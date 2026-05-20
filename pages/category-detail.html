@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse premium export products by category from Puristine Impex LLP.">
+  <title>Category | Puristine Impex LLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#071739',gold:'#D4A373','gray-soft':'#f8f9fb'},fontFamily:{heading:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body data-page="category-detail" class="font-body text-navy bg-white antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main" class="pt-24">
+    <nav class="breadcrumb-sticky glass border-b border-gray-200/80" aria-label="Breadcrumb">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <ol class="flex items-center gap-2 text-sm text-gray-500 flex-wrap">
+          <li><a href="../index.html" class="hover:text-gold transition-colors" data-i18n="common.home"></a></li>
+          <li><span class="text-gray-300">/</span></li>
+          <li><a href="categories.html" class="hover:text-gold transition-colors" data-i18n="pages.categoryDetail.breadcrumb"></a></li>
+          <li><span class="text-gray-300">/</span></li>
+          <li class="text-navy font-medium" id="category-title" data-i18n="categories.spices.title">Spices</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-20 reveal">
+          <div>
+            <div class="line-gold mb-6"></div>
+            <h1 class="font-heading font-bold text-4xl sm:text-5xl text-navy mb-6" id="category-heading" data-i18n="categories.spices.title"></h1>
+            <p class="text-gray-600 text-lg leading-relaxed" id="category-desc" data-i18n="categories.spices.longDesc"></p>
+          </div>
+          <div class="rounded-3xl overflow-hidden shadow-2xl">
+            <img id="category-hero-img" src="../assets/images/categories/spices.svg" alt="Category" class="w-full aspect-[4/3] object-cover" width="800" height="600">
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl text-navy mb-10" data-i18n="pages.categoryDetail.productsTitle"></h2>
+          <div id="products-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/js/images.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

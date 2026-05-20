@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="375" viewBox="0 0 500 375">
+  <rect width="500" height="375" fill="#3d2810"/>
+  <circle cx="250" cy="180" r="90" fill="#e8a317" opacity="0.95"/>
+  <text x="250" y="330" text-anchor="middle" fill="#D4A373" font-family="system-ui" font-size="16" font-weight="600">TURMERIC</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d2818"/><stop offset="100%" style="stop-color:#1a4030"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="300" y="180" width="200" height="120" rx="16" fill="#2d5a45" opacity="0.9"/><circle cx="350" cy="360" r="40" fill="#90ee90" opacity="0.8"/><circle cx="450" cy="340" r="35" fill="#98fb98" opacity="0.75"/>
+  <text x="400" y="520" text-anchor="middle" fill="#D4A373" font-family="system-ui,sans-serif" font-size="22" font-weight="600" letter-spacing="2">MOUTH FRESHENERS</text>
+</svg>

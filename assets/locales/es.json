@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Puristine Impex LLP | Importación y Exportación Premium",
+    "description": "Puristine Impex LLP — proveedor internacional de confianza de productos alimenticios premium, especias, legumbres y soluciones innovadoras para el hogar."
+  },
+  "nav": {
+    "home": "Inicio",
+    "categories": "Categorías",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Contáctenos"
+  },
+  "hero": {
+    "badge": "Excelencia en Comercio Internacional",
+    "title": "Comercio Global. Calidad Premium. Alianzas de Confianza.",
+    "subtitle": "Puristine Impex LLP se especializa en el abastecimiento y suministro de productos alimenticios premium, especias, legumbres y soluciones innovadoras para el hogar en todo el mundo.",
+    "cta1": "Explorar Categorías",
+    "cta2": "Contáctenos",
+    "stat1": "Mercados de Exportación",
+    "stat2": "Líneas de Producto",
+    "stat3": "Calidad Garantizada"
+  },
+  "aboutPreview": {
+    "label": "Quiénes Somos",
+    "title": "De Raíces Heredadas a la Excelencia Global",
+    "p1": "Establecidos desde el legado de Puristine Foods, nos expandimos a Puristine Impex LLP para servir mercados internacionales con la misma calidad inquebrantable.",
+    "p2": "Nuestra experiencia en importación y exportación abarca especias premium, legumbres, harinas, salsas y un portafolio en expansión de innovaciones para el hogar.",
+    "cta": "Descubra Nuestra Historia",
+    "counter1": "Años de Experiencia",
+    "counter2": "Categorías de Productos",
+    "counter3": "Países Atendidos"
+  },
+  "categoriesSection": {
+    "label": "Nuestro Portafolio",
+    "title": "Categorías de Productos Premium",
+    "subtitle": "Selecciones curadas para compradores internacionales exigentes."
+  },
+  "featured": {
+    "label": "Selección Destacada",
+    "title": "Productos Listos para Exportar",
+    "subtitle": "Una muestra de nuestro catálogo internacional."
+  },
+  "whyUs": {
+    "label": "Por Qué Puristine",
+    "title": "Por Qué Nos Eligen los Compradores Globales",
+    "items": {
+      "expertise": { "title": "Fuerte Experiencia en Productos", "desc": "Conocimiento profundo en especias, legumbres y FMCG." },
+      "flexible": { "title": "Suministro y Empaque Flexible", "desc": "MOQ personalizados, etiquetado privado y formatos adaptados." },
+      "logistics": { "title": "Logística Confiable", "desc": "Coordinación de exportación de principio a fin." },
+      "portfolio": { "title": "Portafolio Diverso", "desc": "Un socio de confianza para múltiples categorías." },
+      "customer": { "title": "Enfoque Centrado en el Cliente", "desc": "Soporte dedicado y asociaciones a largo plazo." }
+    }
+  },
+  "fairewash": {
+    "label": "Categorías en Expansión",
+    "title": "Soluciones Fairewash para el Hogar",
+    "subtitle": "Productos de limpieza sostenibles e innovadores.",
+    "product1": { "name": "Hojas de Detergente para Ropa", "desc": "Hojas ecológicas y ahorradoras de espacio." },
+    "product2": { "name": "Hojas Limpiadoras de Pisos", "desc": "Hojas solubles para pisos brillantes." },
+    "badge": "Innovación Sostenible"
+  },
+  "trust": {
+    "label": "Confianza Global",
+    "title": "Construido para Alianzas Internacionales",
+    "items": {
+      "export": { "title": "Operaciones de Exportación", "desc": "Procesos alineados con estándares internacionales." },
+      "ethical": { "title": "Abastecimiento Ético", "desc": "Cadenas de suministro responsables." },
+      "quality": { "title": "Garantía de Calidad", "desc": "Controles rigurosos en cada etapa." },
+      "sustainable": { "title": "Productos Sostenibles", "desc": "Portafolio ecológico en crecimiento." },
+      "partnerships": { "title": "Alianzas a Largo Plazo", "desc": "Relaciones que crecen con su negocio." }
+    }
+  },
+  "cta": {
+    "title": "Construyamos Alianzas Globales",
+    "subtitle": "¿Listo para abastecer productos premium? Nuestro equipo está aquí.",
+    "email": "Envíenos un Email",
+    "contact": "Contactar Ahora"
+  },
+  "footer": {
+    "tagline": "Comercio global premium en productos alimenticios y soluciones para el hogar.",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "language": "Idioma",
+    "address": "India — Operaciones de Exportación Mundial",
+    "hours": "Lun–Sáb: 9:00 – 18:00 IST",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "explore": "Explorar",
+    "learnMore": "Saber Más",
+    "viewAll": "Ver Todas las Categorías",
+    "readMore": "Leer Más",
+    "back": "Atrás",
+    "home": "Inicio"
+  },
+  "categories": {
+    "spices": { "title": "Especias", "desc": "Especias enteras y molidas premium.", "longDesc": "Especias de grado exportación con especificaciones consistentes." },
+    "pulses": { "title": "Legumbres", "desc": "Dales y legumbres de alta calidad.", "longDesc": "Toor, moong, chana y urad — limpios y clasificados." },
+    "flours": { "title": "Harinas", "desc": "Harinas de trigo, besan y especialidades.", "longDesc": "Atta premium y harinas sin gluten." },
+    "sauces": { "title": "Salsas", "desc": "Chutneys y condimentos auténticos.", "longDesc": "Salsas tradicionales y contemporáneas." },
+    "pickles": { "title": "Encurtidos", "desc": "Encurtidos indios tradicionales.", "longDesc": "Mango, lima y vegetales mixtos." },
+    "syrups": { "title": "Jarabes", "desc": "Jarabes de rosa y frutas.", "longDesc": "Concentrados para bebidas y postres." },
+    "namkeens-sweets": { "title": "Snacks y Dulces", "desc": "Snacks y confitería para exportación.", "longDesc": "Namkeens y mithai seleccionados." },
+    "instant-mixes": { "title": "Mezclas Instantáneas", "desc": "Mezclas listas para preparar.", "longDesc": "Idli, dosa y mezclas especiales." },
+    "mouth-fresheners": { "title": "Refrescantes Bucales", "desc": "Paan masala y mukhwas.", "longDesc": "Formulaciones premium para retail." },
+    "disposable-products": { "title": "Productos Desechables", "desc": "Desechables ecológicos.", "longDesc": "Platos y vasos para hostelería." },
+    "patanjali-products": { "title": "Productos Patanjali", "desc": "Distribución autorizada Patanjali.", "longDesc": "Líneas completas para distribuidores." },
+    "home-care": { "title": "Cuidado del Hogar", "desc": "Soluciones de limpieza innovadoras.", "longDesc": "Fairewash y productos sostenibles." }
+  },
+  "products": {
+    "turmeric-powder": { "name": "Cúrcuma Premium", "desc": "Alta curcumina, color vibrante." },
+    "toor-dal": { "name": "Toor Dal", "desc": "Guisantes paloma pulidos." },
+    "wheat-flour": { "name": "Harina de Trigo Premium", "desc": "Atta finamente molida." },
+    "green-chutney": { "name": "Chutney Verde", "desc": "Cilantro y menta auténticos." },
+    "mango-pickle": { "name": "Encurtido de Mango", "desc": "Aam ka achar tradicional." },
+    "rose-syrup": { "name": "Jarabe de Rosa", "desc": "Concentrado fragante." },
+    "turmeric": { "name": "Cúrcuma en Polvo", "desc": "Haldi de grado exportación." },
+    "cumin": { "name": "Comino", "desc": "Jeera premium." },
+    "coriander": { "name": "Cilantro en Polvo", "desc": "Dhania recién molida." },
+    "red-chilli": { "name": "Chile Rojo en Polvo", "desc": "Color vibrante." },
+    "garam-masala": { "name": "Garam Masala", "desc": "Mezcla signature." },
+    "cardamom": { "name": "Cardamomo Verde", "desc": "Elaichi aromático." },
+    "moong-dal": { "name": "Moong Dal", "desc": "Gramo verde partido." },
+    "chana-dal": { "name": "Chana Dal", "desc": "Garbanzo partido." },
+    "urad-dal": { "name": "Urad Dal", "desc": "Frijol negro partido." },
+    "besan": { "name": "Besan", "desc": "Harina de garbanzo fina." },
+    "rice-flour": { "name": "Harina de Arroz", "desc": "Sin gluten." },
+    "laundry-sheets": { "name": "Hojas de Detergente", "desc": "Ecológicas y solubles." },
+    "floor-sheets": { "name": "Hojas para Pisos", "desc": "Limpieza conveniente." }
+  },
+  "pages": {
+    "categories": { "title": "Categorías de Productos", "subtitle": "Explore nuestro portafolio completo de exportación.", "search": "Buscar categorías..." },
+    "categoryDetail": { "breadcrumb": "Categorías", "productsTitle": "Productos en esta Categoría" },
+    "about": {
+      "title": "Sobre Puristine Impex",
+      "subtitle": "Herencia, experiencia y visión de excelencia comercial.",
+      "story": { "label": "Nuestra Historia", "title": "De Puristine Foods al Impex Global", "p1": "Puristine Impex LLP nació de la confianza de Puristine Foods.", "p2": "Expandimos para servir exportadores y distribuidores en todos los continentes." },
+      "mission": { "label": "Misión", "title": "Excelencia Sin Fronteras", "text": "Conectar mercados globales con productos premium indios." },
+      "vision": { "label": "Visión", "title": "Socio Comercial Global de Confianza", "text": "Ser el socio B2B preferido por compradores exigentes." },
+      "expertise": { "label": "Experiencia", "title": "Excelencia en Comercio Global", "text": "Décadas de experiencia en exportación FMCG." },
+      "commitment": { "label": "Compromiso", "title": "Calidad Sin Compromiso", "text": "Cada producto refleja nuestro compromiso con la seguridad alimentaria." },
+      "growth": { "label": "Crecimiento Futuro", "title": "Expandiendo Horizontes", "text": "Invirtiendo en categorías que satisfacen tendencias globales." }
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "subtitle": "Inicie su consulta de exportación.",
+      "formTitle": "Enviar Consulta",
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "company": "Empresa",
+      "country": "País",
+      "message": "Su Mensaje",
+      "submit": "Enviar Consulta",
+      "details": "Datos de Contacto",
+      "exportCta": "Consulta de Exportación",
+      "exportText": "Cuéntenos sus requisitos — MOQ, empaque y destino.",
+      "hours": "Horario Comercial",
+      "hoursValue": "Lunes – Sábado: 9:00 – 18:00 (IST)",
+      "map": "Nuestra Ubicación"
+    },
+    "privacy": { "title": "Política de Privacidad", "updated": "Última actualización: Mayo 2026", "intro": "Puristine Impex LLP respeta su privacidad." },
+    "terms": { "title": "Términos y Condiciones", "updated": "Última actualización: Mayo 2026", "intro": "Estos términos rigen el uso de nuestro sitio web." }
+  },
+  "contact": { "sending": "Enviando...", "sent": "Mensaje Enviado ✓" }
+}

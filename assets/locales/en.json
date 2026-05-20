@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "title": "Puristine Impex LLP | Premium Global Import Export",
+    "description": "Puristine Impex LLP — trusted international supplier of premium food products, spices, pulses, and innovative home-care solutions for global B2B partners."
+  },
+  "nav": {
+    "home": "Home",
+    "categories": "Categories",
+    "about": "About Us",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "badge": "International Trade Excellence",
+    "title": "Global Trade. Premium Quality. Trusted Partnerships.",
+    "subtitle": "Puristine Impex LLP specializes in sourcing and supplying premium food products, spices, pulses, and innovative home-care solutions worldwide.",
+    "cta1": "Explore Categories",
+    "cta2": "Contact Us",
+    "stat1": "Export Markets",
+    "stat2": "Product Lines",
+    "stat3": "Quality Assured"
+  },
+  "aboutPreview": {
+    "label": "Who We Are",
+    "title": "From Heritage Roots to Global Excellence",
+    "p1": "Established from the legacy of Puristine Foods, we expanded into Puristine Impex LLP to serve international markets with the same uncompromising quality our name represents.",
+    "p2": "Our import-export expertise spans premium spices, pulses, flours, sauces, and an expanding portfolio of home-care innovations — all delivered through customer-centric sourcing and ethical partnerships.",
+    "cta": "Discover Our Story",
+    "counter1": "Years Experience",
+    "counter2": "Product Categories",
+    "counter3": "Countries Served"
+  },
+  "categoriesSection": {
+    "label": "Our Portfolio",
+    "title": "Premium Product Categories",
+    "subtitle": "Curated selections for discerning international buyers — export-ready quality, flexible packaging, and reliable supply."
+  },
+  "featured": {
+    "label": "Featured Selection",
+    "title": "Export-Ready Products",
+    "subtitle": "A glimpse into our international catalog — premium grades, consistent specifications, and B2B-ready packaging."
+  },
+  "whyUs": {
+    "label": "Why Puristine",
+    "title": "Why Global Buyers Choose Us",
+    "items": {
+      "expertise": { "title": "Strong Product Expertise", "desc": "Deep category knowledge across spices, pulses, and FMCG — ensuring the right grades for every market." },
+      "flexible": { "title": "Flexible Supply & Packaging", "desc": "Custom MOQs, private labeling, and packaging formats tailored to your distribution channels." },
+      "logistics": { "title": "Reliable Logistics", "desc": "End-to-end export coordination with trusted freight partners and documentation support." },
+      "portfolio": { "title": "Diverse Product Portfolio", "desc": "One trusted partner for multiple categories — simplifying procurement and supply chain management." },
+      "customer": { "title": "Customer-Centric Focus", "desc": "Dedicated account support, transparent communication, and long-term partnership mindset." }
+    }
+  },
+  "fairewash": {
+    "label": "Expanding Categories",
+    "title": "Fairewash Home-Care Solutions",
+    "subtitle": "Sustainable, innovative cleaning products designed for modern households and international retail.",
+    "product1": { "name": "Laundry Detergent Sheets", "desc": "Eco-friendly, space-saving laundry sheets with powerful cleaning performance." },
+    "product2": { "name": "Floor Cleaner Sheets", "desc": "Convenient dissolvable sheets for sparkling floors — less plastic, more impact." },
+    "badge": "Sustainable Innovation"
+  },
+  "trust": {
+    "label": "Global Trust",
+    "title": "Built for International Partnerships",
+    "items": {
+      "export": { "title": "Export Operations", "desc": "Streamlined export processes compliant with international trade standards." },
+      "ethical": { "title": "Ethical Sourcing", "desc": "Responsible supply chains with verified growers and manufacturers." },
+      "quality": { "title": "Quality Assurance", "desc": "Rigorous quality checks at every stage — from sourcing to shipment." },
+      "sustainable": { "title": "Sustainable Products", "desc": "Growing portfolio of eco-conscious home-care and packaging solutions." },
+      "partnerships": { "title": "Long-Term Partnerships", "desc": "We invest in relationships that grow with your business across markets." }
+    }
+  },
+  "cta": {
+    "title": "Let's Build Global Partnerships",
+    "subtitle": "Ready to source premium products for your market? Our export team is here to help.",
+    "email": "Email Us",
+    "contact": "Contact Now"
+  },
+  "footer": {
+    "tagline": "Premium global trade in food products and home-care solutions. Trusted by international buyers worldwide.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "language": "Language",
+    "address": "India — Export Operations Worldwide",
+    "hours": "Mon–Sat: 9:00 AM – 6:00 PM IST",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "explore": "Explore",
+    "learnMore": "Learn More",
+    "viewAll": "View All Categories",
+    "readMore": "Read More",
+    "back": "Back",
+    "home": "Home"
+  },
+  "categories": {
+    "spices": { "title": "Spices", "desc": "Premium whole and ground spices for global cuisines.", "longDesc": "Export-grade spices sourced from trusted growing regions — turmeric, cumin, coriander, chilli, and specialty blends with consistent color, aroma, and mesh specifications." },
+    "pulses": { "title": "Pulses", "desc": "High-quality dals and legumes for international markets.", "longDesc": "Toor, moong, chana, and urad dals — cleaned, sorted, and packed to meet export standards with customizable bag sizes and branding." },
+    "flours": { "title": "Flours", "desc": "Fine-grade wheat, besan, and specialty flours.", "longDesc": "Premium atta, besan, and rice flour for retail and food-service — consistent grind, freshness, and food-safety compliance." },
+    "sauces": { "title": "Sauces", "desc": "Authentic chutneys and condiments for global palates.", "longDesc": "Traditional and contemporary sauces — green chutney, tamarind, and specialty condiments in export-ready packaging." },
+    "pickles": { "title": "Pickles", "desc": "Traditional Indian pickles with export-grade quality.", "longDesc": "Mango, lime, mixed vegetable pickles — crafted with authentic recipes and shelf-stable formulations for international distribution." },
+    "syrups": { "title": "Syrups", "desc": "Rose, khus, and fruit syrups for beverages and desserts.", "longDesc": "Concentrated syrups for beverages, desserts, and food service — vibrant flavors with consistent viscosity and shelf life." },
+    "namkeens-sweets": { "title": "Namkeens & Sweets", "desc": "Snacks and confectionery for retail export.", "longDesc": "Curated namkeens and mithai selections — hygienically packed for retail shelves and food-service channels worldwide." },
+    "instant-mixes": { "title": "Instant Mixes", "desc": "Ready-to-prepare mixes for convenience markets.", "longDesc": "Idli, dosa, gulab jamun, and specialty instant mixes — consistent taste profiles for global Indian diaspora and mainstream markets." },
+    "mouth-fresheners": { "title": "Mouth Fresheners", "desc": "Paan masala and mukhwas for specialty retail.", "longDesc": "Premium mouth fresheners and mukhwas — export-compliant formulations with attractive retail packaging." },
+    "disposable-products": { "title": "Disposable Products", "desc": "Eco-conscious disposables for hospitality.", "longDesc": "Plates, cups, and food-service disposables — quality materials suitable for events, catering, and retail." },
+    "patanjali-products": { "title": "Patanjali Products", "desc": "Authorized distribution of Patanjali FMCG range.", "longDesc": "Complete Patanjali product lines for international distributors — personal care, food, and wellness categories." },
+    "home-care": { "title": "Home Care Products", "desc": "Innovative cleaning solutions including Fairewash.", "longDesc": "Fairewash detergent sheets, floor cleaners, and expanding home-care innovations — sustainable formats for modern households." }
+  },
+  "products": {
+    "turmeric-powder": { "name": "Premium Turmeric Powder", "desc": "High-curcumin turmeric with vibrant color — export grade." },
+    "toor-dal": { "name": "Toor Dal", "desc": "Sorted, polished pigeon peas for consistent cooking quality." },
+    "wheat-flour": { "name": "Premium Wheat Flour", "desc": "Fine-ground atta for rotis, breads, and bakery applications." },
+    "green-chutney": { "name": "Green Chutney", "desc": "Authentic coriander-mint chutney — ready for retail." },
+    "mango-pickle": { "name": "Mango Pickle", "desc": "Traditional aam ka achar with balanced spice profile." },
+    "rose-syrup": { "name": "Rose Syrup", "desc": "Fragrant rose concentrate for beverages and desserts." },
+    "turmeric": { "name": "Turmeric Powder", "desc": "Export-grade haldi with consistent curcumin levels." },
+    "cumin": { "name": "Cumin Seeds", "desc": "Premium jeera — bold aroma, uniform size." },
+    "coriander": { "name": "Coriander Powder", "desc": "Fresh-ground dhania for curries and blends." },
+    "red-chilli": { "name": "Red Chilli Powder", "desc": "Vibrant colour and controlled heat levels." },
+    "garam-masala": { "name": "Garam Masala", "desc": "Signature blend for authentic Indian cuisine." },
+    "cardamom": { "name": "Green Cardamom", "desc": "Bold, aromatic elaichi — whole and ground." },
+    "moong-dal": { "name": "Moong Dal", "desc": "Split green gram — quick-cooking, export quality." },
+    "chana-dal": { "name": "Chana Dal", "desc": "Split Bengal gram with uniform polish." },
+    "urad-dal": { "name": "Urad Dal", "desc": "Black gram splits for idli, dosa, and curries." },
+    "besan": { "name": "Besan (Gram Flour)", "desc": "Fine chickpea flour for snacks and sweets." },
+    "rice-flour": { "name": "Rice Flour", "desc": "Gluten-free flour for South Indian specialties." },
+    "laundry-sheets": { "name": "Laundry Detergent Sheets", "desc": "Eco-friendly dissolvable laundry sheets." },
+    "floor-sheets": { "name": "Floor Cleaner Sheets", "desc": "Space-saving floor cleaning solution." }
+  },
+  "pages": {
+    "categories": {
+      "title": "Product Categories",
+      "subtitle": "Explore our complete export portfolio — premium food products and home-care solutions for global markets.",
+      "search": "Search categories..."
+    },
+    "categoryDetail": {
+      "breadcrumb": "Categories",
+      "productsTitle": "Products in this Category"
+    },
+    "about": {
+      "title": "About Puristine Impex",
+      "subtitle": "Heritage, expertise, and a vision for global trade excellence.",
+      "story": { "label": "Our Story", "title": "From Puristine Foods to Global Impex", "p1": "Puristine Impex LLP was born from the trusted foundation of Puristine Foods — a name synonymous with quality in Indian food products.", "p2": "Recognizing growing international demand, we expanded our operations to serve exporters, distributors, and retailers across continents with the same integrity that built our domestic reputation." },
+      "mission": { "label": "Mission", "title": "Delivering Excellence Across Borders", "text": "To connect global markets with premium Indian food products and innovative home-care solutions through ethical sourcing, reliable logistics, and customer-first partnerships." },
+      "vision": { "label": "Vision", "title": "A Trusted Global Trade Partner", "text": "To be the preferred B2B export partner for discerning buyers worldwide — known for quality, transparency, and sustainable growth." },
+      "expertise": { "label": "Expertise", "title": "Global Trade Excellence", "text": "Our team brings decades of combined experience in FMCG export, quality assurance, and international compliance — ensuring smooth transactions from inquiry to delivery." },
+      "commitment": { "label": "Commitment", "title": "Quality Without Compromise", "text": "Every product we export reflects our commitment to food safety, consistent specifications, and packaging that meets international retail standards." },
+      "growth": { "label": "Future Growth", "title": "Expanding Horizons", "text": "With Fairewash home-care innovations and an ever-growing product catalog, we continue investing in categories that meet evolving global consumer trends." }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Start your export inquiry — our team responds within one business day.",
+      "formTitle": "Send an Inquiry",
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "country": "Country",
+      "message": "Your Message",
+      "submit": "Send Inquiry",
+      "details": "Contact Details",
+      "exportCta": "Export Inquiry",
+      "exportText": "Looking to source products for your market? Tell us your requirements — MOQ, packaging, and destination — and we'll prepare a tailored proposal.",
+      "hours": "Business Hours",
+      "hoursValue": "Monday – Saturday: 9:00 AM – 6:00 PM (IST)",
+      "map": "Our Location"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: May 2026",
+      "intro": "Puristine Impex LLP respects your privacy. This policy describes how we collect, use, and protect information when you visit our website or contact us for business inquiries."
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "updated": "Last updated: May 2026",
+      "intro": "These terms govern your use of the Puristine Impex LLP website. By accessing this site, you agree to these terms in full."
+    }
+  },
+  "contact": {
+    "sending": "Sending...",
+    "sent": "Message Sent ✓"
+  }
+}

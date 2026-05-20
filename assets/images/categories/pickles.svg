@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2818"/>
+      <stop offset="100%" style="stop-color:#2d4a28"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="280" y="160" width="120" height="260" rx="16" fill="#4a6741" opacity="0.5" stroke="#6b8e5a" stroke-width="3"/>
+  <ellipse cx="340" cy="200" rx="35" ry="50" fill="#ff8c00" opacity="0.9"/>
+  <ellipse cx="340" cy="320" rx="30" ry="40" fill="#32cd32" opacity="0.7"/>
+  <text x="400" y="520" text-anchor="middle" fill="#D4A373" font-family="system-ui,sans-serif" font-size="28" font-weight="600" letter-spacing="4">PICKLES</text>
+</svg>
