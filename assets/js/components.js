@@ -23,7 +23,7 @@ const Components = (function () {
         <div class="flex items-center justify-between h-20 lg:h-24">
           <a href="${bp}index.html" class="flex items-center group" aria-label="Puristine Impex Home">
             <img
-              src="${bp}assets/images/puristine-impex-logo.jpg"
+              src="${bp}assets/images/puristine-impex-logo.png"
               alt="Puristine Impex LLP"
               class="h-14 sm:h-16 lg:h-[4.5rem] w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
               width="886"
@@ -80,7 +80,7 @@ const Components = (function () {
           <div class="lg:col-span-1">
             <a href="${bp}index.html" class="inline-block m-0 p-0 mb-4 leading-none" aria-label="Puristine Impex Home">
               <img
-                src="${bp}assets/images/puristine-impex-logo.jpg"
+                src="${bp}assets/images/puristine-impex-logo.png"
                 alt="Puristine Impex LLP"
                 class="block h-16 sm:h-[4.25rem] w-auto object-contain m-0 p-0"
                 width="886"

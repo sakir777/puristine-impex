@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://puristineimpex.com/sitemap.xml
