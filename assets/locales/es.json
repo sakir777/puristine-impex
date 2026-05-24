@@ -12,8 +12,8 @@
   },
   "hero": {
     "badge": "Excelencia en Comercio Internacional",
-    "title": "Comercio Global. Calidad Premium. Alianzas de Confianza.",
-    "subtitle": "Puristine Impex LLP se especializa en el abastecimiento y suministro de productos alimenticios premium, especias, legumbres y soluciones innovadoras para el hogar en todo el mundo.",
+    "title": "¿Necesita Productos de Calidad?",
+    "subtitle": "Elija entre productos de alta calidad diseñados para la eficiencia, la durabilidad y estilos de vida modernos",
     "cta1": "Explorar Categorías",
     "cta2": "Contáctenos",
     "stat1": "Mercados de Exportación",
@@ -22,18 +22,20 @@
   },
   "aboutPreview": {
     "label": "Quiénes Somos",
-    "title": "De Raíces Heredadas a la Excelencia Global",
-    "p1": "Establecidos desde el legado de Puristine Foods, nos expandimos a Puristine Impex LLP para servir mercados internacionales con la misma calidad inquebrantable.",
-    "p2": "Nuestra experiencia en importación y exportación abarca especias premium, legumbres, harinas, salsas y un portafolio en expansión de innovaciones para el hogar.",
-    "cta": "Descubra Nuestra Historia",
-    "counter1": "Años de Experiencia",
-    "counter2": "Categorías de Productos",
-    "counter3": "Países Atendidos"
+    "title": "Bienvenido a PURISTINE IMPEX LLP",
+    "p1": "Puristine Impex LLP es uno de los nombres líderes en exportadores, importadores y proveedores de la India de productos ecológicos modernos, todo tipo de alimentos, especias y mercancía general diseñados para la generación actual y un futuro sostenible.",
+    "p2": "Priorizamos las necesidades de nuestros clientes y nos esforzamos por ofrecer lo mejor del mercado. Nos enfocamos en la satisfacción del usuario para alcanzar nuestros objetivos.",
+    "cta": "Leer Más"
   },
   "categoriesSection": {
-    "label": "Nuestro Portafolio",
-    "title": "Categorías de Productos Premium",
-    "subtitle": "Selecciones curadas para compradores internacionales exigentes."
+    "label": "Nuestros Productos",
+    "title": "Nuestro Portafolio",
+    "subtitle": "Explore una selección de nuestras categorías premium de exportación."
+  },
+  "categoriesPreview": {
+    "pulses": "Semillas comestibles de plantas de la familia de las leguminosas. Las legumbres crecen en vainas y vienen en variedad de formas, tamaños y colores.",
+    "instant-mixes": "Ingredientes mezclados por adelantado, especialmente alimentos listos para cocinar o consumir tras añadir leche o agua.",
+    "spices": "Semilla, fruto, raíz, corteza u otra sustancia vegetal usada principalmente para sazonar o colorear alimentos."
   },
   "featured": {
     "label": "Selección Destacada",
@@ -44,30 +46,67 @@
     "label": "Por Qué Puristine",
     "title": "Por Qué Nos Eligen los Compradores Globales",
     "items": {
-      "expertise": { "title": "Fuerte Experiencia en Productos", "desc": "Conocimiento profundo en especias, legumbres y FMCG." },
-      "flexible": { "title": "Suministro y Empaque Flexible", "desc": "MOQ personalizados, etiquetado privado y formatos adaptados." },
-      "logistics": { "title": "Logística Confiable", "desc": "Coordinación de exportación de principio a fin." },
-      "portfolio": { "title": "Portafolio Diverso", "desc": "Un socio de confianza para múltiples categorías." },
-      "customer": { "title": "Enfoque Centrado en el Cliente", "desc": "Soporte dedicado y asociaciones a largo plazo." }
+      "expertise": {
+        "title": "Fuerte Experiencia en Productos",
+        "desc": "Conocimiento profundo en especias, legumbres y FMCG."
+      },
+      "flexible": {
+        "title": "Suministro y Empaque Flexible",
+        "desc": "MOQ personalizados, etiquetado privado y formatos adaptados."
+      },
+      "logistics": {
+        "title": "Logística Confiable",
+        "desc": "Coordinación de exportación de principio a fin."
+      },
+      "portfolio": {
+        "title": "Portafolio Diverso",
+        "desc": "Un socio de confianza para múltiples categorías."
+      },
+      "customer": {
+        "title": "Enfoque Centrado en el Cliente",
+        "desc": "Soporte dedicado y asociaciones a largo plazo."
+      }
     }
   },
   "fairewash": {
-    "label": "Categorías en Expansión",
-    "title": "Soluciones Fairewash para el Hogar",
-    "subtitle": "Productos de limpieza sostenibles e innovadores.",
-    "product1": { "name": "Hojas de Detergente para Ropa", "desc": "Hojas ecológicas y ahorradoras de espacio." },
-    "product2": { "name": "Hojas Limpiadoras de Pisos", "desc": "Hojas solubles para pisos brillantes." },
-    "badge": "Innovación Sostenible"
+    "title": "Lo Que Ofrecemos",
+    "subtitle": "Soluciones de Limpieza Sostenibles",
+    "description": "Productos de limpieza innovadores y ecológicos diseñados para ofrecer un rendimiento potente mientras reducen el impacto ambiental.",
+    "product1": {
+      "name": "Hojas de Detergente para Ropa",
+      "desc": "Hojas de detergente ultraconcentradas que se disuelven al instante en agua, eliminando manchas con potencia mientras son suaves con las telas y el medio ambiente. Diseñadas para la lavandería moderna con cero residuos y máxima comodidad."
+    },
+    "product2": {
+      "name": "Hojas para Limpieza de Pisos",
+      "desc": "Hojas ecológicas para limpieza de pisos que se disuelven rápidamente en agua para crear una solución de limpieza efectiva. Duras con la suciedad y seguras para hogares, familias y todas las superficies."
+    },
+    "cta": "Leer Más",
+    "badge": "Soluciones Fairewash para el Hogar"
   },
   "trust": {
     "label": "Confianza Global",
     "title": "Construido para Alianzas Internacionales",
     "items": {
-      "export": { "title": "Operaciones de Exportación", "desc": "Procesos alineados con estándares internacionales." },
-      "ethical": { "title": "Abastecimiento Ético", "desc": "Cadenas de suministro responsables." },
-      "quality": { "title": "Garantía de Calidad", "desc": "Controles rigurosos en cada etapa." },
-      "sustainable": { "title": "Productos Sostenibles", "desc": "Portafolio ecológico en crecimiento." },
-      "partnerships": { "title": "Alianzas a Largo Plazo", "desc": "Relaciones que crecen con su negocio." }
+      "export": {
+        "title": "Operaciones de Exportación",
+        "desc": "Procesos alineados con estándares internacionales."
+      },
+      "ethical": {
+        "title": "Abastecimiento Ético",
+        "desc": "Cadenas de suministro responsables."
+      },
+      "quality": {
+        "title": "Garantía de Calidad",
+        "desc": "Controles rigurosos en cada etapa."
+      },
+      "sustainable": {
+        "title": "Productos Sostenibles",
+        "desc": "Portafolio ecológico en crecimiento."
+      },
+      "partnerships": {
+        "title": "Alianzas a Largo Plazo",
+        "desc": "Relaciones que crecen con su negocio."
+      }
     }
   },
   "cta": {
@@ -89,59 +128,193 @@
   },
   "common": {
     "explore": "Explorar",
+    "exploreMore": "Explorar Más",
     "learnMore": "Saber Más",
     "viewAll": "Ver Todas las Categorías",
+    "seeAllProducts": "Ver Todos los Productos",
     "readMore": "Leer Más",
     "back": "Atrás",
     "home": "Inicio"
   },
   "categories": {
-    "spices": { "title": "Especias", "desc": "Especias enteras y molidas premium.", "longDesc": "Especias de grado exportación con especificaciones consistentes." },
-    "pulses": { "title": "Legumbres", "desc": "Dales y legumbres de alta calidad.", "longDesc": "Toor, moong, chana y urad — limpios y clasificados." },
-    "flours": { "title": "Harinas", "desc": "Harinas de trigo, besan y especialidades.", "longDesc": "Atta premium y harinas sin gluten." },
-    "sauces": { "title": "Salsas", "desc": "Chutneys y condimentos auténticos.", "longDesc": "Salsas tradicionales y contemporáneas." },
-    "pickles": { "title": "Encurtidos", "desc": "Encurtidos indios tradicionales.", "longDesc": "Mango, lima y vegetales mixtos." },
-    "syrups": { "title": "Jarabes", "desc": "Jarabes de rosa y frutas.", "longDesc": "Concentrados para bebidas y postres." },
-    "namkeens-sweets": { "title": "Snacks y Dulces", "desc": "Snacks y confitería para exportación.", "longDesc": "Namkeens y mithai seleccionados." },
-    "instant-mixes": { "title": "Mezclas Instantáneas", "desc": "Mezclas listas para preparar.", "longDesc": "Idli, dosa y mezclas especiales." },
-    "mouth-fresheners": { "title": "Refrescantes Bucales", "desc": "Paan masala y mukhwas.", "longDesc": "Formulaciones premium para retail." },
-    "disposable-products": { "title": "Productos Desechables", "desc": "Desechables ecológicos.", "longDesc": "Platos y vasos para hostelería." },
-    "patanjali-products": { "title": "Productos Patanjali", "desc": "Distribución autorizada Patanjali.", "longDesc": "Líneas completas para distribuidores." },
-    "home-care": { "title": "Cuidado del Hogar", "desc": "Soluciones de limpieza innovadoras.", "longDesc": "Fairewash y productos sostenibles." }
+    "spices": {
+      "title": "Especias",
+      "desc": "Especias enteras y molidas premium.",
+      "longDesc": "Especias de grado exportación con especificaciones consistentes."
+    },
+    "pulses": {
+      "title": "Legumbres",
+      "desc": "Dales y legumbres de alta calidad.",
+      "longDesc": "Toor, moong, chana y urad — limpios y clasificados."
+    },
+    "flours": {
+      "title": "Harinas",
+      "desc": "Harinas de trigo, besan y especialidades.",
+      "longDesc": "Atta premium y harinas sin gluten."
+    },
+    "sauces": {
+      "title": "Salsas",
+      "desc": "Chutneys y condimentos auténticos.",
+      "longDesc": "Salsas tradicionales y contemporáneas."
+    },
+    "pickles": {
+      "title": "Encurtidos",
+      "desc": "Encurtidos indios tradicionales.",
+      "longDesc": "Mango, lima y vegetales mixtos."
+    },
+    "syrups": {
+      "title": "Jarabes",
+      "desc": "Jarabes de rosa y frutas.",
+      "longDesc": "Concentrados para bebidas y postres."
+    },
+    "namkeens-sweets": {
+      "title": "Snacks y Dulces",
+      "desc": "Snacks y confitería para exportación.",
+      "longDesc": "Namkeens y mithai seleccionados."
+    },
+    "instant-mixes": {
+      "title": "Mezclas Instantáneas",
+      "desc": "Mezclas listas para preparar.",
+      "longDesc": "Idli, dosa y mezclas especiales."
+    },
+    "mouth-fresheners": {
+      "title": "Refrescantes Bucales",
+      "desc": "Paan masala y mukhwas.",
+      "longDesc": "Formulaciones premium para retail."
+    },
+    "disposable-products": {
+      "title": "Platos Desechables, etc.",
+      "desc": "Desechables ecológicos.",
+      "longDesc": "Platos y vasos para hostelería."
+    },
+    "jaggery": {
+      "title": "Jaggery",
+      "desc": "Azúcar de caña sin refinar tradicional.",
+      "longDesc": "Bloques y polvo de jaggery premium para exportación."
+    }
   },
   "products": {
-    "turmeric-powder": { "name": "Cúrcuma Premium", "desc": "Alta curcumina, color vibrante." },
-    "toor-dal": { "name": "Toor Dal", "desc": "Guisantes paloma pulidos." },
-    "wheat-flour": { "name": "Harina de Trigo Premium", "desc": "Atta finamente molida." },
-    "green-chutney": { "name": "Chutney Verde", "desc": "Cilantro y menta auténticos." },
-    "mango-pickle": { "name": "Encurtido de Mango", "desc": "Aam ka achar tradicional." },
-    "rose-syrup": { "name": "Jarabe de Rosa", "desc": "Concentrado fragante." },
-    "turmeric": { "name": "Cúrcuma en Polvo", "desc": "Haldi de grado exportación." },
-    "cumin": { "name": "Comino", "desc": "Jeera premium." },
-    "coriander": { "name": "Cilantro en Polvo", "desc": "Dhania recién molida." },
-    "red-chilli": { "name": "Chile Rojo en Polvo", "desc": "Color vibrante." },
-    "garam-masala": { "name": "Garam Masala", "desc": "Mezcla signature." },
-    "cardamom": { "name": "Cardamomo Verde", "desc": "Elaichi aromático." },
-    "moong-dal": { "name": "Moong Dal", "desc": "Gramo verde partido." },
-    "chana-dal": { "name": "Chana Dal", "desc": "Garbanzo partido." },
-    "urad-dal": { "name": "Urad Dal", "desc": "Frijol negro partido." },
-    "besan": { "name": "Besan", "desc": "Harina de garbanzo fina." },
-    "rice-flour": { "name": "Harina de Arroz", "desc": "Sin gluten." },
-    "laundry-sheets": { "name": "Hojas de Detergente", "desc": "Ecológicas y solubles." },
-    "floor-sheets": { "name": "Hojas para Pisos", "desc": "Limpieza conveniente." }
+    "turmeric-powder": {
+      "name": "Cúrcuma Premium",
+      "desc": "Alta curcumina, color vibrante."
+    },
+    "toor-dal": {
+      "name": "Toor Dal",
+      "desc": "Guisantes paloma pulidos."
+    },
+    "wheat-flour": {
+      "name": "Harina de Trigo Premium",
+      "desc": "Atta finamente molida."
+    },
+    "green-chutney": {
+      "name": "Chutney Verde",
+      "desc": "Cilantro y menta auténticos."
+    },
+    "mango-pickle": {
+      "name": "Encurtido de Mango",
+      "desc": "Aam ka achar tradicional."
+    },
+    "rose-syrup": {
+      "name": "Jarabe de Rosa",
+      "desc": "Concentrado fragante."
+    },
+    "turmeric": {
+      "name": "Cúrcuma en Polvo",
+      "desc": "Haldi de grado exportación."
+    },
+    "cumin": {
+      "name": "Comino",
+      "desc": "Jeera premium."
+    },
+    "coriander": {
+      "name": "Cilantro en Polvo",
+      "desc": "Dhania recién molida."
+    },
+    "red-chilli": {
+      "name": "Chile Rojo en Polvo",
+      "desc": "Color vibrante."
+    },
+    "garam-masala": {
+      "name": "Garam Masala",
+      "desc": "Mezcla signature."
+    },
+    "cardamom": {
+      "name": "Cardamomo Verde",
+      "desc": "Elaichi aromático."
+    },
+    "moong-dal": {
+      "name": "Moong Dal",
+      "desc": "Gramo verde partido."
+    },
+    "chana-dal": {
+      "name": "Chana Dal",
+      "desc": "Garbanzo partido."
+    },
+    "urad-dal": {
+      "name": "Urad Dal",
+      "desc": "Frijol negro partido."
+    },
+    "besan": {
+      "name": "Besan",
+      "desc": "Harina de garbanzo fina."
+    },
+    "rice-flour": {
+      "name": "Harina de Arroz",
+      "desc": "Sin gluten."
+    },
+    "laundry-sheets": {
+      "name": "Hojas de Detergente",
+      "desc": "Ecológicas y solubles."
+    },
+    "floor-sheets": {
+      "name": "Hojas para Pisos",
+      "desc": "Limpieza conveniente."
+    }
   },
   "pages": {
-    "categories": { "title": "Categorías de Productos", "subtitle": "Explore nuestro portafolio completo de exportación.", "search": "Buscar categorías..." },
-    "categoryDetail": { "breadcrumb": "Categorías", "productsTitle": "Productos en esta Categoría" },
+    "categories": {
+      "title": "Todos los Productos",
+      "subtitle": "Explore nuestra gama completa de categorías de exportación.",
+      "search": "Buscar productos..."
+    },
+    "categoryDetail": {
+      "breadcrumb": "Categorías",
+      "productsTitle": "Productos en esta Categoría"
+    },
     "about": {
       "title": "Sobre Puristine Impex",
       "subtitle": "Herencia, experiencia y visión de excelencia comercial.",
-      "story": { "label": "Nuestra Historia", "title": "De Puristine Foods al Impex Global", "p1": "Puristine Impex LLP nació de la confianza de Puristine Foods.", "p2": "Expandimos para servir exportadores y distribuidores en todos los continentes." },
-      "mission": { "label": "Misión", "title": "Excelencia Sin Fronteras", "text": "Conectar mercados globales con productos premium indios." },
-      "vision": { "label": "Visión", "title": "Socio Comercial Global de Confianza", "text": "Ser el socio B2B preferido por compradores exigentes." },
-      "expertise": { "label": "Experiencia", "title": "Excelencia en Comercio Global", "text": "Décadas de experiencia en exportación FMCG." },
-      "commitment": { "label": "Compromiso", "title": "Calidad Sin Compromiso", "text": "Cada producto refleja nuestro compromiso con la seguridad alimentaria." },
-      "growth": { "label": "Crecimiento Futuro", "title": "Expandiendo Horizontes", "text": "Invirtiendo en categorías que satisfacen tendencias globales." }
+      "story": {
+        "label": "Nuestra Historia",
+        "title": "De Puristine Foods al Impex Global",
+        "p1": "Puristine Impex LLP nació de la confianza de Puristine Foods.",
+        "p2": "Expandimos para servir exportadores y distribuidores en todos los continentes."
+      },
+      "mission": {
+        "label": "Misión",
+        "title": "Excelencia Sin Fronteras",
+        "text": "Conectar mercados globales con productos premium indios."
+      },
+      "vision": {
+        "label": "Visión",
+        "title": "Socio Comercial Global de Confianza",
+        "text": "Ser el socio B2B preferido por compradores exigentes."
+      },
+      "expertise": {
+        "label": "Experiencia",
+        "title": "Excelencia en Comercio Global",
+        "text": "Décadas de experiencia en exportación FMCG."
+      },
+      "commitment": {
+        "label": "Compromiso",
+        "title": "Calidad Sin Compromiso",
+        "text": "Cada producto refleja nuestro compromiso con la seguridad alimentaria."
+      },
+      "growth": {
+        "label": "Crecimiento Futuro",
+        "title": "Expandiendo Horizontes",
+        "text": "Invirtiendo en categorías que satisfacen tendencias globales."
+      }
     },
     "contact": {
       "title": "Contáctenos",
@@ -160,8 +333,335 @@
       "hoursValue": "Lunes – Sábado: 9:00 – 18:00 (IST)",
       "map": "Nuestra Ubicación"
     },
-    "privacy": { "title": "Política de Privacidad", "updated": "Última actualización: Mayo 2026", "intro": "Puristine Impex LLP respeta su privacidad." },
-    "terms": { "title": "Términos y Condiciones", "updated": "Última actualización: Mayo 2026", "intro": "Estos términos rigen el uso de nuestro sitio web." }
+    "privacy": {
+      "title": "Política de Privacidad",
+      "updated": "Última actualización: Mayo 2026",
+      "intro": "Puristine Impex LLP respeta su privacidad."
+    },
+    "terms": {
+      "title": "Términos y Condiciones",
+      "updated": "Última actualización: Mayo 2026",
+      "intro": "Estos términos rigen el uso de nuestro sitio web."
+    },
+    "ecoFriendly": {
+      "title": "Productos Ecológicos",
+      "heroTagline": "El Toque de la Naturaleza en Cada Lavado",
+      "about": {
+        "p1": "<span class=\"eco-brand\">Faire Wash</span> es una marca innovadora de cuidado del hogar comprometida con redefinir el futuro de la limpieza mediante soluciones ecológicas, sostenibles y eficientes.",
+        "p2": "Combinamos ingredientes inspirados en la naturaleza con tecnología de limpieza moderna para desarrollar productos que ofrecen un rendimiento potente minimizando el impacto ambiental. Nuestra misión es simplificar la limpieza diaria promoviendo un hogar más saludable y un planeta más limpio.",
+        "p3": "Los productos <span class=\"eco-brand\">Faire Wash</span> están diseñados para reemplazar los detergentes voluminosos tradicionales con alternativas compactas, inteligentes y sostenibles que reducen los residuos plásticos y la huella de carbono.",
+        "p4": "Desde el cuidado de la ropa hasta el cuidado de los pisos y las próximas soluciones ecológicas para el hogar, <span class=\"eco-brand\">Faire Wash</span> está construyendo una nueva generación de productos de limpieza responsables para hogares modernos en todo el mundo."
+      },
+      "deliver": {
+        "title": "Lo Que Ofrecemos",
+        "subtitle": "Soluciones de Limpieza Sostenibles",
+        "description": "Productos de limpieza innovadores y ecológicos diseñados para ofrecer un rendimiento potente reduciendo el impacto ambiental."
+      },
+      "laundry": {
+        "title": "1. Hojas de Detergente para Ropa",
+        "desc": "Hojas de detergente ultra concentradas que se disuelven al instante en el agua, eliminando manchas difíciles mientras son suaves con las telas y el medio ambiente. Diseñadas para la lavandería moderna con cero residuos y máxima comodidad.",
+        "keyHighlights": "Aspectos Destacados",
+        "h1": "Tecnología de disolución instantánea",
+        "h2": "Compatible con lavadoras de carga frontal y superior",
+        "h3": "Ligero y ideal para viajes",
+        "h4": "Sin necesidad de medir",
+        "h5": "Fórmula ecológica",
+        "cta": "Explorar Beneficios y Uso"
+      },
+      "floor": {
+        "title": "2. Hojas para Limpieza de Pisos",
+        "desc": "Hojas ecológicas para limpieza de pisos que se disuelven rápidamente en el agua creando una solución de limpieza eficaz. Fuertes contra la suciedad y las manchas, seguras para hogares, familias y todo tipo de superficies.",
+        "keyHighlights": "Aspectos Destacados",
+        "h1": "Fórmula no tóxica",
+        "h2": "No deja residuos",
+        "h3": "Seguro para niños y mascotas",
+        "h4": "Apto para mármol, baldosas, granito, vinilo y madera",
+        "h5": "Limpieza fresca y eficaz",
+        "cta": "Explorar Beneficios y Uso"
+      },
+      "comingSoon": "Próximamente más soluciones sostenibles para el hogar como parte de la creciente gama ecológica de limpieza Faire Wash.",
+      "purpose": {
+        "title": "Nuestro Propósito",
+        "text": "Hacer la limpieza más inteligente, segura y sostenible para los hogares mediante soluciones innovadoras que reducen el impacto ambiental sin comprometer el rendimiento."
+      },
+      "vision": {
+        "title": "Nuestra Visión",
+        "text": "Convertirnos en una marca global de confianza de cuidado del hogar ecológico, ofreciendo tecnologías de limpieza innovadoras que promuevan la vida sostenible y el consumo responsable."
+      },
+      "whyChoose": {
+        "title": "Por Qué Elegir Faire Wash",
+        "intro": "Faire Wash combina innovación y sostenibilidad para ofrecer el futuro de la limpieza ecológica.",
+        "subintro": "Seis razones convincentes para cambiar a una limpieza más inteligente y ecológica.",
+        "r1": {
+          "title": "Tecnología de Disolución Instantánea",
+          "desc": "Tecnología avanzada en hojas que se disuelven rápidamente en el agua, garantizando una limpieza eficiente sin residuos ni acumulación de detergente."
+        },
+        "r2": {
+          "title": "Orgullosamente Hecho en India",
+          "desc": "Fabricado en India con tecnología moderna y altos estándares de calidad para hogares de todo el mundo."
+        },
+        "r3": {
+          "title": "Ingredientes de Origen Vegetal",
+          "desc": "Elaborado con ingredientes derivados de plantas que ofrecen una limpieza potente siendo responsables con el medio ambiente."
+        },
+        "r4": {
+          "title": "Diseño Compacto que Ahorra Espacio",
+          "desc": "Hojas compactas y ligeras que eliminan botellas voluminosas de detergente y ahorran espacio de almacenamiento."
+        },
+        "r5": {
+          "title": "Limpieza Ecológica",
+          "desc": "Diseñado para reducir los residuos plásticos y apoyar prácticas de limpieza sostenibles."
+        },
+        "r6": {
+          "title": "Fórmula Totalmente Biodegradable",
+          "desc": "Formulado para descomponerse de forma natural, ayudando a proteger los sistemas de agua y el medio ambiente."
+        }
+      },
+      "smarter": {
+        "title": "Una Alternativa Más Inteligente a los Detergentes Tradicionales",
+        "subtitle": "Cambie a una limpieza más inteligente y sostenible.",
+        "intro": "Los detergentes líquidos tradicionales vienen en botellas plásticas voluminosas y requieren grandes cantidades de agua para el transporte. Las hojas de detergente Faire Wash ofrecen una alternativa compacta, ligera y ecológica que ayuda a reducir residuos e impacto ambiental.",
+        "r1": {
+          "title": "Menos Residuos Plásticos",
+          "desc": "El empaque compacto elimina las botellas plásticas voluminosas de detergente."
+        },
+        "r2": {
+          "title": "Huella de Carbono Reducida",
+          "desc": "Las hojas ligeras reducen las emisiones de transporte."
+        },
+        "r3": {
+          "title": "Sin Exceso de Detergente",
+          "desc": "Hojas premedidas garantizan la cantidad correcta cada vez."
+        },
+        "r4": {
+          "title": "Fácil Almacenamiento e Ideal para Viajar",
+          "desc": "Empaque ultraligero que ocupa poco espacio y es conveniente para viajes."
+        }
+      },
+      "commitment": {
+        "p1": "Faire Wash está comprometido con transformar la limpieza diaria en una elección más sostenible y responsable. Nuestras soluciones innovadoras en hojas ayudan a reducir residuos plásticos, minimizar el impacto ambiental y simplificar la limpieza para hogares modernos.",
+        "p2": "Al elegir Faire Wash, no solo limpia su hogar — contribuye a un planeta más limpio.",
+        "highlightsTitle": "Aspectos Clave",
+        "h1": "Soluciones de Limpieza Ecológicas",
+        "h2": "Reducción de Residuos Plásticos",
+        "h3": "Ingredientes de Origen Vegetal",
+        "h4": "Innovación Inteligente en Cuidado del Hogar"
+      },
+      "movement": {
+        "title": "Únase al Movimiento de Limpieza Sostenible",
+        "subtitle": "Juntos podemos crear hogares más limpios y un planeta más saludable.",
+        "p1": "¿Interesado en conocer más sobre los productos Faire Wash? Ya sea cliente buscando información o empresa interesada en distribución y asociaciones, nuestro equipo está listo para ayudarle.",
+        "p2": "Damos la bienvenida a consultas de distribuidores, minoristas y empresas que deseen ofrecer soluciones de limpieza sostenibles a sus clientes."
+      },
+      "solutions": {
+        "title": "Soluciones de Limpieza Ecológicas para Hogares Modernos",
+        "p1": "Damos la bienvenida a consultas de distribuidores, minoristas y empresas que deseen ofrecer soluciones de limpieza sostenibles a sus clientes.",
+        "b1": "Consultas de productos y atención al cliente",
+        "b2": "Oportunidades de asociación con distribuidores y minoristas",
+        "b3": "Consultas de pedidos al por mayor y exportación",
+        "closing1": "Comprometidos con soluciones de limpieza ecológicas con calidad, innovación y sostenibilidad.",
+        "closing2": "Únase a la red creciente de socios que llevan soluciones de limpieza sostenibles a hogares modernos.",
+        "btnProducts": "Explorar Nuestros Productos",
+        "btnDistributor": "Convertirse en Distribuidor"
+      },
+      "insta": "Feed de Instagram"
+    },
+    "laundrySheets": {
+      "title": "Hojas de Detergente para Ropa",
+      "intro": "Hojas de detergente ultra concentradas que se disuelven al instante en el agua, eliminando manchas difíciles mientras son suaves con las telas y el medio ambiente. Diseñadas para la lavandería moderna con cero residuos y máxima comodidad.",
+      "benefitsTitle": "Beneficios Clave de las Hojas de Ropa Faire Wash",
+      "benefitsSubtitle": "Rendimiento de limpieza potente con una hoja de detergente compacta y ecológica para la lavandería moderna",
+      "b1": {
+        "title": "Eliminación Potente de Manchas",
+        "desc": "Fórmula avanzada que elimina eficazmente manchas difíciles, suciedad y olores."
+      },
+      "b2": {
+        "title": "Apto para Lavadora y Lavado a Mano",
+        "desc": "Funciona perfectamente en lavadoras de carga frontal, superior y lavado manual."
+      },
+      "b3": {
+        "title": "Eficaz en Agua Caliente y Fría",
+        "desc": "Rendimiento fiable en ciclos de lavado caliente y frío."
+      },
+      "b4": {
+        "title": "Suave con las Telas",
+        "desc": "Formulado para proteger telas delicadas y ropa de uso diario."
+      },
+      "b5": {
+        "title": "Fórmula de Baja Espuma",
+        "desc": "Tecnología de baja espuma optimizada para un enjuague eficiente."
+      },
+      "b6": {
+        "title": "Limpieza con Enzimas",
+        "desc": "Tecnología enzimática avanzada que descompone manchas y suciedad orgánica."
+      },
+      "b7": {
+        "title": "Fórmula Ultra Concentrada",
+        "desc": "Máxima limpieza con el mínimo uso de producto."
+      },
+      "b8": {
+        "title": "Limpieza Sin Plástico",
+        "desc": "Formato en hojas que elimina botellas voluminosas y reduce residuos."
+      },
+      "howLabel": "Lavandería Simplificada",
+      "howTitle": "Cómo Funcionan las Hojas de Detergente Faire Wash",
+      "howDesc": "Experimente una forma más inteligente de lavar con hojas ultraligeras diseñadas para una limpieza potente y cero residuos.",
+      "s1": {
+        "title": "1. Coloque la Hoja",
+        "a": "Coloque la hoja directamente en el tambor de la lavadora.",
+        "b": "La hoja ultrafina comienza a disolverse al instante en el agua."
+      },
+      "s2": {
+        "title": "2. Agregue la Ropa",
+        "a": "Cargue la ropa sobre la hoja y cierre la máquina como de costumbre.",
+        "b": "Sin medir. Sin desorden. Sin derrames."
+      },
+      "s3": {
+        "title": "3. Inicie el Ciclo de Lavado",
+        "a": "Seleccione su programa preferido. La hoja se disuelve por completo liberando agentes de limpieza potentes.",
+        "b": "Funciona en lavadoras de carga frontal y superior."
+      },
+      "s4": {
+        "title": "4. Disfrute Resultados Frescos",
+        "a": "Retire ropa limpia y fresca sin residuos, sin plástico y sin botellas pesadas de detergente.",
+        "b": ""
+      },
+      "f1": "Tecnología de Disolución Instantánea",
+      "f2": "Funciona en Todas las Lavadoras",
+      "f3": "Fórmula de Limpieza Vegetal",
+      "f4": "Cero Residuos Plásticos",
+      "tagline": "Compacto. Potente. Limpieza ecológica para hogares modernos.",
+      "dosageTitle": "Cuánto Usar",
+      "d1": {
+        "title": "Carga Pequeña",
+        "desc": "1/2 hoja para cargas ligeras (aprox. 3,5 kg). Ideal para lavado diario."
+      },
+      "d2": {
+        "title": "Carga Mediana",
+        "desc": "1 hoja para cargas normales (aprox. 7 kg)."
+      },
+      "d3": {
+        "title": "Carga Grande",
+        "desc": "1,5 hojas para cargas pesadas (aprox. 10 kg)."
+      },
+      "d4": {
+        "title": "Carga Extra Grande / Muy Sucia",
+        "desc": "2–3 hojas para cargas muy grandes o ropa muy sucia."
+      },
+      "useLabel": "Lavado Fácil y Ecológico",
+      "useTitle": "Cómo Usar las Hojas de Detergente Faire Wash",
+      "useP1": "Experimente el futuro de la lavandería con las Hojas Faire Wash. Tome una hoja, colóquela en la lavadora o cubeta y déjela disolverse al instante.",
+      "useP2": "Haga su rutina de lavado más inteligente, limpia y conveniente con Faire Wash.",
+      "videoLabel": "Video",
+      "backLink": "← Todos los Productos Ecológicos",
+      "cta": "Consultar Ahora"
+    },
+    "floorSheets": {
+      "title": "Hojas para Limpieza de Pisos",
+      "intro": "Hojas ecológicas para limpieza de pisos que se disuelven rápidamente en el agua creando una solución eficaz. Fuertes contra suciedad y manchas, seguras para hogares, familias y todo tipo de superficies.",
+      "benefitsTitle": "Beneficios Clave de las Hojas para Pisos Faire Wash",
+      "benefitsSubtitle": "Limpieza de pisos inteligente y ecológica para hogares modernos.",
+      "b1": {
+        "title": "Fórmula No Tóxica",
+        "desc": "Solución segura y no tóxica para uso doméstico diario."
+      },
+      "b2": {
+        "title": "Libre de Crueldad",
+        "desc": "Nunca probado en animales, desarrollado con prácticas responsables."
+      },
+      "b3": {
+        "title": "Sin Químicos Agresivos",
+        "desc": "Libre de químicos que dañan pisos o irritan la piel."
+      },
+      "b4": {
+        "title": "Sin Parabenos",
+        "desc": "Formulado sin parabenos ni conservantes dañinos."
+      },
+      "b5": {
+        "title": "Fragancia Fresca y Agradable",
+        "desc": "Deja los pisos con aroma fresco sin olor fuerte a fenol."
+      },
+      "b6": {
+        "title": "Seguro para Niños y Mascotas",
+        "desc": "Fórmula suave para hogares con niños y mascotas."
+      },
+      "b7": {
+        "title": "Eliminación Eficaz de Gérmenes",
+        "desc": "Ayuda a reducir gérmenes y bacterias durante la limpieza."
+      },
+      "b8": {
+        "title": "Apto para Múltiples Tipos de Piso",
+        "desc": "Eficaz en mármol, baldosas, granito, vinilo y madera."
+      },
+      "howLabel": "Solución Simple para Pisos",
+      "howTitle": "Cómo Funcionan las Hojas para Pisos Faire Wash",
+      "howDesc1": "Una forma más inteligente y ecológica de limpiar sus pisos en pocos pasos.",
+      "howDesc2": "Rendimiento de limpieza potente con ingredientes ambientalmente responsables.",
+      "s1": {
+        "title": "1. Disolver en Agua",
+        "a": "Coloque media hoja en un cubo con aproximadamente 5 litros de agua.",
+        "b": "La hoja se disuelve rápidamente formando una solución eficaz."
+      },
+      "s2": {
+        "title": "2. Trapeé el Piso",
+        "a": "Sumerga la mopa en la solución y limpie como de costumbre.",
+        "b": "La fórmula avanzada elimina suciedad, manchas y grasa fácilmente."
+      },
+      "s3": {
+        "title": "3. Sin Enjuague Necesario",
+        "a": "La solución no deja residuo pegajoso.",
+        "b": "No es necesario enjuagar después de trapear."
+      },
+      "s4": {
+        "title": "4. Disfrute Pisos Limpios",
+        "a": "Deje secar al aire y disfrute pisos brillantes, frescos y sin residuos.",
+        "b": ""
+      },
+      "f1": "Se Disuelve al Instante en Agua",
+      "f2": "Seguro para Múltiples Tipos de Piso",
+      "f3": "Fórmula No Tóxica",
+      "f4": "Limpieza Ecológica",
+      "useLabel": "Solución de Limpieza Fácil e Inteligente",
+      "useTitle": "Cómo Usar las Hojas para Pisos Faire Wash",
+      "useP1": "Simplifique la limpieza de pisos con las Hojas Faire Wash. Disuelva una hoja en agua y disfrute de una limpieza rápida y eficaz en su hogar u oficina.",
+      "useP2": "Mejore su rutina diaria de limpieza con Faire Wash.",
+      "videoLabel": "Video",
+      "backLink": "← Todos los Productos Ecológicos",
+      "cta": "Consultar Ahora"
+    }
   },
-  "contact": { "sending": "Enviando...", "sent": "Mensaje Enviado ✓" }
+  "contact": {
+    "sending": "Enviando...",
+    "sent": "Mensaje Enviado ✓"
+  },
+  "testimonials": {
+    "label": "Testimonios",
+    "title": "Lo Que Dicen Nuestros Socios",
+    "subtitle": "Con la confianza de distribuidores, minoristas y compradores en todo el mundo.",
+    "videosTitle": "Testimonios en Video",
+    "video1": {
+      "title": "Socio de Exportación",
+      "caption": "Escuche a nuestro socio internacional de distribución."
+    },
+    "video2": {
+      "title": "Socio Minorista",
+      "caption": "Un socio minorista comparte su experiencia con Puristine."
+    },
+    "textTitle": "Testimonios Escritos",
+    "t1": {
+      "quote": "Puristine Impex ha sido un socio de exportación confiable: calidad constante, documentación clara y envíos a tiempo cada temporada.",
+      "name": "James Mitchell",
+      "role": "Director de Compras, Global Foods Ltd."
+    },
+    "t2": {
+      "quote": "Su gama de especias y legumbres cumple nuestros estándares de calidad. La comunicación es profesional y el equipo entiende las necesidades del comprador internacional.",
+      "name": "Sofia Alvarez",
+      "role": "Gerente de Importación, Mercado Norte"
+    },
+    "t3": {
+      "quote": "Las hojas de detergente Faire Wash destacan en nuestro pasillo de cuidado del hogar: ecológicas, compactas y a nuestros clientes les encantan los resultados.",
+      "name": "Rajesh Kapoor",
+      "role": "Comprador de Categoría, HomeMart Retail"
+    }
+  }
 }

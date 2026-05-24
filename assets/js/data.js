@@ -3,19 +3,21 @@
  * All images are local under assets/images/ (no external URLs).
  */
 const PURISTINE_DATA = {
+  /** Shown on homepage portfolio section (order matters) */
+  homepageCategories: ['pulses', 'instant-mixes', 'spices'],
+
   categories: [
-    { id: 'spices', slug: 'spices', image: 'categories/spices.svg', icon: '🌶️' },
-    { id: 'pulses', slug: 'pulses', image: 'categories/pulses.svg', icon: '🫘' },
-    { id: 'flours', slug: 'flours', image: 'categories/flours.svg', icon: '🌾' },
-    { id: 'sauces', slug: 'sauces', image: 'categories/sauces.svg', icon: '🍯' },
-    { id: 'pickles', slug: 'pickles', image: 'categories/pickles.svg', icon: '🥒' },
-    { id: 'syrups', slug: 'syrups', image: 'categories/syrups.svg', icon: '🍶' },
-    { id: 'namkeens-sweets', slug: 'namkeens-sweets', image: 'categories/namkeens-sweets.svg', icon: '🍬' },
     { id: 'instant-mixes', slug: 'instant-mixes', image: 'categories/instant-mixes.svg', icon: '⚡' },
-    { id: 'mouth-fresheners', slug: 'mouth-fresheners', image: 'categories/mouth-fresheners.svg', icon: '✨' },
+    { id: 'spices', slug: 'spices', image: 'categories/spices.svg', icon: '🌶️' },
     { id: 'disposable-products', slug: 'disposable-products', image: 'categories/disposable-products.svg', icon: '📦' },
-    { id: 'patanjali-products', slug: 'patanjali-products', image: 'categories/patanjali-products.svg', icon: '🌿' },
-    { id: 'home-care', slug: 'home-care', image: 'categories/home-care.svg', icon: '🏠' }
+    { id: 'pulses', slug: 'pulses', image: 'categories/pulses.svg', icon: '🫘' },
+    { id: 'mouth-fresheners', slug: 'mouth-fresheners', image: 'categories/mouth-fresheners.svg', icon: '✨' },
+    { id: 'jaggery', slug: 'jaggery', image: 'categories/syrups.svg', icon: '🍯' },
+    { id: 'flours', slug: 'flours', image: 'categories/flours.svg', icon: '🌾' },
+    { id: 'syrups', slug: 'syrups', image: 'categories/syrups.svg', icon: '🍶' },
+    { id: 'pickles', slug: 'pickles', image: 'categories/pickles.svg', icon: '🥒' },
+    { id: 'sauces', slug: 'sauces', image: 'categories/sauces.svg', icon: '🍯' },
+    { id: 'namkeens-sweets', slug: 'namkeens-sweets', image: 'categories/namkeens-sweets.svg', icon: '🍬' }
   ],
 
   featuredProducts: [
@@ -59,6 +61,16 @@ const PURISTINE_DATA = {
       { id: 'floor-sheets', image: 'fairewash/floor-sheets.svg' }
     ]
   },
+
+  /**
+   * Homepage video testimonials — set url when client provides MP4 or embed link.
+   * YouTube: https://www.youtube.com/embed/VIDEO_ID
+   * Vimeo: https://player.vimeo.com/video/VIDEO_ID
+   */
+  testimonialVideos: [
+    { url: '', type: 'embed' },
+    { url: '', type: 'embed' }
+  ],
 
   /** Resolve image path for current page location */
   img(relativePath) {

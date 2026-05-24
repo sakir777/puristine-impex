@@ -12,8 +12,8 @@
   },
   "hero": {
     "badge": "International Trade Excellence",
-    "title": "Global Trade. Premium Quality. Trusted Partnerships.",
-    "subtitle": "Puristine Impex LLP specializes in sourcing and supplying premium food products, spices, pulses, and innovative home-care solutions worldwide.",
+    "title": "Need Quality Products ?",
+    "subtitle": "Choose from high - quality products built for efficiency, Durability and modern lifestyles",
     "cta1": "Explore Categories",
     "cta2": "Contact Us",
     "stat1": "Export Markets",
@@ -22,18 +22,20 @@
   },
   "aboutPreview": {
     "label": "Who We Are",
-    "title": "From Heritage Roots to Global Excellence",
-    "p1": "Established from the legacy of Puristine Foods, we expanded into Puristine Impex LLP to serve international markets with the same uncompromising quality our name represents.",
-    "p2": "Our import-export expertise spans premium spices, pulses, flours, sauces, and an expanding portfolio of home-care innovations — all delivered through customer-centric sourcing and ethical partnerships.",
-    "cta": "Discover Our Story",
-    "counter1": "Years Experience",
-    "counter2": "Product Categories",
-    "counter3": "Countries Served"
+    "title": "Welcome to PURISTINE IMPEX LLP",
+    "p1": "Puristine Impex LLP is one of the leading names in India's exporters, importers, and suppliers of modern eco-friendly products, all kinds of foodstuff, spices, and general merchandise designed for today's generation and a sustainable future.",
+    "p2": "We prioritize the needs of our customers and strive to provide the best in the market. We focus on user satisfaction to achieve our goals.",
+    "cta": "Read More"
   },
   "categoriesSection": {
-    "label": "Our Portfolio",
-    "title": "Premium Product Categories",
-    "subtitle": "Curated selections for discerning international buyers — export-ready quality, flexible packaging, and reliable supply."
+    "label": "Our Products",
+    "title": "Our Portfolio",
+    "subtitle": "Explore a selection of our premium export categories — quality products for global markets."
+  },
+  "categoriesPreview": {
+    "pulses": "Edible seeds of plants in the legume family. Pulses grow in pods and come in a variety of shapes, sizes, and colors.",
+    "instant-mixes": "Consisting of ingredients blended in advance, especially of food that is ready to cook or eat after addition of milk or water.",
+    "spices": "Seed, fruit, root, bark, or other plant substance primarily used for flavoring or coloring food."
   },
   "featured": {
     "label": "Featured Selection",
@@ -52,12 +54,43 @@
     }
   },
   "fairewash": {
-    "label": "Expanding Categories",
-    "title": "Fairewash Home-Care Solutions",
-    "subtitle": "Sustainable, innovative cleaning products designed for modern households and international retail.",
-    "product1": { "name": "Laundry Detergent Sheets", "desc": "Eco-friendly, space-saving laundry sheets with powerful cleaning performance." },
-    "product2": { "name": "Floor Cleaner Sheets", "desc": "Convenient dissolvable sheets for sparkling floors — less plastic, more impact." },
-    "badge": "Sustainable Innovation"
+    "title": "What We Deliver",
+    "subtitle": "Sustainable Cleaning Solutions",
+    "description": "Innovative, eco-friendly cleaning products designed to deliver powerful performance while reducing environmental impact.",
+    "product1": {
+      "name": "Laundry Detergent Sheets",
+      "desc": "Ultra-concentrated detergent sheets that dissolve instantly in water, delivering powerful stain removal while remaining gentle on fabrics and the environment. Designed for modern laundry with zero waste and maximum convenience."
+    },
+    "product2": {
+      "name": "Floor Cleaning Sheets",
+      "desc": "Eco-friendly floor cleaning sheets that dissolve quickly in water to create an effective cleaning solution. Tough on dirt and stains while being safe for homes, families, and all floor surfaces."
+    },
+    "cta": "Read More",
+    "badge": "Fairewash Home Care Solutions"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What Our Partners Say",
+    "subtitle": "Trusted by distributors, retailers, and buyers worldwide.",
+    "videosTitle": "Video Testimonials",
+    "video1": { "title": "Export Partner", "caption": "Hear from our international distribution partner." },
+    "video2": { "title": "Retail Partner", "caption": "A retail partner shares their experience with Puristine." },
+    "textTitle": "Written Testimonials",
+    "t1": {
+      "quote": "Puristine Impex has been a reliable export partner — consistent quality, clear documentation, and on-time shipments every season.",
+      "name": "James Mitchell",
+      "role": "Procurement Director, Global Foods Ltd."
+    },
+    "t2": {
+      "quote": "Their spice and pulse range meets our quality standards. Communication is professional and the team understands international buyer needs.",
+      "name": "Sofia Alvarez",
+      "role": "Import Manager, Mercado Norte"
+    },
+    "t3": {
+      "quote": "Faire Wash detergent sheets are a standout in our home-care aisle — eco-friendly, compact, and our customers love the results.",
+      "name": "Rajesh Kapoor",
+      "role": "Category Buyer, HomeMart Retail"
+    }
   },
   "trust": {
     "label": "Global Trust",
@@ -89,8 +122,10 @@
   },
   "common": {
     "explore": "Explore",
+    "exploreMore": "Explore More",
     "learnMore": "Learn More",
     "viewAll": "View All Categories",
+    "seeAllProducts": "See All Products",
     "readMore": "Read More",
     "back": "Back",
     "home": "Home"
@@ -105,9 +140,8 @@
     "namkeens-sweets": { "title": "Namkeens & Sweets", "desc": "Snacks and confectionery for retail export.", "longDesc": "Curated namkeens and mithai selections — hygienically packed for retail shelves and food-service channels worldwide." },
     "instant-mixes": { "title": "Instant Mixes", "desc": "Ready-to-prepare mixes for convenience markets.", "longDesc": "Idli, dosa, gulab jamun, and specialty instant mixes — consistent taste profiles for global Indian diaspora and mainstream markets." },
     "mouth-fresheners": { "title": "Mouth Fresheners", "desc": "Paan masala and mukhwas for specialty retail.", "longDesc": "Premium mouth fresheners and mukhwas — export-compliant formulations with attractive retail packaging." },
-    "disposable-products": { "title": "Disposable Products", "desc": "Eco-conscious disposables for hospitality.", "longDesc": "Plates, cups, and food-service disposables — quality materials suitable for events, catering, and retail." },
-    "patanjali-products": { "title": "Patanjali Products", "desc": "Authorized distribution of Patanjali FMCG range.", "longDesc": "Complete Patanjali product lines for international distributors — personal care, food, and wellness categories." },
-    "home-care": { "title": "Home Care Products", "desc": "Innovative cleaning solutions including Fairewash.", "longDesc": "Fairewash detergent sheets, floor cleaners, and expanding home-care innovations — sustainable formats for modern households." }
+    "disposable-products": { "title": "Disposable Plates, etc.", "desc": "Eco-conscious disposables for hospitality.", "longDesc": "Plates, cups, and food-service disposables — quality materials suitable for events, catering, and retail." },
+    "jaggery": { "title": "Jaggery", "desc": "Traditional unrefined cane sugar for food and beverage applications.", "longDesc": "Premium jaggery blocks and powder — natural sweetness for confectionery, beverages, and export markets." }
   },
   "products": {
     "turmeric-powder": { "name": "Premium Turmeric Powder", "desc": "High-curcumin turmeric with vibrant color — export grade." },
@@ -132,9 +166,9 @@
   },
   "pages": {
     "categories": {
-      "title": "Product Categories",
-      "subtitle": "Explore our complete export portfolio — premium food products and home-care solutions for global markets.",
-      "search": "Search categories..."
+      "title": "All Products",
+      "subtitle": "Browse our complete range of export product categories.",
+      "search": "Search products..."
     },
     "categoryDetail": {
       "breadcrumb": "Categories",
@@ -176,6 +210,170 @@
       "title": "Terms & Conditions",
       "updated": "Last updated: May 2026",
       "intro": "These terms govern your use of the Puristine Impex LLP website. By accessing this site, you agree to these terms in full."
+    },
+    "ecoFriendly": {
+      "title": "Eco - Friendly Products",
+      "heroTagline": "Nature's Touch Every Wash",
+      "about": {
+        "p1": "<span class=\"eco-brand\">Faire Wash</span> is an innovative home-care brand committed to redefining the future of cleaning through eco-friendly, sustainable, and efficient solutions.",
+        "p2": "We combine nature-inspired ingredients with modern cleaning technology to develop products that deliver powerful performance while minimizing environmental impact. Our mission is to simplify everyday cleaning while promoting a healthier home and a cleaner planet.",
+        "p3": "<span class=\"eco-brand\">Faire Wash</span> products are designed to replace traditional bulky detergents with compact, smart, and sustainable alternatives that reduce plastic waste and carbon footprint.",
+        "p4": "From laundry care to floor care and upcoming eco-friendly household solutions, <span class=\"eco-brand\">Faire Wash</span> is building a new generation of responsible cleaning products for modern homes worldwide."
+      },
+      "deliver": {
+        "title": "What We Deliver",
+        "subtitle": "Sustainable Cleaning Solutions",
+        "description": "Innovative, eco-friendly cleaning products designed to deliver powerful performance while reducing environmental impact."
+      },
+      "laundry": {
+        "title": "1. Laundry Detergent Sheets",
+        "desc": "Ultra-concentrated detergent sheets that dissolve instantly in water, delivering powerful stain removal while remaining gentle on fabrics and the environment. Designed for modern laundry with zero waste and maximum convenience.",
+        "keyHighlights": "Key Highlights",
+        "h1": "Instant dissolve technology",
+        "h2": "Works in front load & top load machines",
+        "h3": "Travel-friendly and lightweight",
+        "h4": "No measuring required",
+        "h5": "Eco-friendly formulation",
+        "cta": "Explore Benefits & Usage"
+      },
+      "floor": {
+        "title": "2. Floor Cleaning Sheets",
+        "desc": "Eco-friendly floor cleaning sheets that dissolve quickly in water to create an effective cleaning solution. Tough on dirt and stains while being safe for homes, families, and all floor surfaces.",
+        "keyHighlights": "Key Highlights",
+        "h1": "Non-toxic formulation",
+        "h2": "Leaves no residue",
+        "h3": "Safe for kids & pets",
+        "h4": "Suitable for marble, tiles, granite, vinyl & wooden floors",
+        "h5": "Fresh and effective cleaning",
+        "cta": "Explore Benefits & Usage"
+      },
+      "comingSoon": "More sustainable home care solutions coming soon as part of the growing Faire Wash eco-cleaning range.",
+      "purpose": {
+        "title": "Our Purpose",
+        "text": "To make cleaning smarter, safer, and more sustainable for households by developing innovative cleaning solutions that reduce environmental impact without compromising performance."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "text": "To become a globally trusted eco-friendly home care brand, delivering innovative cleaning technologies that promote sustainable living and responsible consumption."
+      },
+      "whyChoose": {
+        "title": "Why Choose Faire Wash",
+        "intro": "Faire Wash combines innovation and sustainability to deliver the future of eco-friendly cleaning.",
+        "subintro": "Six compelling reasons to switch to smarter, eco-friendly cleaning.",
+        "r1": { "title": "Instant Dissolve Technology", "desc": "Advanced sheet technology that dissolves quickly in water, ensuring efficient cleaning without residue or detergent buildup." },
+        "r2": { "title": "Proudly Made in India", "desc": "Manufactured in India with modern technology and high-quality standards designed for households across the world." },
+        "r3": { "title": "Plant-Based Ingredients", "desc": "Made with plant-derived ingredients that deliver powerful cleaning while being environmentally responsible." },
+        "r4": { "title": "Compact Space-Saving Design", "desc": "Compact, lightweight sheets eliminate bulky detergent bottles and save valuable storage space." },
+        "r5": { "title": "Eco-Friendly Cleaning", "desc": "Designed to reduce plastic waste and support sustainable cleaning practices." },
+        "r6": { "title": "Fully Biodegradable Formula", "desc": "Formulated to break down naturally, helping protect water systems and the environment." }
+      },
+      "smarter": {
+        "title": "A Smarter Alternative to Traditional Detergents",
+        "subtitle": "Switch to smarter, sustainable cleaning.",
+        "intro": "Traditional liquid detergents come in bulky plastic bottles and require large amounts of water for transportation. Faire Wash detergent sheets offer a compact, lightweight, and eco-friendly alternative that helps reduce waste and environmental impact.",
+        "r1": { "title": "Less Plastic Waste", "desc": "Compact packaging eliminates bulky plastic detergent bottles." },
+        "r2": { "title": "Reduced Carbon Footprint", "desc": "Lightweight detergent sheets reduce transportation emissions." },
+        "r3": { "title": "No Overuse of Detergent", "desc": "Pre-measured sheets ensure the right amount every time." },
+        "r4": { "title": "Easy Storage & Travel Friendly", "desc": "Ultra-light packaging takes minimal space and is convenient for travel." }
+      },
+      "commitment": {
+        "p1": "Faire Wash is committed to transforming everyday cleaning into a more sustainable and responsible choice. Our innovative sheet-based solutions help reduce plastic waste, minimize environmental impact, and simplify cleaning for modern homes.",
+        "p2": "By choosing Faire Wash, you are not just cleaning your home — you are contributing to a cleaner planet.",
+        "highlightsTitle": "Key Highlights",
+        "h1": "Eco-Friendly Cleaning Solutions",
+        "h2": "Reduced Plastic Waste",
+        "h3": "Plant-Based Ingredients",
+        "h4": "Smarter Home Care Innovation"
+      },
+      "movement": {
+        "title": "Join the Sustainable Cleaning Movement",
+        "subtitle": "Together, we can create cleaner homes and a healthier planet.",
+        "p1": "Interested in learning more about Faire Wash products? Whether you are a customer looking for product information or a business interested in distribution and partnership opportunities, our team is ready to assist you.",
+        "p2": "We welcome inquiries from distributors, retailers, and businesses looking to bring sustainable cleaning solutions to their customers."
+      },
+      "solutions": {
+        "title": "Eco-Friendly Cleaning Solutions for Modern Homes",
+        "p1": "We welcome inquiries from distributors, retailers, and businesses looking to bring sustainable cleaning solutions to their customers.",
+        "b1": "Product inquiries and customer support",
+        "b2": "Distributor and retail partnership opportunities",
+        "b3": "Bulk and export order enquiries",
+        "closing1": "Committed to delivering eco-friendly cleaning solutions with quality, innovation, and sustainability.",
+        "closing2": "Join the growing network of partners bringing sustainable cleaning solutions to modern households.",
+        "btnProducts": "Explore Our Products",
+        "btnDistributor": "Become a Distributor"
+      },
+      "insta": "Insta Feed"
+    },
+    "laundrySheets": {
+      "title": "Laundry Detergent Sheets",
+      "intro": "Ultra-concentrated detergent sheets that dissolve instantly in water, delivering powerful stain removal while remaining gentle on fabrics and the environment. Designed for modern laundry with zero waste and maximum convenience.",
+      "benefitsTitle": "Key Benefits of Faire Wash Laundry Sheets",
+      "benefitsSubtitle": "Powerful cleaning performance with a compact, eco-friendly detergent sheet designed for modern laundry",
+      "b1": { "title": "Powerful Stain Removal", "desc": "Advanced cleaning formula effectively removes tough stains, dirt, and odors with ease." },
+      "b2": { "title": "Machine & Hand Wash Friendly", "desc": "Works perfectly in front load machines, top load machines, and hand washing." },
+      "b3": { "title": "Effective in Hot & Cold Water", "desc": "Delivers reliable cleaning performance in both hot and cold wash cycles." },
+      "b4": { "title": "Gentle on Fabrics", "desc": "Carefully formulated to protect delicate fabrics and everyday clothing." },
+      "b5": { "title": "Low Foaming Formula", "desc": "Optimized low-foam technology ensures efficient rinsing and cleaner results." },
+      "b6": { "title": "Enzyme Powered Cleaning", "desc": "Advanced enzyme technology helps break down stubborn stains and organic dirt." },
+      "b7": { "title": "Ultra-Concentrated Formula", "desc": "High-performance formula provides maximum cleaning with minimal product use." },
+      "b8": { "title": "Plastic-Free Cleaning", "desc": "Compact sheet format eliminates bulky plastic detergent bottles and reduces waste." },
+      "howLabel": "Laundry Made Simple",
+      "howTitle": "How Faire Wash Detergent Sheets Work",
+      "howDesc": "Experience a smarter way to do laundry with ultra-light detergent sheets designed for powerful cleaning and zero waste.",
+      "s1": { "title": "1. Place the Sheet", "a": "Place detergent sheet directly into the washing machine drum.", "b": "Ultra-thin sheet begins dissolving instantly in water." },
+      "s2": { "title": "2. Add Your Laundry", "a": "Load your clothes on top of the sheet and close the machine as usual.", "b": "No measuring. No mess. No detergent spills." },
+      "s3": { "title": "3. Start the Wash Cycle", "a": "Select your preferred wash program. The sheet dissolves completely and releases powerful cleaning agents.", "b": "Works in both front load and top load machines." },
+      "s4": { "title": "4. Enjoy Fresh Results", "a": "Remove clean, fresh clothes with no residue, no plastic waste, and no heavy detergent bottles.", "b": "" },
+      "f1": "Instant Dissolve Technology",
+      "f2": "Works in All Washing Machines",
+      "f3": "Plant-Based Cleaning Formula",
+      "f4": "Zero Plastic Waste",
+      "tagline": "Compact. Powerful. Eco-friendly cleaning for modern homes.",
+      "dosageTitle": "How Much To Use",
+      "d1": { "title": "Small Load", "desc": "1/2 Sheet for light laundry loads (about 3.5 kg). Suitable for regular daily washing." },
+      "d2": { "title": "Medium Load", "desc": "1 Sheet for normal laundry loads (about 7 kg)." },
+      "d3": { "title": "Large Load", "desc": "1.5 Sheets for heavier laundry loads (about 10 kg)." },
+      "d4": { "title": "Extra Large / Heavy Load", "desc": "2–3 Sheets for very large loads or heavily soiled clothes." },
+      "useLabel": "Easy & Eco-Friendly Washing",
+      "useTitle": "How to Use Faire Wash Laundry Detergent Sheets",
+      "useP1": "Experience the future of laundry with Faire Wash Laundry Detergent Sheets. Just take a sheet, put it inside the washing machine or bucket, and let it dissolve instantly for powerful cleaning.",
+      "useP2": "Make your laundry routine smarter, cleaner, and more convenient with Faire Wash.",
+      "videoLabel": "Video",
+      "backLink": "← All Eco-Friendly Products",
+      "cta": "Enquire Now"
+    },
+    "floorSheets": {
+      "title": "Floor Cleaning Sheets",
+      "intro": "Eco-friendly floor cleaning sheets that dissolve quickly in water to create an effective cleaning solution. Tough on dirt and stains while being safe for homes, families, and all floor surfaces.",
+      "benefitsTitle": "Key Benefits of Faire Wash Floor Cleaning Sheets",
+      "benefitsSubtitle": "Smart, eco-friendly floor cleaning designed for modern homes.",
+      "b1": { "title": "Non-Toxic Formula", "desc": "Safe, non-toxic cleaning solution designed for everyday household use." },
+      "b2": { "title": "Cruelty-Free", "desc": "Never tested on animals and developed with responsible practices." },
+      "b3": { "title": "No Harsh Chemicals", "desc": "Free from aggressive chemicals that can damage floors or irritate skin." },
+      "b4": { "title": "Paraben-Free", "desc": "Formulated without parabens or harmful preservatives." },
+      "b5": { "title": "Fresh, Pleasant Fragrance", "desc": "Leaves floors smelling fresh without the strong phenyl odor." },
+      "b6": { "title": "Safe for Kids & Pets", "desc": "Gentle formula suitable for homes with children and pets." },
+      "b7": { "title": "Effective Germ Removal", "desc": "Helps reduce germs and bacteria while cleaning." },
+      "b8": { "title": "Suitable for Multiple Floor Types", "desc": "Works effectively on marble, tiles, granite, vinyl, and wooden floors." },
+      "howLabel": "Simple Floor Cleaning Solution",
+      "howTitle": "How Faire Wash Floor Cleaning Sheets Work",
+      "howDesc1": "A smarter and eco-friendly way to clean your floors in just a few simple steps.",
+      "howDesc2": "Powerful cleaning performance with environmentally responsible ingredients.",
+      "s1": { "title": "1. Dissolve in Water", "a": "Drop half a floor cleaning sheet into a bucket containing approximately 5 litres of water.", "b": "The sheet dissolves quickly to form an effective cleaning solution." },
+      "s2": { "title": "2. Mop Your Floor", "a": "Dip the mop into the prepared solution and clean the floor as usual.", "b": "The advanced formula helps remove dirt, stains, and grime easily." },
+      "s3": { "title": "3. No Rinsing Required", "a": "The specially formulated solution leaves no sticky residue.", "b": "There is no need for rinsing after mopping." },
+      "s4": { "title": "4. Enjoy Clean Floors", "a": "Allow the floor to air dry naturally and enjoy sparkling clean, fresh, and residue-free floors.", "b": "" },
+      "f1": "Instantly Dissolves in Water",
+      "f2": "Safe for Multiple Floor Types",
+      "f3": "Non-Toxic Formula",
+      "f4": "Eco-Friendly Cleaning",
+      "useLabel": "Easy & Smart Eco-Friendly Cleaning Solution",
+      "useTitle": "How to Use Faire Wash Floor Cleaning Sheets",
+      "useP1": "Make floor cleaning simple with Faire Wash Floor Cleaning Sheets. Just dissolve a sheet in water and enjoy quick, effective, and hassle-free cleaning for your home or workspace.",
+      "useP2": "Upgrade your daily cleaning routine with Faire Wash.",
+      "videoLabel": "Video",
+      "backLink": "← All Eco-Friendly Products",
+      "cta": "Enquire Now"
     }
   },
   "contact": {

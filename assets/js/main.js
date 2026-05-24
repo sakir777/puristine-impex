@@ -24,16 +24,99 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'contact') {
     ContactPage.init();
   }
+  if (page === 'eco-friendly' || page === 'laundry-sheets' || page === 'floor-sheets') {
+    EcoFriendlyPage.init();
+  }
 });
+
+/** Eco-Friendly Products page */
+const EcoFriendlyPage = {
+  titleKeys: {
+    'eco-friendly': 'pages.ecoFriendly.title',
+    'laundry-sheets': 'pages.laundrySheets.title',
+    'floor-sheets': 'pages.floorSheets.title'
+  },
+
+  init() {
+    this.applyPageTitle();
+    this.highlightBrand();
+    document.addEventListener('i18n:ready', () => {
+      this.applyPageTitle();
+      this.highlightBrand();
+    });
+  },
+
+  applyPageTitle() {
+    const page = document.body.dataset.page;
+    const key = this.titleKeys[page];
+    if (!key || typeof I18n === 'undefined') return;
+    const title = I18n.t(key);
+    if (title && title !== key) {
+      document.title = `${title} | Faire Wash | Puristine Impex LLP`;
+    }
+  },
+
+  highlightBrand() {
+    const brand = 'Faire Wash';
+    document.querySelectorAll('.eco-page [data-i18n]').forEach((el) => {
+      const onDark = Boolean(el.closest('.eco-hero-band, .product-hero-bar'));
+      const html = el.innerHTML;
+      if (!html.includes(brand)) return;
+
+      if (html.includes('eco-brand')) {
+        if (onDark) {
+          el.querySelectorAll('.eco-brand').forEach((span) => span.classList.add('eco-brand-on-dark'));
+        }
+        return;
+      }
+
+      const cls = onDark ? 'eco-brand eco-brand-on-dark' : 'eco-brand';
+      el.innerHTML = html.replaceAll(brand, `<span class="${cls}">${brand}</span>`);
+    });
+  }
+};
 
 /** Homepage dynamic content */
 const HomePage = {
   init() {
     this.renderCategories();
-    this.renderFeatured();
-    document.addEventListener('i18n:ready', () => {
-      this.renderCategories();
-      this.renderFeatured();
+    this.renderTestimonialVideos();
+    document.addEventListener('i18n:ready', () => this.renderCategories());
+  },
+
+  renderTestimonialVideos() {
+    const videos = PURISTINE_DATA?.testimonialVideos;
+    if (!videos?.length) return;
+
+    document.querySelectorAll('[data-testimonial-video]').forEach((card) => {
+      const index = Number(card.getAttribute('data-testimonial-video'));
+      const item = videos[index];
+      if (!item?.url) return;
+
+      const media = card.querySelector('.testimonial-video-media');
+      if (!media) return;
+
+      media.classList.add('has-video');
+      const placeholder = media.querySelector('.testimonial-video-placeholder');
+      if (placeholder) placeholder.remove();
+
+      let el;
+      if (item.type === 'file' || /\.(mp4|webm|ogg)(\?|$)/i.test(item.url)) {
+        el = document.createElement('video');
+        el.src = item.url;
+        el.controls = true;
+        el.playsInline = true;
+        if (item.poster) el.poster = item.poster;
+      } else {
+        el = document.createElement('iframe');
+        el.src = item.url;
+        el.title = 'Video testimonial';
+        el.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        el.allowFullscreen = true;
+        el.loading = 'lazy';
+      }
+
+      media.appendChild(el);
     });
   },
 
@@ -43,53 +126,27 @@ const HomePage = {
 
     const t = (key) => I18n.t(key);
     const bp = Components.basePath();
+    const ids = PURISTINE_DATA.homepageCategories || [];
+    const categories = ids
+      .map((id) => PURISTINE_DATA.categories.find((c) => c.id === id))
+      .filter(Boolean);
 
-    grid.innerHTML = PURISTINE_DATA.categories
+    grid.innerHTML = categories
       .map(
         (cat) => `
-      <a href="${bp}pages/category-detail.html?category=${cat.slug}" class="group card-premium block bg-white rounded-2xl overflow-hidden border border-[#e4e8ee]/80 shadow-sm">
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="${PURISTINE_DATA.img(cat.image)}" alt="${t(`categories.${cat.id}.title`)}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" width="400" height="300">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#071739]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <a href="${bp}pages/categories.html" class="categories-home-card group card-premium block bg-white rounded-2xl overflow-hidden border border-[#e4e8ee]/80 shadow-sm h-full text-inherit no-underline transition-all duration-500 hover:border-gold/40 hover:shadow-lg" aria-label="${t(`categories.${cat.id}.title`)}">
+        <div class="relative aspect-[5/3] lg:aspect-[3/2] overflow-hidden">
+          <img src="${PURISTINE_DATA.img(cat.image)}" alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" width="400" height="300">
         </div>
-        <div class="p-6 lg:p-8">
-          <h3 class="font-heading font-semibold text-lg text-[#071739] mb-2 group-hover:text-[#D4A373] transition-colors" data-i18n="categories.${cat.id}.title"></h3>
-          <p class="text-sm text-[#64748b] leading-relaxed mb-4 line-clamp-2" data-i18n="categories.${cat.id}.desc"></p>
-          <span class="inline-flex items-center gap-2 text-sm font-medium text-[#D4A373]">
-            <span data-i18n="common.explore"></span>
-            <svg class="w-4 h-4 card-arrow rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </span>
+        <div class="p-4 lg:p-5">
+          <h3 class="font-heading font-semibold text-base lg:text-lg text-navy mb-1.5 group-hover:text-gold transition-colors duration-300" data-i18n="categories.${cat.id}.title"></h3>
+          <p class="categories-home-desc text-xs sm:text-sm text-gray-600 leading-relaxed" data-i18n="categoriesPreview.${cat.id}"></p>
         </div>
       </a>`
       )
       .join('');
 
     I18n.apply();
-  },
-
-  renderFeatured() {
-    const grid = document.getElementById('featured-grid');
-    if (!grid) return;
-
-    const bp = Components.basePath();
-    grid.innerHTML = PURISTINE_DATA.featuredProducts
-      .map((p) => {
-        const catLabel = I18n.t(`categories.${p.category}.title`);
-        const name = I18n.t(`products.${p.id}.name`);
-        const desc = I18n.t(`products.${p.id}.desc`);
-        return `
-        <article class="group card-premium bg-white rounded-2xl overflow-hidden border border-[#e4e8ee]/80">
-          <div class="aspect-product overflow-hidden">
-            <img src="${PURISTINE_DATA.img(p.image)}" alt="${name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
-          </div>
-          <div class="p-6">
-            <span class="text-xs font-semibold uppercase tracking-wider text-[#D4A373] mb-2 block">${catLabel}</span>
-            <h3 class="font-heading font-semibold text-[#071739] mb-2">${name}</h3>
-            <p class="text-sm text-[#64748b] leading-relaxed">${desc}</p>
-          </div>
-        </article>`;
-      })
-      .join('');
   }
 };
 
@@ -99,21 +156,18 @@ const CategoriesPage = {
     const grid = document.getElementById('all-categories-grid');
     if (!grid) return;
 
-    const bp = Components.basePath();
     const render = () => {
       grid.innerHTML = PURISTINE_DATA.categories
         .map(
           (cat) => `
-        <a href="${bp}pages/category-detail.html?category=${cat.slug}" data-category="${cat.slug}" class="category-card group card-premium bg-white rounded-2xl overflow-hidden border border-[#e4e8ee]">
-          <div class="aspect-[16/10] overflow-hidden relative">
-            <img src="${PURISTINE_DATA.img(cat.image)}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy">
-            <div class="absolute top-4 left-4 w-12 h-12 rounded-xl glass flex items-center justify-center text-2xl">${cat.icon}</div>
+        <article data-category="${cat.slug}" class="category-card card-premium bg-white rounded-2xl overflow-hidden border border-[#e4e8ee] text-center">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="${PURISTINE_DATA.img(cat.image)}" alt="${I18n.t(`categories.${cat.id}.title`)}" class="w-full h-full object-cover" loading="lazy">
           </div>
-          <div class="p-6">
-            <h2 class="font-heading text-xl font-semibold text-[#071739] mb-2" data-i18n="categories.${cat.id}.title"></h2>
-            <p class="text-[#64748b] text-sm" data-i18n="categories.${cat.id}.desc"></p>
+          <div class="p-5">
+            <h2 class="font-heading text-lg font-semibold text-navy" data-i18n="categories.${cat.id}.title"></h2>
           </div>
-        </a>`
+        </article>`
         )
         .join('');
 
@@ -182,7 +236,7 @@ const CategoryDetailPage = {
             <img src="${PURISTINE_DATA.img(p.image)}" alt="${I18n.t(`products.${p.id}.name`)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
           </div>
           <div class="p-6">
-            <h3 class="font-heading font-semibold text-[#071739] mb-2">${I18n.t(`products.${p.id}.name`)}</h3>
+            <h3 class="font-heading font-semibold text-[#44749E] mb-2">${I18n.t(`products.${p.id}.name`)}</h3>
             <p class="text-sm text-[#64748b]">${I18n.t(`products.${p.id}.desc`)}</p>
           </div>
         </article>`

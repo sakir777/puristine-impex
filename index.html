@@ -23,8 +23,8 @@
       theme: {
         extend: {
           colors: {
-            navy: '#071739',
-            gold: '#D4A373',
+            navy: '#44749E',
+            gold: '#ED835E',
             'gray-soft': '#f8f9fb'
           },
           fontFamily: {
@@ -55,216 +55,253 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="relative min-h-screen flex items-center hero-mesh overflow-hidden pt-24" aria-label="Hero">
+    <section class="relative flex items-center hero-mesh overflow-hidden pt-20 pb-8 lg:h-screen lg:max-h-screen lg:pt-24 lg:pb-6" aria-label="Hero">
       <div class="absolute inset-0 world-map-bg opacity-40 pointer-events-none" data-parallax="0.15"></div>
       <div class="absolute top-1/4 right-[10%] w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-pulse pointer-events-none" style="animation-duration:4s"></div>
       <div class="absolute bottom-1/4 left-[5%] w-96 h-96 rounded-full bg-navy/5 blur-3xl pointer-events-none" data-parallax="0.2"></div>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-4 w-full h-full">
+        <div class="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center h-full">
           <div class="reveal">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-gold/30 text-sm font-medium text-gold mb-8 shadow-sm" data-i18n="hero.badge"></span>
-            <h1 class="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-navy leading-[1.1] tracking-tight mb-6" data-i18n="hero.title"></h1>
-            <p class="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl mb-10" data-i18n="hero.subtitle"></p>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-gold/30 text-xs sm:text-sm font-medium text-gold mb-5 shadow-sm" data-i18n="hero.badge"></span>
+            <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-[2.75rem] text-navy leading-[1.15] tracking-tight mb-4" data-i18n="hero.title"></h1>
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mb-7" data-i18n="hero.subtitle"></p>
             <div class="flex flex-wrap gap-4">
               <a href="pages/categories.html" class="btn-primary" data-i18n="hero.cta1"></a>
               <a href="pages/contact.html" class="btn-secondary" data-i18n="hero.cta2"></a>
             </div>
-            <div class="grid grid-cols-3 gap-6 mt-16 pt-16 border-t border-gray-200/80 max-w-lg">
-              <div>
-                <p class="font-heading font-bold text-2xl lg:text-3xl text-navy"><span data-counter="25" data-suffix="+">0</span></p>
-                <p class="text-xs sm:text-sm text-gray-500 mt-1" data-i18n="hero.stat1"></p>
-              </div>
-              <div>
-                <p class="font-heading font-bold text-2xl lg:text-3xl text-navy"><span data-counter="12" data-suffix="">0</span></p>
-                <p class="text-xs sm:text-sm text-gray-500 mt-1" data-i18n="hero.stat2"></p>
-              </div>
-              <div>
-                <p class="font-heading font-bold text-2xl lg:text-3xl text-gold">100%</p>
-                <p class="text-xs sm:text-sm text-gray-500 mt-1" data-i18n="hero.stat3"></p>
-              </div>
-            </div>
           </div>
 
-          <div class="relative hidden lg:block reveal-right" data-delay="200">
-            <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
-              <img src="assets/images/hero/export.svg" alt="Global shipping containers and international trade" class="w-full aspect-[4/5] object-cover" width="800" height="1000" fetchpriority="high">
+          <div class="relative hidden lg:block reveal-right h-[min(58vh,520px)] w-full max-w-md ml-auto" data-delay="200">
+            <div class="relative z-10 h-full rounded-3xl overflow-hidden shadow-2xl">
+              <img src="assets/images/hero/export.svg" alt="Global shipping containers and international trade" class="w-full h-full object-cover" width="800" height="1000" fetchpriority="high">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent"></div>
             </div>
-            <div class="absolute -top-6 -right-6 w-32 h-32 glass rounded-2xl p-4 shadow-xl animate-float z-20 flex flex-col justify-center items-center">
-              <span class="text-3xl font-heading font-bold text-gold">25+</span>
-              <span class="text-[10px] uppercase tracking-wider text-gray-500 text-center" data-i18n="hero.stat1"></span>
+            <div class="absolute -top-4 -right-4 w-28 h-28 glass rounded-2xl p-3 shadow-xl animate-float z-40 flex flex-col justify-center items-center">
+              <span class="text-2xl font-heading font-bold text-gold">100%</span>
+              <span class="text-[10px] uppercase tracking-wider text-gray-500 text-center leading-tight" data-i18n="hero.stat3"></span>
             </div>
-            <div class="absolute -bottom-4 -left-8 w-48 glass rounded-2xl p-5 shadow-xl animate-float-delay z-20">
-              <div class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
-                </div>
-                <div>
-                  <p class="font-heading font-semibold text-sm text-navy">Global Export</p>
-                  <p class="text-xs text-gray-500">Trusted Worldwide</p>
-                </div>
+            <div class="absolute bottom-0 left-0 w-[75%] aspect-square z-30 -translate-x-[32%] translate-y-[20%]">
+              <div class="h-full w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white animate-float-delay">
+                <img src="assets/images/hero/about.svg" alt="Premium global export products" class="w-full h-full object-cover" width="600" height="750" loading="lazy">
               </div>
             </div>
-            <img src="assets/images/hero/spices-accent.svg" alt="" class="absolute top-1/2 -left-16 w-28 h-28 rounded-2xl object-cover shadow-lg animate-float-slow border-4 border-white" width="112" height="112" aria-hidden="true">
           </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT PREVIEW -->
-    <section class="py-24 lg:py-32 bg-gray-soft" id="about-preview">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          <div class="reveal-left">
-            <div class="line-gold mb-6"></div>
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-4" data-i18n="aboutPreview.label"></p>
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-6 leading-tight" data-i18n="aboutPreview.title"></h2>
-            <p class="text-gray-600 leading-relaxed mb-4" data-i18n="aboutPreview.p1"></p>
-            <p class="text-gray-600 leading-relaxed mb-8" data-i18n="aboutPreview.p2"></p>
-            <a href="pages/about.html" class="inline-flex items-center gap-2 text-navy font-semibold hover:text-gold transition-colors group">
-              <span data-i18n="aboutPreview.cta"></span>
-              <svg class="w-5 h-5 transition-transform group-hover:translate-x-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-            <div class="grid grid-cols-3 gap-8 mt-16">
-              <div class="text-center lg:text-left">
-                <p class="font-heading font-bold text-4xl text-navy counter-value"><span data-counter="15" data-suffix="+">0</span></p>
-                <p class="text-sm text-gray-500 mt-2" data-i18n="aboutPreview.counter1"></p>
-              </div>
-              <div class="text-center lg:text-left">
-                <p class="font-heading font-bold text-4xl text-navy counter-value"><span data-counter="12" data-suffix="">0</span></p>
-                <p class="text-sm text-gray-500 mt-2" data-i18n="aboutPreview.counter2"></p>
-              </div>
-              <div class="text-center lg:text-left">
-                <p class="font-heading font-bold text-4xl text-gold counter-value"><span data-counter="25" data-suffix="+">0</span></p>
-                <p class="text-sm text-gray-500 mt-2" data-i18n="aboutPreview.counter3"></p>
-              </div>
+    <section class="flex items-center bg-gray-soft py-12 lg:h-screen lg:max-h-screen lg:py-8" id="about-preview">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div class="reveal-left relative order-2 lg:order-1">
+            <div class="rounded-3xl overflow-hidden shadow-2xl h-[min(42vh,380px)] lg:h-[min(58vh,480px)]">
+              <img src="assets/images/hero/about.svg" alt="Premium food products and export packaging" class="w-full h-full object-cover" loading="lazy" width="800" height="1000">
             </div>
           </div>
-          <div class="reveal-right relative">
-            <div class="rounded-3xl overflow-hidden shadow-2xl">
-              <img src="assets/images/hero/about.svg" alt="Premium food products and export packaging" class="w-full aspect-[4/5] object-cover" loading="lazy" width="800" height="1000">
-            </div>
-            <div class="absolute -bottom-8 -left-8 glass rounded-2xl p-6 shadow-xl max-w-xs hidden sm:block">
-              <p class="font-heading font-semibold text-navy text-lg">Puristine Foods → Impex</p>
-              <p class="text-sm text-gray-500 mt-2">Heritage quality, global reach</p>
-            </div>
+          <div class="reveal order-1 lg:order-2">
+            <div class="line-gold mb-5"></div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-3" data-i18n="aboutPreview.label"></p>
+            <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-4 leading-tight" data-i18n="aboutPreview.title"></h2>
+            <p class="text-sm sm:text-base text-gray-600 leading-relaxed mb-3" data-i18n="aboutPreview.p1"></p>
+            <p class="text-sm sm:text-base text-gray-600 leading-relaxed mb-6" data-i18n="aboutPreview.p2"></p>
+            <a href="pages/about.html" class="btn-primary" data-i18n="aboutPreview.cta"></a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIREWASH — Home Care Solutions -->
+    <section class="fairewash-showcase relative py-12 lg:py-14 overflow-hidden lg:max-h-[120vh]" id="fairewash" aria-label="Fairewash sustainable cleaning solutions">
+      <div class="absolute inset-0 fairewash-mesh pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute top-16 -left-20 w-80 h-80 rounded-full bg-[#F7D393]/25 blur-3xl fairewash-orb pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute bottom-10 right-0 w-96 h-96 rounded-full bg-[#44749E]/15 blur-3xl fairewash-orb-delay pointer-events-none" aria-hidden="true"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <header class="text-center max-w-3xl mx-auto mb-8 lg:mb-6 reveal">
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-gold/40 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-gold mb-3 shadow-sm" data-i18n="fairewash.badge"></span>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-2" data-i18n="fairewash.title"></h2>
+          <p class="text-base sm:text-lg font-heading font-semibold text-gold mb-2" data-i18n="fairewash.subtitle"></p>
+          <p class="text-gray-600 leading-relaxed text-xs sm:text-sm max-w-2xl mx-auto" data-i18n="fairewash.description"></p>
+        </header>
+
+        <div class="grid lg:grid-cols-2 gap-5 lg:gap-8">
+          <a href="pages/laundry-detergent-sheets.html" class="fairewash-product-card reveal group" data-delay="0" aria-label="Explore Laundry Detergent Sheets">
+            <span class="fairewash-card-shine" aria-hidden="true"></span>
+            <div class="fairewash-product-visual">
+              <span class="fairewash-card-index">01</span>
+              <div class="fairewash-product-image-wrap">
+                <div class="fairewash-float-inner">
+                  <img src="assets/images/fairewash/laundry-sheets.svg" alt="" class="fairewash-product-image" width="320" height="320" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="fairewash-product-body">
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-navy mb-2 group-hover:text-[#ED835E] transition-colors duration-300" data-i18n="fairewash.product1.name"></h3>
+              <p class="fairewash-product-desc text-gray-600 text-xs sm:text-sm leading-relaxed mb-4" data-i18n="fairewash.product1.desc"></p>
+              <span class="fairewash-card-cta mt-auto">
+                <span data-i18n="common.exploreMore"></span>
+                <svg class="w-4 h-4 rtl-flip transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="pages/floor-cleaning-sheets.html" class="fairewash-product-card reveal group" data-delay="150" aria-label="Explore Floor Cleaning Sheets">
+            <span class="fairewash-card-shine" aria-hidden="true"></span>
+            <div class="fairewash-product-visual fairewash-product-visual--alt">
+              <span class="fairewash-card-index">02</span>
+              <div class="fairewash-product-image-wrap">
+                <div class="fairewash-float-inner fairewash-float-delay">
+                  <img src="assets/images/fairewash/floor-sheets.svg" alt="" class="fairewash-product-image" width="320" height="320" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="fairewash-product-body">
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-navy mb-2 group-hover:text-[#ED835E] transition-colors duration-300" data-i18n="fairewash.product2.name"></h3>
+              <p class="fairewash-product-desc text-gray-600 text-xs sm:text-sm leading-relaxed mb-4" data-i18n="fairewash.product2.desc"></p>
+              <span class="fairewash-card-cta mt-auto">
+                <span data-i18n="common.exploreMore"></span>
+                <svg class="w-4 h-4 rtl-flip transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center mt-6 lg:mt-8 reveal">
+          <a href="pages/eco-friendly-products.html" class="btn-secondary" data-i18n="fairewash.cta"></a>
         </div>
       </div>
     </section>
 
     <!-- CATEGORIES -->
-    <section class="py-24 lg:py-32" id="categories">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-          <div class="line-gold mx-auto mb-6"></div>
-          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-4" data-i18n="categoriesSection.label"></p>
-          <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-4" data-i18n="categoriesSection.title"></h2>
-          <p class="text-gray-600" data-i18n="categoriesSection.subtitle"></p>
+    <section class="categories-showcase py-12 lg:py-14 overflow-hidden lg:max-h-[120vh]" id="categories">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-8 lg:mb-6 reveal">
+          <div class="line-gold mx-auto mb-4"></div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-2" data-i18n="categoriesSection.label"></p>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-2" data-i18n="categoriesSection.title"></h2>
+          <p class="text-gray-600 text-xs sm:text-sm" data-i18n="categoriesSection.subtitle"></p>
         </div>
-        <div id="categories-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"></div>
-        <div class="text-center mt-12 reveal">
-          <a href="pages/categories.html" class="btn-secondary" data-i18n="common.viewAll"></a>
+        <div id="categories-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 max-w-5xl mx-auto"></div>
+        <div class="text-center mt-6 lg:mt-8 reveal">
+          <a href="pages/categories.html" class="btn-primary" data-i18n="common.seeAllProducts"></a>
         </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PRODUCTS -->
-    <section class="py-24 lg:py-32 bg-gray-soft">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16 reveal">
-          <div>
-            <div class="line-gold mb-6"></div>
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-4" data-i18n="featured.label"></p>
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl text-navy" data-i18n="featured.title"></h2>
-          </div>
-          <p class="text-gray-600 max-w-md lg:text-right" data-i18n="featured.subtitle"></p>
-        </div>
-        <div id="featured-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
       </div>
     </section>
 
     <!-- WHY CHOOSE US -->
-    <section class="py-24 lg:py-32" id="why-us">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-          <div class="line-gold mx-auto mb-6"></div>
-          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-4" data-i18n="whyUs.label"></p>
-          <h2 class="font-heading font-bold text-3xl sm:text-4xl text-navy" data-i18n="whyUs.title"></h2>
+    <section class="why-us-showcase py-12 lg:pt-10 lg:pb-14 overflow-hidden lg:max-h-[120vh]" id="why-us">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-8 lg:mb-6 reveal">
+          <div class="line-gold mx-auto mb-4"></div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-2" data-i18n="whyUs.label"></p>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy" data-i18n="whyUs.title"></h2>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="reveal card-premium p-8 rounded-2xl bg-white border border-gray-200/80 hover:border-gold/30" data-delay="0">
-            <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mb-6">
-              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-white border border-gray-200/80 hover:border-gold/30" data-delay="0">
+            <div class="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
             </div>
-            <h3 class="font-heading font-semibold text-xl text-navy mb-3" data-i18n="whyUs.items.expertise.title"></h3>
-            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="whyUs.items.expertise.desc"></p>
+            <h3 class="font-heading font-semibold text-base lg:text-lg text-navy mb-2" data-i18n="whyUs.items.expertise.title"></h3>
+            <p class="why-us-card-desc text-gray-600 text-xs sm:text-sm leading-relaxed" data-i18n="whyUs.items.expertise.desc"></p>
           </article>
-          <article class="reveal card-premium p-8 rounded-2xl bg-white border border-gray-200/80" data-delay="100">
-            <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mb-6">
-              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-white border border-gray-200/80" data-delay="100">
+            <div class="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
             </div>
-            <h3 class="font-heading font-semibold text-xl text-navy mb-3" data-i18n="whyUs.items.flexible.title"></h3>
-            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="whyUs.items.flexible.desc"></p>
+            <h3 class="font-heading font-semibold text-base lg:text-lg text-navy mb-2" data-i18n="whyUs.items.flexible.title"></h3>
+            <p class="why-us-card-desc text-gray-600 text-xs sm:text-sm leading-relaxed" data-i18n="whyUs.items.flexible.desc"></p>
           </article>
-          <article class="reveal card-premium p-8 rounded-2xl bg-white border border-gray-200/80" data-delay="200">
-            <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mb-6">
-              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-white border border-gray-200/80" data-delay="200">
+            <div class="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
             </div>
-            <h3 class="font-heading font-semibold text-xl text-navy mb-3" data-i18n="whyUs.items.logistics.title"></h3>
-            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="whyUs.items.logistics.desc"></p>
+            <h3 class="font-heading font-semibold text-base lg:text-lg text-navy mb-2" data-i18n="whyUs.items.logistics.title"></h3>
+            <p class="why-us-card-desc text-gray-600 text-xs sm:text-sm leading-relaxed" data-i18n="whyUs.items.logistics.desc"></p>
           </article>
-          <article class="reveal card-premium p-8 rounded-2xl bg-white border border-gray-200/80" data-delay="100">
-            <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mb-6">
-              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-white border border-gray-200/80" data-delay="100">
+            <div class="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
             </div>
-            <h3 class="font-heading font-semibold text-xl text-navy mb-3" data-i18n="whyUs.items.portfolio.title"></h3>
-            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="whyUs.items.portfolio.desc"></p>
+            <h3 class="font-heading font-semibold text-base lg:text-lg text-navy mb-2" data-i18n="whyUs.items.portfolio.title"></h3>
+            <p class="why-us-card-desc text-gray-600 text-xs sm:text-sm leading-relaxed" data-i18n="whyUs.items.portfolio.desc"></p>
           </article>
-          <article class="reveal card-premium p-8 rounded-2xl bg-navy text-white sm:col-span-2 lg:col-span-1" data-delay="200">
-            <div class="w-14 h-14 rounded-2xl bg-gold/20 flex items-center justify-center mb-6">
-              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-navy text-white sm:col-span-2 lg:col-span-1" data-delay="200">
+            <div class="w-11 h-11 rounded-xl bg-gold/20 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
             </div>
-            <h3 class="font-heading font-semibold text-xl mb-3" data-i18n="whyUs.items.customer.title"></h3>
-            <p class="text-white/70 text-sm leading-relaxed" data-i18n="whyUs.items.customer.desc"></p>
+            <h3 class="font-heading font-semibold text-base lg:text-lg mb-2" data-i18n="whyUs.items.customer.title"></h3>
+            <p class="why-us-card-desc text-white/70 text-xs sm:text-sm leading-relaxed" data-i18n="whyUs.items.customer.desc"></p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- FAIREWASH -->
-    <section class="py-24 lg:py-32 bg-navy text-white relative overflow-hidden" id="fairewash">
-      <div class="absolute inset-0 opacity-10 world-map-bg"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div class="reveal-left">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-gold/20 text-gold text-xs font-semibold uppercase tracking-wider mb-6" data-i18n="fairewash.badge"></span>
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gold/80 mb-4" data-i18n="fairewash.label"></p>
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl mb-6" data-i18n="fairewash.title"></h2>
-            <p class="text-white/70 leading-relaxed mb-10" data-i18n="fairewash.subtitle"></p>
-            <div class="space-y-6">
-              <div class="flex gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-                <img src="assets/images/fairewash/laundry-sheets.svg" alt="Laundry detergent sheets" class="w-20 h-20 rounded-xl object-cover animate-float" width="80" height="80">
-                <div>
-                  <h3 class="font-heading font-semibold text-lg mb-1" data-i18n="fairewash.product1.name"></h3>
-                  <p class="text-white/60 text-sm" data-i18n="fairewash.product1.desc"></p>
-                </div>
-              </div>
-              <div class="flex gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-                <img src="assets/images/fairewash/floor-sheets.svg" alt="Floor cleaner sheets" class="w-20 h-20 rounded-xl object-cover animate-float-delay" width="80" height="80">
-                <div>
-                  <h3 class="font-heading font-semibold text-lg mb-1" data-i18n="fairewash.product2.name"></h3>
-                  <p class="text-white/60 text-sm" data-i18n="fairewash.product2.desc"></p>
-                </div>
+    <!-- TESTIMONIALS -->
+    <section class="py-16 lg:py-24 overflow-hidden" id="testimonials" aria-label="Testimonials">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-12 reveal">
+          <div class="line-gold mx-auto mb-4"></div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-2" data-i18n="testimonials.label"></p>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-3" data-i18n="testimonials.title"></h2>
+          <p class="text-gray-600 text-sm sm:text-base" data-i18n="testimonials.subtitle"></p>
+        </div>
+
+        <p class="text-center text-sm font-semibold text-navy mb-5 reveal" data-i18n="testimonials.videosTitle"></p>
+        <div class="grid md:grid-cols-2 gap-5 lg:gap-6 max-w-4xl mx-auto mb-12 lg:mb-14">
+          <article class="testimonial-video-card reveal" data-delay="0" data-testimonial-video="0">
+            <div class="testimonial-video-media">
+              <button type="button" class="testimonial-video-play" aria-label="Play video testimonial" tabindex="-1" hidden>
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              <div class="testimonial-video-placeholder">
+                <svg class="w-12 h-12 text-navy/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span class="text-sm font-semibold text-navy/60 mt-2" data-i18n="testimonials.video1.title"></span>
               </div>
             </div>
-            <a href="pages/category-detail.html?category=home-care" class="btn-gold mt-10 inline-flex" data-i18n="common.learnMore"></a>
-          </div>
-          <div class="reveal-right relative hidden lg:block">
-            <img src="assets/images/fairewash/floor-sheets.svg" alt="Fairewash sustainable home care products" class="rounded-3xl shadow-2xl w-full aspect-square object-cover" loading="lazy">
-            <img src="assets/images/fairewash/laundry-sheets.svg" alt="" class="absolute -top-8 -right-8 w-40 h-40 rounded-2xl object-cover shadow-xl border-4 border-navy animate-float" width="160" height="160" aria-hidden="true">
-          </div>
+            <p class="text-xs text-gray-500 text-center mt-3 px-2" data-i18n="testimonials.video1.caption"></p>
+          </article>
+          <article class="testimonial-video-card reveal" data-delay="80" data-testimonial-video="1">
+            <div class="testimonial-video-media">
+              <button type="button" class="testimonial-video-play" aria-label="Play video testimonial" tabindex="-1" hidden>
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              <div class="testimonial-video-placeholder">
+                <svg class="w-12 h-12 text-navy/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span class="text-sm font-semibold text-navy/60 mt-2" data-i18n="testimonials.video2.title"></span>
+              </div>
+            </div>
+            <p class="text-xs text-gray-500 text-center mt-3 px-2" data-i18n="testimonials.video2.caption"></p>
+          </article>
+        </div>
+
+        <p class="text-center text-sm font-semibold text-navy mb-5 reveal" data-i18n="testimonials.textTitle"></p>
+        <div class="grid md:grid-cols-3 gap-5 lg:gap-6">
+          <article class="testimonial-text-card reveal card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80" data-delay="0">
+            <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+            <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t1.quote"></blockquote>
+            <footer>
+              <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t1.name"></p>
+              <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t1.role"></p>
+            </footer>
+          </article>
+          <article class="testimonial-text-card reveal card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80" data-delay="60">
+            <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+            <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t2.quote"></blockquote>
+            <footer>
+              <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t2.name"></p>
+              <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t2.role"></p>
+            </footer>
+          </article>
+          <article class="testimonial-text-card reveal card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80 md:col-span-1" data-delay="120">
+            <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+            <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t3.quote"></blockquote>
+            <footer>
+              <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t3.name"></p>
+              <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t3.role"></p>
+            </footer>
+          </article>
         </div>
       </div>
     </section>
@@ -321,14 +358,14 @@
     <!-- CTA -->
     <section class="py-20 lg:py-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal relative rounded-3xl overflow-hidden bg-navy px-8 py-16 lg:px-20 lg:py-20 text-center">
+        <div class="reveal relative rounded-3xl overflow-hidden bg-navy text-white px-8 py-16 lg:px-20 lg:py-20 text-center">
           <div class="absolute inset-0 world-map-bg opacity-20"></div>
           <div class="relative z-10">
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-4" data-i18n="cta.title"></h2>
-            <p class="text-white/70 text-lg max-w-xl mx-auto mb-10" data-i18n="cta.subtitle"></p>
+            <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl mb-4" data-i18n="cta.title"></h2>
+            <p class="text-white/90 text-lg max-w-xl mx-auto mb-10" data-i18n="cta.subtitle"></p>
             <div class="flex flex-wrap justify-center gap-4">
               <a href="mailto:info@puristineimpex.com" class="btn-gold" data-i18n="cta.email"></a>
-              <a href="pages/contact.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white/30 text-white font-medium hover:bg-white hover:text-navy transition-all duration-500" data-i18n="cta.contact"></a>
+              <a href="pages/contact.html" class="btn-secondary" data-i18n="cta.contact"></a>
             </div>
           </div>
         </div>

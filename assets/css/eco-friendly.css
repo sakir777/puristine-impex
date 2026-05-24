@@ -1,0 +1,93 @@
+/* Eco-Friendly Products — Faire Wash page */
+
+.eco-page {
+  --eco-primary: #44749E;
+  --eco-primary-dark: #3a637f;
+  --eco-primary-light: rgba(68, 116, 158, 0.12);
+}
+
+.eco-page #main {
+  padding-top: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .eco-page #main {
+    padding-top: 6rem;
+  }
+}
+
+.eco-bg-light {
+  background-color: var(--eco-primary-light);
+}
+
+.eco-bg-light-soft {
+  background-color: rgba(68, 116, 158, 0.08);
+}
+
+.eco-brand {
+  color: #44749E;
+  font-weight: 600;
+}
+
+.eco-about-copy .eco-brand {
+  color: #44749E;
+}
+
+/* Brand name on navy / dark sections — must contrast with #44749E background */
+.eco-hero-band .eco-brand,
+.product-hero-bar .eco-brand,
+.eco-brand-on-dark {
+  color: #F7D393;
+}
+
+.eco-heading {
+  color: var(--eco-primary);
+}
+
+.eco-page .text-eco {
+  color: var(--eco-primary);
+}
+
+.eco-page .bg-eco-dark,
+.eco-hero-band {
+  background-color: var(--eco-primary);
+}
+
+.eco-check-list li::before {
+  content: '✓';
+  flex-shrink: 0;
+  color: var(--eco-primary);
+  font-weight: 700;
+}
+
+.eco-check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.eco-feature-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.eco-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px -12px rgba(68, 116, 158, 0.2);
+}
+
+.eco-product-block {
+  border-left: 4px solid var(--eco-primary);
+}
+
+.eco-insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.eco-insta-placeholder {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--eco-primary-light), #fff);
+  border-radius: 0.75rem;
+  border: 1px dashed rgba(68, 116, 158, 0.25);
+}
