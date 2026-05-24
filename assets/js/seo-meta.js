@@ -5,7 +5,7 @@ const SeoMeta = (function () {
   const SITE_NAME = 'Puristine Impex LLP';
   const THEME_COLOR = '#44749E';
   const TILE_COLOR = '#44749E';
-  const DEFAULT_SITE_URL = 'https://puristineimpex.com';
+  const DEFAULT_SITE_URL = 'https://puristine-impex.vercel.app';
 
   const PAGE_META = {
     'index.html': {

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://puristineimpex.com/sitemap.xml
+Sitemap: https://puristine-impex.vercel.app/sitemap.xml
