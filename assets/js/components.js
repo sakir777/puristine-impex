@@ -18,9 +18,10 @@ const Components = (function () {
     const bp = basePath();
 
     return `
-    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" role="banner">
-      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-        <div class="flex items-center justify-between h-20 lg:h-24">
+    <header id="navbar" class="navbar-header fixed top-0 left-0 right-0 z-[100] w-full" role="banner">
+      <div id="navbar-bar" class="navbar-bar w-full transition-all duration-500">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+          <div class="flex items-center justify-between h-20 lg:h-24">
           <a href="${bp}index.html" class="flex items-center group" aria-label="Puristine Impex Home">
             <img
               src="${bp}assets/images/puristine-impex-logo.png"
@@ -45,14 +46,15 @@ const Components = (function () {
               <button type="button" data-lang="ar" class="lang-btn px-2.5 py-1.5 text-xs font-semibold rounded-full transition-all duration-300 text-[#64748b] hover:text-[#44749E]" aria-pressed="false">AR</button>
             </div>
             <a href="${bp}pages/contact.html" class="hidden md:inline-flex btn-gold !py-3 !px-6 !text-sm" data-i18n="nav.cta"></a>
-            <button type="button" id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-[#44749E] hover:bg-[#f1f3f6] transition-colors" aria-label="Open menu" aria-expanded="false">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <button type="button" id="mobile-menu-btn" class="mobile-menu-btn lg:hidden" aria-label="Open menu" aria-expanded="false">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
           </div>
-        </div>
-      </nav>
+          </div>
+        </nav>
+      </div>
 
-      <div id="mobile-menu" class="lg:hidden fixed inset-0 top-20 bg-white/98 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-500 ease-out" aria-hidden="true">
+      <div id="mobile-menu" class="mobile-menu-panel lg:hidden" aria-hidden="true">
         <div class="flex flex-col p-8 gap-6">
           <a href="${bp}index.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.home"></a>
           <a href="${bp}pages/categories.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.categories"></a>
@@ -148,21 +150,24 @@ const Components = (function () {
     const menu = document.getElementById('mobile-menu');
     if (!btn || !menu) return;
 
+    const closeMenu = () => {
+      menu.classList.remove('is-open');
+      menu.setAttribute('aria-hidden', 'true');
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('mobile-menu-open');
+    };
+
     const toggle = () => {
-      const open = menu.classList.contains('translate-x-0');
-      menu.classList.toggle('translate-x-full', open);
-      menu.classList.toggle('translate-x-0', !open);
-      menu.setAttribute('aria-hidden', open ? 'true' : 'false');
-      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
-      document.body.classList.toggle('mobile-menu-open', !open);
+      const open = menu.classList.toggle('is-open');
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('mobile-menu-open', open);
     };
 
     btn.addEventListener('click', toggle);
-    menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => {
-      menu.classList.add('translate-x-full');
-      menu.classList.remove('translate-x-0');
-      document.body.classList.remove('mobile-menu-open');
-    }));
+    menu.querySelectorAll('a, button[data-lang]').forEach((el) => {
+      el.addEventListener('click', closeMenu);
+    });
   }
 
   function init(options = {}) {

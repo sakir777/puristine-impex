@@ -83,15 +83,13 @@ const Animations = (function () {
 
   function initNavbarScroll() {
     const navbar = document.getElementById('navbar');
-    if (!navbar) return;
+    const navbarBar = document.getElementById('navbar-bar');
+    if (!navbar || !navbarBar) return;
 
     const onScroll = () => {
-      if (window.scrollY > 40) {
-        navbar.classList.add('navbar-scrolled', 'glass');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
-        if (!navbar.classList.contains('navbar-dark')) navbar.classList.remove('glass');
-      }
+      const scrolled = window.scrollY > 24;
+      navbar.classList.toggle('navbar-scrolled', scrolled);
+      navbarBar.classList.toggle('navbar-bar--glass', scrolled);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();

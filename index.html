@@ -65,37 +65,40 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="relative flex items-center hero-mesh overflow-hidden pt-20 pb-8 lg:h-screen lg:max-h-screen lg:pt-24 lg:pb-6" aria-label="Hero">
+    <section class="relative flex items-center hero-mesh overflow-hidden pt-20 pb-14 sm:pb-16 lg:h-screen lg:max-h-screen lg:pt-24 lg:pb-6" aria-label="Hero">
       <div class="absolute inset-0 world-map-bg opacity-40 pointer-events-none" data-parallax="0.15"></div>
-      <div class="absolute top-1/4 right-[10%] w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-pulse pointer-events-none" style="animation-duration:4s"></div>
-      <div class="absolute bottom-1/4 left-[5%] w-96 h-96 rounded-full bg-navy/5 blur-3xl pointer-events-none" data-parallax="0.2"></div>
+      <div class="absolute top-1/4 right-[10%] w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-pulse pointer-events-none hidden sm:block" style="animation-duration:4s"></div>
+      <div class="absolute bottom-1/4 left-[5%] w-96 h-96 rounded-full bg-navy/5 blur-3xl pointer-events-none hidden sm:block" data-parallax="0.2"></div>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-4 w-full h-full">
-        <div class="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center h-full">
-          <div class="reveal">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-4 w-full min-w-0 h-full">
+        <div class="hero-grid h-full min-w-0">
+          <div class="hero-copy reveal min-w-0">
             <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-gold/30 text-xs sm:text-sm font-medium text-gold mb-5 shadow-sm" data-i18n="hero.badge"></span>
             <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-[2.75rem] text-navy leading-[1.15] tracking-tight mb-4" data-i18n="hero.title"></h1>
-            <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mb-7" data-i18n="hero.subtitle"></p>
-            <div class="flex flex-wrap gap-4">
-              <a href="pages/categories.html" class="btn-primary" data-i18n="hero.cta1"></a>
-              <a href="pages/contact.html" class="btn-secondary" data-i18n="hero.cta2"></a>
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mb-0 lg:mb-7" data-i18n="hero.subtitle"></p>
+          </div>
+
+          <div class="hero-visual-wrap w-full">
+            <div class="hero-visual relative reveal-right" data-delay="200">
+              <div class="hero-visual-main relative z-10 h-full rounded-3xl overflow-hidden shadow-2xl">
+                <img src="assets/images/hero/export.svg" alt="Global shipping containers and international trade" class="w-full h-full object-cover" width="800" height="1000" fetchpriority="high">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent"></div>
+              </div>
+              <div class="hero-visual-badge absolute glass rounded-2xl p-2 sm:p-3 shadow-xl z-40 flex flex-col justify-center items-center">
+                <span class="text-xl lg:text-2xl font-heading font-bold text-gold">100%</span>
+                <span class="text-[9px] lg:text-[10px] uppercase tracking-wider text-gray-500 text-center leading-tight" data-i18n="hero.stat3"></span>
+              </div>
+              <div class="hero-visual-stack absolute aspect-square z-30">
+                <div class="h-full w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white hero-visual-stack-inner">
+                  <img src="assets/images/hero/about.svg" alt="Premium global export products" class="w-full h-full object-cover" width="600" height="750" loading="lazy">
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="relative hidden lg:block reveal-right h-[min(58vh,520px)] w-full max-w-md ml-auto" data-delay="200">
-            <div class="relative z-10 h-full rounded-3xl overflow-hidden shadow-2xl">
-              <img src="assets/images/hero/export.svg" alt="Global shipping containers and international trade" class="w-full h-full object-cover" width="800" height="1000" fetchpriority="high">
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent"></div>
-            </div>
-            <div class="absolute -top-4 -right-4 w-28 h-28 glass rounded-2xl p-3 shadow-xl animate-float z-40 flex flex-col justify-center items-center">
-              <span class="text-2xl font-heading font-bold text-gold">100%</span>
-              <span class="text-[10px] uppercase tracking-wider text-gray-500 text-center leading-tight" data-i18n="hero.stat3"></span>
-            </div>
-            <div class="absolute bottom-0 left-0 w-[75%] aspect-square z-30 -translate-x-[32%] translate-y-[20%]">
-              <div class="h-full w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white animate-float-delay">
-                <img src="assets/images/hero/about.svg" alt="Premium global export products" class="w-full h-full object-cover" width="600" height="750" loading="lazy">
-              </div>
-            </div>
+          <div class="hero-ctas reveal" data-delay="100">
+            <a href="pages/categories.html" class="btn-primary btn-hero-cta" data-i18n="hero.cta1"></a>
+            <a href="pages/contact.html" class="btn-secondary btn-hero-cta" data-i18n="hero.cta2"></a>
           </div>
         </div>
       </div>
