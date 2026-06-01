@@ -464,7 +464,7 @@ html[dir="rtl"] .mobile-menu-panel {
 
 .hero-title {
   font-size: 28px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 @media (min-width: 640px) {
