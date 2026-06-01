@@ -1,5 +1,5 @@
 /**
- * Puristine Impex — Main Application Entry
+ * Puristine Impex LLP — Main Application Entry
  */
 document.addEventListener('DOMContentLoaded', async () => {
   const page = document.body.dataset.page || 'home';
@@ -78,10 +78,188 @@ const EcoFriendlyPage = {
 
 /** Homepage dynamic content */
 const HomePage = {
+  testimonialCarousel: null,
+
   init() {
     this.renderCategories();
     this.renderTestimonialVideos();
+    this.initTestimonialsCarousel();
     document.addEventListener('i18n:ready', () => this.renderCategories());
+  },
+
+  initTestimonialsCarousel() {
+    const root = document.querySelector('[data-testimonials-carousel]');
+    if (!root || root.dataset.carouselReady === 'true') return;
+
+    const viewport = root.querySelector('[data-carousel-viewport]');
+    const track = root.querySelector('[data-carousel-track]');
+    const prevBtn = root.querySelector('[data-carousel-prev]');
+    const nextBtn = root.querySelector('[data-carousel-next]');
+    const originals = [...track.querySelectorAll('.testimonials-carousel__slide')];
+    if (!originals.length) return;
+
+    const realCount = originals.length;
+    const infinite = realCount > 1;
+
+    const markClone = (node) => {
+      node.classList.add('is-clone');
+      node.setAttribute('aria-hidden', 'true');
+      node.removeAttribute('data-i18n');
+      node.querySelectorAll('[data-i18n]').forEach((el) => el.removeAttribute('data-i18n'));
+    };
+
+    if (infinite) {
+      const before = document.createDocumentFragment();
+      const after = document.createDocumentFragment();
+      [...originals].reverse().forEach((slide) => {
+        const clone = slide.cloneNode(true);
+        markClone(clone);
+        before.appendChild(clone);
+      });
+      originals.forEach((slide) => {
+        const clone = slide.cloneNode(true);
+        markClone(clone);
+        after.appendChild(clone);
+      });
+      track.insertBefore(before, originals[0]);
+      track.appendChild(after);
+    }
+
+    const slides = [...track.querySelectorAll('.testimonials-carousel__slide')];
+    const baseSlideIndex = infinite ? realCount : 0;
+    let stepIndex = 0;
+    let autoplayId = null;
+    let isAnimating = false;
+    const autoplayMs = 5000;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const getGap = () => {
+      const styles = getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap || styles.gap);
+      return Number.isFinite(gap) ? gap : 0;
+    };
+
+    const getSlidesVisible = () => (window.innerWidth >= 768 ? 3 : 1);
+
+    const getSlideWidth = () => {
+      const gap = getGap();
+      const visible = getSlidesVisible();
+      return (viewport.clientWidth - (visible - 1) * gap) / visible;
+    };
+
+    const getStep = () => getSlideWidth() + getGap();
+
+    const syncSlideMetrics = () => {
+      viewport.style.setProperty('--slide-width', `${getSlideWidth()}px`);
+    };
+
+    const setBtnLabels = () => {
+      if (typeof I18n === 'undefined') return;
+      prevBtn?.setAttribute('aria-label', I18n.t('testimonials.prev'));
+      nextBtn?.setAttribute('aria-label', I18n.t('testimonials.next'));
+    };
+
+    const scrollToStep = (step, animate = true) => {
+      stepIndex = step;
+      const offset = (baseSlideIndex + stepIndex) * getStep();
+      const useTransition = animate && !reducedMotion;
+      track.style.transition = useTransition ? 'transform 0.55s var(--transition-smooth)' : 'none';
+      track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+      isAnimating = useTransition;
+    };
+
+    const normalizeInfinite = () => {
+      if (!infinite) return;
+      if (stepIndex >= realCount) scrollToStep(0, false);
+      else if (stepIndex < 0) scrollToStep(realCount - 1, false);
+      isAnimating = false;
+    };
+
+    const next = () => {
+      if (isAnimating) return;
+      scrollToStep(stepIndex + 1);
+    };
+
+    const prev = () => {
+      if (isAnimating) return;
+      scrollToStep(stepIndex - 1);
+    };
+
+    const stopAutoplay = () => {
+      if (autoplayId) {
+        clearInterval(autoplayId);
+        autoplayId = null;
+      }
+    };
+
+    const startAutoplay = () => {
+      stopAutoplay();
+      if (reducedMotion || realCount < 2) return;
+      autoplayId = window.setInterval(next, autoplayMs);
+    };
+
+    const onResize = () => {
+      syncSlideMetrics();
+      if (infinite && (stepIndex >= realCount || stepIndex < 0)) {
+        normalizeInfinite();
+      }
+      scrollToStep(stepIndex, false);
+    };
+
+    track.addEventListener('transitionend', (e) => {
+      if (e.target !== track || e.propertyName !== 'transform') return;
+      normalizeInfinite();
+      isAnimating = false;
+    });
+
+    prevBtn?.addEventListener('click', () => {
+      prev();
+      startAutoplay();
+    });
+    nextBtn?.addEventListener('click', () => {
+      next();
+      startAutoplay();
+    });
+
+    root.addEventListener('mouseenter', stopAutoplay);
+    root.addEventListener('mouseleave', startAutoplay);
+    root.addEventListener('focusin', stopAutoplay);
+    root.addEventListener('focusout', (e) => {
+      if (!root.contains(e.relatedTarget)) startAutoplay();
+    });
+
+    viewport?.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prev();
+        startAutoplay();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        next();
+        startAutoplay();
+      }
+    });
+
+    const syncCloneContent = () => {
+      if (!infinite) return;
+      for (let i = 0; i < realCount; i += 1) {
+        slides[i].innerHTML = originals[realCount - 1 - i].innerHTML;
+        slides[baseSlideIndex + realCount + i].innerHTML = originals[i].innerHTML;
+      }
+    };
+
+    setBtnLabels();
+    document.addEventListener('i18n:ready', () => {
+      setBtnLabels();
+      syncCloneContent();
+    });
+
+    window.addEventListener('resize', onResize);
+    syncSlideMetrics();
+    scrollToStep(0, false);
+    startAutoplay();
+    root.dataset.carouselReady = 'true';
+    this.testimonialCarousel = { stopAutoplay };
   },
 
   renderTestimonialVideos() {

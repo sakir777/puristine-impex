@@ -1,5 +1,5 @@
 /**
- * Puristine Impex — Internationalization
+ * Puristine Impex LLP — Internationalization
  * Loads locale JSON and applies translations via data-i18n attributes.
  */
 const I18n = (function () {

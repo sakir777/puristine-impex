@@ -1,5 +1,5 @@
 /**
- * Puristine Impex — Product & Category Data
+ * Puristine Impex LLP — Product & Category Data
  * All images are local under assets/images/ (no external URLs).
  */
 const PURISTINE_DATA = {

@@ -5,13 +5,13 @@
   },
   "nav": {
     "home": "Home",
-    "categories": "Categories",
+    "cleaningSolutions": "Cleaning Solutions",
+    "products": "Products",
     "about": "About Us",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "cta": "Get in Touch"
   },
   "hero": {
-    "badge": "International Trade Excellence",
     "title": "Need Quality Products ?",
     "subtitle": "Choose from high - quality products built for efficiency, Durability and modern lifestyles",
     "cta1": "Explore Categories",
@@ -70,14 +70,15 @@
   },
   "testimonials": {
     "label": "Testimonials",
-    "title": "What Our Partners Say",
-    "subtitle": "Trusted by distributors, retailers, and buyers worldwide.",
+    "title": "What Our Customers Say",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
     "videosTitle": "Video Testimonials",
     "video1": { "title": "Export Partner", "caption": "Hear from our international distribution partner." },
     "video2": { "title": "Retail Partner", "caption": "A retail partner shares their experience with Puristine." },
     "textTitle": "Written Testimonials",
     "t1": {
-      "quote": "Puristine Impex has been a reliable export partner — consistent quality, clear documentation, and on-time shipments every season.",
+      "quote": "Puristine Impex LLP has been a reliable export partner — consistent quality, clear documentation, and on-time shipments every season.",
       "name": "James Mitchell",
       "role": "Procurement Director, Global Foods Ltd."
     },
@@ -175,7 +176,7 @@
       "productsTitle": "Products in this Category"
     },
     "about": {
-      "title": "About Puristine Impex",
+      "title": "About Puristine Impex LLP",
       "subtitle": "Heritage, expertise, and a vision for global trade excellence.",
       "story": { "label": "Our Story", "title": "From Puristine Foods to Global Impex", "p1": "Puristine Impex LLP was born from the trusted foundation of Puristine Foods — a name synonymous with quality in Indian food products.", "p2": "Recognizing growing international demand, we expanded our operations to serve exporters, distributors, and retailers across continents with the same integrity that built our domestic reputation." },
       "mission": { "label": "Mission", "title": "Delivering Excellence Across Borders", "text": "To connect global markets with premium Indian food products and innovative home-care solutions through ethical sourcing, reliable logistics, and customer-first partnerships." },

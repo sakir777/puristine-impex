@@ -5,13 +5,13 @@
   },
   "nav": {
     "home": "Inicio",
-    "categories": "Categorías",
+    "cleaningSolutions": "Soluciones de Limpieza",
+    "products": "Productos",
     "about": "Nosotros",
-    "contact": "Contacto",
+    "contact": "Contáctenos",
     "cta": "Contáctenos"
   },
   "hero": {
-    "badge": "Excelencia en Comercio Internacional",
     "title": "¿Necesita Productos de Calidad?",
     "subtitle": "Elija entre productos de alta calidad diseñados para la eficiencia, la durabilidad y estilos de vida modernos",
     "cta1": "Explorar Categorías",
@@ -282,7 +282,7 @@
       "productsTitle": "Productos en esta Categoría"
     },
     "about": {
-      "title": "Sobre Puristine Impex",
+      "title": "Sobre Puristine Impex LLP",
       "subtitle": "Herencia, experiencia y visión de excelencia comercial.",
       "story": {
         "label": "Nuestra Historia",
@@ -636,8 +636,9 @@
   },
   "testimonials": {
     "label": "Testimonios",
-    "title": "Lo Que Dicen Nuestros Socios",
-    "subtitle": "Con la confianza de distribuidores, minoristas y compradores en todo el mundo.",
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "prev": "Testimonio anterior",
+    "next": "Siguiente testimonio",
     "videosTitle": "Testimonios en Video",
     "video1": {
       "title": "Socio de Exportación",
@@ -649,7 +650,7 @@
     },
     "textTitle": "Testimonios Escritos",
     "t1": {
-      "quote": "Puristine Impex ha sido un socio de exportación confiable: calidad constante, documentación clara y envíos a tiempo cada temporada.",
+      "quote": "Puristine Impex LLP ha sido un socio de exportación confiable: calidad constante, documentación clara y envíos a tiempo cada temporada.",
       "name": "James Mitchell",
       "role": "Director de Compras, Global Foods Ltd."
     },

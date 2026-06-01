@@ -1,16 +1,19 @@
 /**
- * Puristine Impex — Reusable UI Components (Navbar, Footer)
+ * Puristine Impex LLP — Reusable UI Components (Navbar, Footer)
  */
 const Components = (function () {
   function basePath() {
     return window.location.pathname.includes('/pages/') ? '../' : './';
   }
 
-  function navLink(href, key, page) {
+  function navLink(href, key, page, extraActive = []) {
     const bp = basePath();
     const fullHref = bp + href;
-    const isActive = page && window.location.pathname.includes(page);
-    return `<a href="${fullHref}" class="nav-link text-sm font-medium tracking-wide transition-colors duration-300 ${isActive ? 'text-[#ED835E]' : 'text-[#44749E]/80 hover:text-[#ED835E]'}" data-i18n="nav.${key}"></a>`;
+    const path = window.location.pathname;
+    const isActive =
+      (page && path.includes(page)) ||
+      extraActive.some((segment) => path.includes(segment));
+    return `<a href="${fullHref}" class="nav-link text-sm font-medium tracking-wide transition-colors duration-300 ${isActive ? 'text-[#ED835E]' : 'text-[#1B0C37] hover:text-[#ED835E]'}" data-i18n="nav.${key}"></a>`;
   }
 
   function renderNavbar(options = {}) {
@@ -22,7 +25,7 @@ const Components = (function () {
       <div id="navbar-bar" class="navbar-bar w-full transition-all duration-500">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
           <div class="flex items-center justify-between h-20 lg:h-24">
-          <a href="${bp}index.html" class="flex items-center group" aria-label="Puristine Impex Home">
+          <a href="${bp}index.html" class="flex items-center group" aria-label="Puristine Impex LLP Home">
             <img
               src="${bp}assets/images/puristine-impex-logo.png"
               alt="Puristine Impex LLP"
@@ -32,9 +35,10 @@ const Components = (function () {
             />
           </a>
 
-          <div class="hidden lg:flex items-center gap-10">
+          <div class="hidden lg:flex items-center gap-8 xl:gap-10">
             ${navLink('index.html', 'home', 'index')}
-            ${navLink('pages/categories.html', 'categories', 'categories')}
+            ${navLink('pages/eco-friendly-products.html', 'cleaningSolutions', 'eco-friendly', ['floor-cleaning-sheets', 'laundry-detergent-sheets'])}
+            ${navLink('pages/categories.html', 'products', 'categories')}
             ${navLink('pages/about.html', 'about', 'about')}
             ${navLink('pages/contact.html', 'contact', 'contact')}
           </div>
@@ -57,7 +61,8 @@ const Components = (function () {
       <div id="mobile-menu" class="mobile-menu-panel lg:hidden" aria-hidden="true">
         <div class="flex flex-col p-8 gap-6">
           <a href="${bp}index.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.home"></a>
-          <a href="${bp}pages/categories.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.categories"></a>
+          <a href="${bp}pages/eco-friendly-products.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.cleaningSolutions"></a>
+          <a href="${bp}pages/categories.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.products"></a>
           <a href="${bp}pages/about.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.about"></a>
           <a href="${bp}pages/contact.html" class="text-xl font-heading font-semibold text-[#44749E]" data-i18n="nav.contact"></a>
           <div class="flex gap-2 pt-4 border-t border-[#e4e8ee]">
@@ -80,7 +85,7 @@ const Components = (function () {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 pb-16 border-b border-white/10">
           <div class="lg:col-span-1">
-            <a href="${bp}index.html" class="inline-block m-0 p-0 mb-4 leading-none" aria-label="Puristine Impex Home">
+            <a href="${bp}index.html" class="inline-block m-0 p-0 mb-4 leading-none" aria-label="Puristine Impex LLP Home">
               <img
                 src="${bp}assets/images/puristine-impex-logo.png"
                 alt="Puristine Impex LLP"
@@ -96,7 +101,8 @@ const Components = (function () {
             <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-[#ED835E] mb-6" data-i18n="footer.quickLinks"></h3>
             <ul class="space-y-4">
               <li><a href="${bp}index.html" class="text-white/70 hover:text-[#ED835E] transition-colors text-sm" data-i18n="nav.home"></a></li>
-              <li><a href="${bp}pages/categories.html" class="text-white/70 hover:text-[#ED835E] transition-colors text-sm" data-i18n="nav.categories"></a></li>
+              <li><a href="${bp}pages/eco-friendly-products.html" class="text-white/70 hover:text-[#ED835E] transition-colors text-sm" data-i18n="nav.cleaningSolutions"></a></li>
+              <li><a href="${bp}pages/categories.html" class="text-white/70 hover:text-[#ED835E] transition-colors text-sm" data-i18n="nav.products"></a></li>
               <li><a href="${bp}pages/about.html" class="text-white/70 hover:text-[#ED835E] transition-colors text-sm" data-i18n="nav.about"></a></li>
               <li><a href="${bp}pages/contact.html" class="text-white/70 hover:text-[#ED835E] transition-colors text-sm" data-i18n="nav.contact"></a></li>
               <li><a href="${bp}pages/privacy.html" class="text-white/70 hover:text-[#ED835E] transition-colors text-sm" data-i18n="footer.privacy"></a></li>

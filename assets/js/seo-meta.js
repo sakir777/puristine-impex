@@ -1,5 +1,5 @@
 /**
- * Puristine Impex — SEO, social preview, favicons, PWA meta
+ * Puristine Impex LLP — SEO, social preview, favicons, PWA meta
  */
 const SeoMeta = (function () {
   const SITE_NAME = 'Puristine Impex LLP';

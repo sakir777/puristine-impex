@@ -640,7 +640,7 @@ html[dir="rtl"] .mobile-menu-panel {
   }
 
   .hero-visual-stack {
-    transform: translate(-32%, 20%);
+    transform: translate(-70%, 20%);
   }
 
   .hero-visual-stack-inner {
@@ -708,6 +708,25 @@ html[dir="rtl"] .lang-active {
 }
 
 /* Why Global Buyers Choose Us */
+.why-us-showcase .why-us-card {
+  transition:
+    transform 0.5s var(--transition-smooth),
+    box-shadow 0.5s var(--transition-smooth),
+    border-color 0.35s ease;
+}
+
+.why-us-showcase .why-us-card:hover {
+  border-color: rgba(237, 131, 94, 0.3);
+}
+
+.why-us-showcase .why-us-card--accent {
+  border: 1px solid rgba(68, 116, 158, 1);
+}
+
+.why-us-showcase .why-us-card--accent:hover {
+  border-color: rgba(237, 131, 94, 0.45);
+}
+
 @media (min-width: 1024px) {
   .why-us-showcase .why-us-card-desc {
     display: -webkit-box;
@@ -722,6 +741,19 @@ html[dir="rtl"] .lang-active {
   box-sizing: border-box;
 }
 
+.fairewash-cards-grid {
+  width: 88%;
+  max-width: 88%;
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .fairewash-showcase .fairewash-intro-desc {
+    white-space: nowrap;
+    max-width: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .fairewash-showcase .fairewash-product-desc {
     display: -webkit-box;
@@ -730,17 +762,12 @@ html[dir="rtl"] .lang-active {
     overflow: hidden;
   }
 
-  .fairewash-showcase .fairewash-product-visual {
-    min-height: 140px;
-    padding: 1.25rem 1.25rem 0.75rem;
-  }
-
-  .fairewash-showcase .fairewash-product-image-wrap {
-    max-width: 160px;
+  .fairewash-showcase .fairewash-product-cover {
+    height: 334px;
   }
 
   .fairewash-showcase .fairewash-product-body {
-    padding: 1rem 1.25rem 1.25rem;
+    padding: 0.88rem 1.1rem 1.1rem;
   }
 }
 
@@ -835,17 +862,33 @@ html[dir="rtl"] .lang-active {
   animation: fairewash-shine-sweep 0.85s var(--transition-smooth);
 }
 
-.fairewash-card-index {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  z-index: 2;
-  font-family: 'Montserrat', 'Poppins', system-ui, sans-serif;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: var(--navy);
-  opacity: 0.35;
+.fairewash-product-cover {
+  position: relative;
+  width: 100%;
+  height: 264px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(68, 116, 158, 0.08) 0%, rgba(247, 211, 147, 0.18) 100%);
+}
+
+@media (min-width: 640px) {
+  .fairewash-product-cover {
+    height: 299px;
+  }
+}
+
+.fairewash-product-cover-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s var(--transition-smooth);
+}
+
+.fairewash-product-card:hover .fairewash-product-cover-image,
+.fairewash-product-card:focus-visible .fairewash-product-cover-image {
+  transform: scale(1.05);
 }
 
 .fairewash-card-cta {
@@ -869,36 +912,12 @@ html[dir="rtl"] .lang-active {
   transform: scale(1.04);
 }
 
-.fairewash-product-visual {
-  position: relative;
-  padding: 1.5rem 1.5rem 0.75rem;
-  min-height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(160deg, rgba(68, 116, 158, 0.08) 0%, rgba(247, 211, 147, 0.18) 55%, rgba(255, 255, 255, 0.4) 100%);
-  overflow: hidden;
-}
-
-.fairewash-product-visual--alt {
-  background: linear-gradient(160deg, rgba(247, 211, 147, 0.15) 0%, rgba(68, 116, 158, 0.1) 55%, rgba(255, 255, 255, 0.4) 100%);
-}
-
-.fairewash-product-image-wrap {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 200px;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .fairewash-product-card,
   .fairewash-product-card:nth-child(2) {
     animation: none;
   }
 
-  .fairewash-float-inner,
-  .fairewash-float-delay,
   .fairewash-orb,
   .fairewash-orb-delay {
     animation: none;
@@ -908,40 +927,18 @@ html[dir="rtl"] .lang-active {
   .fairewash-product-card:focus-visible {
     transform: translateY(-4px);
   }
-}
 
-.fairewash-product-image {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 16px 40px -12px rgba(7, 23, 57, 0.2);
-  transition: transform 0.6s var(--transition-smooth);
-}
-
-.fairewash-product-card:hover .fairewash-product-image,
-.fairewash-product-card:focus-visible .fairewash-product-image {
-  transform: scale(1.1) rotate(-2deg);
-}
-
-.fairewash-float-inner {
-  animation: float 6s ease-in-out infinite;
-}
-
-.fairewash-float-delay {
-  animation: float 7s ease-in-out infinite 1s;
+  .fairewash-product-card:hover .fairewash-product-cover-image,
+  .fairewash-product-card:focus-visible .fairewash-product-cover-image {
+    transform: none;
+  }
 }
 
 .fairewash-product-body {
-  padding: 1.5rem 1.75rem 1.75rem;
+  padding: 1.32rem 1.54rem 1.54rem;
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 1024px) {
-  .fairewash-product-image-wrap {
-    max-width: 200px;
-  }
 }
 
 /* Testimonials */
@@ -1007,4 +1004,137 @@ html[dir="rtl"] .lang-active {
 
 .testimonial-text-card:hover {
   border-color: rgba(237, 131, 94, 0.35);
+}
+
+/* About preview — welcome heading on one line */
+@media (min-width: 1024px) {
+  #about-preview .about-preview-title {
+    white-space: nowrap;
+    font-size: clamp(1.5rem, 2.4vw, 2.25rem);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* About page — story heading on one line */
+@media (min-width: 1024px) {
+  body[data-page="about"] .about-story-title {
+    white-space: nowrap;
+    font-size: clamp(1.5rem, 2.2vw, 1.875rem);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Global trust — keep long titles on one line */
+#trust .trust-item-title-nowrap {
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  #trust .trust-item-title-nowrap {
+    font-size: 0.9375rem;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Testimonials carousel */
+.testimonials-carousel {
+  position: relative;
+  padding-inline: 2.75rem;
+}
+
+@media (min-width: 640px) {
+  .testimonials-carousel {
+    padding-inline: 3.25rem;
+  }
+}
+
+.testimonials-carousel__viewport {
+  width: 100%;
+  overflow: hidden;
+  outline: none;
+  --carousel-gap: 1.25rem;
+  --slide-width: 100%;
+  /* Room for card-premium hover lift (translateY) so cards are not clipped */
+  padding-block: 0.75rem 1rem;
+  margin-block: -0.75rem -1rem;
+}
+
+.testimonials-carousel .testimonials-carousel__slide.is-clone {
+  pointer-events: none;
+  user-select: none;
+}
+
+.testimonials-carousel__track {
+  display: flex;
+  gap: 1.25rem;
+  transition: transform 0.55s var(--transition-smooth);
+  will-change: transform;
+}
+
+/* --slide-width is set on the viewport from JS (viewport inner width ÷ visible slides) */
+.testimonials-carousel__slide {
+  flex: 0 0 var(--slide-width);
+  width: var(--slide-width);
+  min-width: 0;
+  max-width: var(--slide-width);
+  box-sizing: border-box;
+}
+
+.testimonials-carousel__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -1.25rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(68, 116, 158, 0.15);
+  background: #fff;
+  color: var(--navy);
+  box-shadow: 0 4px 14px rgba(68, 116, 158, 0.12);
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.testimonials-carousel__btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.testimonials-carousel__btn:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.testimonials-carousel__btn--prev {
+  left: 0;
+}
+
+.testimonials-carousel__btn--next {
+  right: 0;
+}
+
+html[dir="rtl"] .testimonials-carousel__btn--prev {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .testimonials-carousel__btn--next {
+  right: auto;
+  left: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials-carousel__track {
+    transition: none;
+  }
 }

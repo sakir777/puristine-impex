@@ -1,5 +1,5 @@
 /**
- * Puristine Impex — Premium Animations
+ * Puristine Impex LLP — Premium Animations
  */
 const Animations = (function () {
   function initScrollReveal() {

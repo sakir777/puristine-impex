@@ -73,9 +73,8 @@
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-4 w-full min-w-0 h-full">
         <div class="hero-grid h-full min-w-0">
           <div class="hero-copy reveal min-w-0">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-gold/30 text-xs sm:text-sm font-medium text-gold mb-5 shadow-sm" data-i18n="hero.badge"></span>
             <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-[2.75rem] text-navy leading-[1.15] tracking-tight mb-4" data-i18n="hero.title"></h1>
-            <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mb-0 lg:mb-7" data-i18n="hero.subtitle"></p>
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mb-0 lg:mb-7 md:w-[90%]" data-i18n="hero.subtitle"></p>
           </div>
 
           <div class="hero-visual-wrap w-full">
@@ -97,7 +96,7 @@
           </div>
 
           <div class="hero-ctas reveal" data-delay="100">
-            <a href="pages/categories.html" class="btn-primary btn-hero-cta" data-i18n="hero.cta1"></a>
+            <!-- <a href="pages/categories.html" class="btn-primary btn-hero-cta" data-i18n="hero.cta1"></a> -->
             <a href="pages/contact.html" class="btn-secondary btn-hero-cta" data-i18n="hero.cta2"></a>
           </div>
         </div>
@@ -116,7 +115,7 @@
           <div class="reveal order-1 lg:order-2">
             <div class="line-gold mb-5"></div>
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-3" data-i18n="aboutPreview.label"></p>
-            <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-4 leading-tight" data-i18n="aboutPreview.title"></h2>
+            <h2 class="about-preview-title font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-4 leading-tight" data-i18n="aboutPreview.title"></h2>
             <p class="text-sm sm:text-base text-gray-600 leading-relaxed mb-3" data-i18n="aboutPreview.p1"></p>
             <p class="text-sm sm:text-base text-gray-600 leading-relaxed mb-6" data-i18n="aboutPreview.p2"></p>
             <a href="pages/about.html" class="btn-primary" data-i18n="aboutPreview.cta"></a>
@@ -126,29 +125,24 @@
     </section>
 
     <!-- FAIREWASH — Home Care Solutions -->
-    <section class="fairewash-showcase relative py-12 lg:py-14 overflow-hidden lg:max-h-[120vh]" id="fairewash" aria-label="Fairewash sustainable cleaning solutions">
+    <section class="fairewash-showcase relative py-12 lg:py-14 overflow-hidden" id="fairewash" aria-label="Fairewash sustainable cleaning solutions">
       <div class="absolute inset-0 fairewash-mesh pointer-events-none" aria-hidden="true"></div>
       <div class="absolute top-16 -left-20 w-80 h-80 rounded-full bg-[#F7D393]/25 blur-3xl fairewash-orb pointer-events-none" aria-hidden="true"></div>
       <div class="absolute bottom-10 right-0 w-96 h-96 rounded-full bg-[#44749E]/15 blur-3xl fairewash-orb-delay pointer-events-none" aria-hidden="true"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <header class="text-center max-w-3xl mx-auto mb-8 lg:mb-6 reveal">
+        <header class="text-center max-w-6xl mx-auto mb-8 lg:mb-6 reveal">
           <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-gold/40 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-gold mb-3 shadow-sm" data-i18n="fairewash.badge"></span>
           <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-2" data-i18n="fairewash.title"></h2>
           <p class="text-base sm:text-lg font-heading font-semibold text-gold mb-2" data-i18n="fairewash.subtitle"></p>
-          <p class="text-gray-600 leading-relaxed text-xs sm:text-sm max-w-2xl mx-auto" data-i18n="fairewash.description"></p>
+          <p class="fairewash-intro-desc text-gray-600 leading-relaxed text-xs sm:text-sm mx-auto" data-i18n="fairewash.description"></p>
         </header>
 
-        <div class="grid lg:grid-cols-2 gap-5 lg:gap-8">
+        <div class="fairewash-cards-grid grid lg:grid-cols-2 gap-5 lg:gap-8">
           <a href="pages/laundry-detergent-sheets.html" class="fairewash-product-card reveal group" data-delay="0" aria-label="Explore Laundry Detergent Sheets">
             <span class="fairewash-card-shine" aria-hidden="true"></span>
-            <div class="fairewash-product-visual">
-              <span class="fairewash-card-index">01</span>
-              <div class="fairewash-product-image-wrap">
-                <div class="fairewash-float-inner">
-                  <img src="assets/images/fairewash/laundry-sheets.svg" alt="" class="fairewash-product-image" width="320" height="320" loading="lazy">
-                </div>
-              </div>
+            <div class="fairewash-product-cover">
+              <img src="assets/images/fairewash/laundry-sheets.svg" alt="" class="fairewash-product-cover-image" width="1200" height="514" loading="lazy">
             </div>
             <div class="fairewash-product-body">
               <h3 class="font-heading font-bold text-lg sm:text-xl text-navy mb-2 group-hover:text-[#ED835E] transition-colors duration-300" data-i18n="fairewash.product1.name"></h3>
@@ -162,13 +156,8 @@
 
           <a href="pages/floor-cleaning-sheets.html" class="fairewash-product-card reveal group" data-delay="150" aria-label="Explore Floor Cleaning Sheets">
             <span class="fairewash-card-shine" aria-hidden="true"></span>
-            <div class="fairewash-product-visual fairewash-product-visual--alt">
-              <span class="fairewash-card-index">02</span>
-              <div class="fairewash-product-image-wrap">
-                <div class="fairewash-float-inner fairewash-float-delay">
-                  <img src="assets/images/fairewash/floor-sheets.svg" alt="" class="fairewash-product-image" width="320" height="320" loading="lazy">
-                </div>
-              </div>
+            <div class="fairewash-product-cover">
+              <img src="assets/images/fairewash/floor-sheets.svg" alt="" class="fairewash-product-cover-image" width="1200" height="514" loading="lazy">
             </div>
             <div class="fairewash-product-body">
               <h3 class="font-heading font-bold text-lg sm:text-xl text-navy mb-2 group-hover:text-[#ED835E] transition-colors duration-300" data-i18n="fairewash.product2.name"></h3>
@@ -212,7 +201,7 @@
           <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy" data-i18n="whyUs.title"></h2>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
-          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-white border border-gray-200/80 hover:border-gold/30" data-delay="0">
+          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-white border border-gray-200/80" data-delay="0">
             <div class="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
             </div>
@@ -240,9 +229,9 @@
             <h3 class="font-heading font-semibold text-base lg:text-lg text-navy mb-2" data-i18n="whyUs.items.portfolio.title"></h3>
             <p class="why-us-card-desc text-gray-600 text-xs sm:text-sm leading-relaxed" data-i18n="whyUs.items.portfolio.desc"></p>
           </article>
-          <article class="why-us-card reveal card-premium p-5 lg:p-6 rounded-2xl bg-navy text-white sm:col-span-2 lg:col-span-1" data-delay="200">
-            <div class="w-11 h-11 rounded-xl bg-gold/20 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <article class="why-us-card why-us-card--accent reveal card-premium p-5 lg:p-6 rounded-2xl bg-navy text-white sm:col-span-2 lg:col-span-1" data-delay="200">
+            <div class="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
             </div>
             <h3 class="font-heading font-semibold text-base lg:text-lg mb-2" data-i18n="whyUs.items.customer.title"></h3>
             <p class="why-us-card-desc text-white/70 text-xs sm:text-sm leading-relaxed" data-i18n="whyUs.items.customer.desc"></p>
@@ -252,16 +241,15 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="py-16 lg:py-24 overflow-hidden" id="testimonials" aria-label="Testimonials">
+    <section class="py-16 lg:py-24 overflow-x-hidden" id="testimonials" aria-label="Testimonials">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-12 reveal">
           <div class="line-gold mx-auto mb-4"></div>
           <p class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-gold mb-2" data-i18n="testimonials.label"></p>
-          <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-3" data-i18n="testimonials.title"></h2>
-          <p class="text-gray-600 text-sm sm:text-base" data-i18n="testimonials.subtitle"></p>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-navy" data-i18n="testimonials.title"></h2>
         </div>
 
-        <p class="text-center text-sm font-semibold text-navy mb-5 reveal" data-i18n="testimonials.videosTitle"></p>
+        <!-- <p class="text-center text-sm font-semibold text-navy mb-5 reveal" data-i18n="testimonials.videosTitle"></p>
         <div class="grid md:grid-cols-2 gap-5 lg:gap-6 max-w-4xl mx-auto mb-12 lg:mb-14">
           <article class="testimonial-video-card reveal" data-delay="0" data-testimonial-video="0">
             <div class="testimonial-video-media">
@@ -287,34 +275,43 @@
             </div>
             <p class="text-xs text-gray-500 text-center mt-3 px-2" data-i18n="testimonials.video2.caption"></p>
           </article>
-        </div>
+        </div> -->
 
-        <p class="text-center text-sm font-semibold text-navy mb-5 reveal" data-i18n="testimonials.textTitle"></p>
-        <div class="grid md:grid-cols-3 gap-5 lg:gap-6">
-          <article class="testimonial-text-card reveal card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80" data-delay="0">
-            <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
-            <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t1.quote"></blockquote>
-            <footer>
-              <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t1.name"></p>
-              <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t1.role"></p>
-            </footer>
-          </article>
-          <article class="testimonial-text-card reveal card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80" data-delay="60">
-            <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
-            <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t2.quote"></blockquote>
-            <footer>
-              <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t2.name"></p>
-              <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t2.role"></p>
-            </footer>
-          </article>
-          <article class="testimonial-text-card reveal card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80 md:col-span-1" data-delay="120">
-            <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
-            <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t3.quote"></blockquote>
-            <footer>
-              <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t3.name"></p>
-              <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t3.role"></p>
-            </footer>
-          </article>
+        <div class="testimonials-carousel reveal" data-testimonials-carousel>
+          <button type="button" class="testimonials-carousel__btn testimonials-carousel__btn--prev" data-carousel-prev aria-label="Previous testimonial">
+            <svg class="w-5 h-5 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="testimonials-carousel__viewport" data-carousel-viewport tabindex="0" aria-roledescription="carousel">
+            <div class="testimonials-carousel__track" data-carousel-track>
+              <article class="testimonial-text-card testimonials-carousel__slide card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80">
+                <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+                <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t1.quote"></blockquote>
+                <footer>
+                  <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t1.name"></p>
+                  <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t1.role"></p>
+                </footer>
+              </article>
+              <article class="testimonial-text-card testimonials-carousel__slide card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80">
+                <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+                <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t2.quote"></blockquote>
+                <footer>
+                  <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t2.name"></p>
+                  <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t2.role"></p>
+                </footer>
+              </article>
+              <article class="testimonial-text-card testimonials-carousel__slide card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80">
+                <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+                <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t3.quote"></blockquote>
+                <footer>
+                  <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t3.name"></p>
+                  <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t3.role"></p>
+                </footer>
+              </article>
+            </div>
+          </div>
+          <button type="button" class="testimonials-carousel__btn testimonials-carousel__btn--next" data-carousel-next aria-label="Next testimonial">
+            <svg class="w-5 h-5 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -361,7 +358,7 @@
             <div class="w-16 h-16 mx-auto rounded-2xl bg-white shadow-md flex items-center justify-center mb-4">
               <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             </div>
-            <h3 class="font-heading font-semibold text-navy mb-2" data-i18n="trust.items.partnerships.title"></h3>
+            <h3 class="font-heading font-semibold text-navy mb-2 trust-item-title-nowrap" data-i18n="trust.items.partnerships.title"></h3>
             <p class="text-xs text-gray-500" data-i18n="trust.items.partnerships.desc"></p>
           </div>
         </div>
