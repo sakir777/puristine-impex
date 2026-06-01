@@ -773,7 +773,7 @@ html[dir="rtl"] .lang-active {
 
 .fairewash-mesh {
   background:
-    radial-gradient(ellipse 70% 60% at 15% 20%, rgba(247, 211, 147, 0.35) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 60% at 15% 20%, rgba(168, 213, 186, 0.38) 0%, transparent 55%),
     radial-gradient(ellipse 60% 50% at 85% 80%, rgba(68, 116, 158, 0.12) 0%, transparent 50%),
     linear-gradient(180deg, #ffffff 0%, #f8f9fb 45%, #f1f5f9 100%);
 }
@@ -796,17 +796,17 @@ html[dir="rtl"] .lang-active {
   border-radius: 50%;
   background: conic-gradient(
     from 0deg,
-    rgba(247, 211, 147, 0.45) 0deg,
+    rgba(168, 213, 186, 0.48) 0deg,
     rgba(255, 255, 255, 0.05) 55deg,
     rgba(68, 116, 158, 0.28) 120deg,
-    rgba(237, 131, 94, 0.38) 180deg,
+    rgba(91, 168, 114, 0.4) 180deg,
     rgba(255, 255, 255, 0.06) 235deg,
-    rgba(247, 211, 147, 0.32) 300deg,
-    rgba(247, 211, 147, 0.45) 360deg
+    rgba(184, 224, 200, 0.35) 300deg,
+    rgba(168, 213, 186, 0.48) 360deg
   );
   filter: blur(56px);
   opacity: 0.75;
-  animation: fairewash-bg-spin 28s linear infinite;
+  animation: fairewash-bg-spin 7s linear infinite;
   will-change: transform;
 }
 
@@ -817,14 +817,14 @@ html[dir="rtl"] .lang-active {
     from 90deg,
     rgba(68, 116, 158, 0.22) 0deg,
     rgba(255, 255, 255, 0.04) 70deg,
-    rgba(237, 131, 94, 0.3) 150deg,
-    rgba(247, 211, 147, 0.25) 220deg,
+    rgba(91, 168, 114, 0.32) 150deg,
+    rgba(168, 213, 186, 0.28) 220deg,
     rgba(68, 116, 158, 0.2) 300deg,
     rgba(68, 116, 158, 0.22) 360deg
   );
   filter: blur(44px);
   opacity: 0.55;
-  animation: fairewash-bg-spin-reverse 40s linear infinite;
+  animation: fairewash-bg-spin-reverse 10s linear infinite;
 }
 
 @keyframes fairewash-bg-spin {
@@ -851,11 +851,11 @@ html[dir="rtl"] .lang-active {
 }
 
 .fairewash-orb {
-  animation: fairewash-orb-drift 8s ease-in-out infinite;
+  animation: fairewash-orb-drift 3s ease-in-out infinite;
 }
 
 .fairewash-orb-delay {
-  animation: fairewash-orb-drift 10s ease-in-out infinite 2s;
+  animation: fairewash-orb-drift 3.5s ease-in-out infinite 0.5s;
 }
 
 @keyframes fairewash-shine-sweep {
@@ -865,8 +865,8 @@ html[dir="rtl"] .lang-active {
 }
 
 @keyframes fairewash-card-pulse {
-  0%, 100% { box-shadow: 0 8px 32px -8px rgba(68, 116, 158, 0.15), 0 0 0 0 rgba(237, 131, 94, 0); }
-  50% { box-shadow: 0 12px 40px -8px rgba(68, 116, 158, 0.2), 0 0 0 1px rgba(237, 131, 94, 0.15); }
+  0%, 100% { box-shadow: 0 8px 32px -8px rgba(68, 116, 158, 0.15), 0 0 0 0 rgba(91, 168, 114, 0); }
+  50% { box-shadow: 0 12px 40px -8px rgba(68, 116, 158, 0.2), 0 0 0 1px rgba(91, 168, 114, 0.2); }
 }
 
 .fairewash-product-card {
@@ -935,7 +935,7 @@ html[dir="rtl"] .lang-active {
   height: 264px;
   flex-shrink: 0;
   overflow: hidden;
-  background: linear-gradient(160deg, rgba(68, 116, 158, 0.08) 0%, rgba(247, 211, 147, 0.18) 100%);
+  background: linear-gradient(160deg, rgba(68, 116, 158, 0.08) 0%, rgba(168, 213, 186, 0.22) 100%);
 }
 
 @media (min-width: 640px) {
