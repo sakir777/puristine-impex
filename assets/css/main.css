@@ -778,6 +778,73 @@ html[dir="rtl"] .lang-active {
     linear-gradient(180deg, #ffffff 0%, #f8f9fb 45%, #f1f5f9 100%);
 }
 
+/* Smooth rotating premium background */
+.fairewash-bg-rotate {
+  z-index: 0;
+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 45%, #000 25%, transparent 72%);
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 45%, #000 25%, transparent 72%);
+}
+
+.fairewash-bg-rotate__ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160vmax;
+  height: 160vmax;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    rgba(247, 211, 147, 0.45) 0deg,
+    rgba(255, 255, 255, 0.05) 55deg,
+    rgba(68, 116, 158, 0.28) 120deg,
+    rgba(237, 131, 94, 0.38) 180deg,
+    rgba(255, 255, 255, 0.06) 235deg,
+    rgba(247, 211, 147, 0.32) 300deg,
+    rgba(247, 211, 147, 0.45) 360deg
+  );
+  filter: blur(56px);
+  opacity: 0.75;
+  animation: fairewash-bg-spin 28s linear infinite;
+  will-change: transform;
+}
+
+.fairewash-bg-rotate__ring--reverse {
+  width: 120vmax;
+  height: 120vmax;
+  background: conic-gradient(
+    from 90deg,
+    rgba(68, 116, 158, 0.22) 0deg,
+    rgba(255, 255, 255, 0.04) 70deg,
+    rgba(237, 131, 94, 0.3) 150deg,
+    rgba(247, 211, 147, 0.25) 220deg,
+    rgba(68, 116, 158, 0.2) 300deg,
+    rgba(68, 116, 158, 0.22) 360deg
+  );
+  filter: blur(44px);
+  opacity: 0.55;
+  animation: fairewash-bg-spin-reverse 40s linear infinite;
+}
+
+@keyframes fairewash-bg-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes fairewash-bg-spin-reverse {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
 @keyframes fairewash-orb-drift {
   0%, 100% { transform: translate(0, 0) scale(1); }
   50% { transform: translate(24px, -16px) scale(1.08); }
@@ -913,6 +980,11 @@ html[dir="rtl"] .lang-active {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .fairewash-bg-rotate__ring,
+  .fairewash-bg-rotate__ring--reverse {
+    animation: none;
+  }
+
   .fairewash-product-card,
   .fairewash-product-card:nth-child(2) {
     animation: none;
