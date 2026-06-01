@@ -407,7 +407,6 @@ html[dir="rtl"] .card-premium:hover .card-arrow {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-top: 1px solid rgba(228, 232, 238, 0.9);
-  transform: translate3d(100%, 0, 0);
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -415,7 +414,11 @@ html[dir="rtl"] .card-premium:hover .card-arrow {
     visibility 0.45s var(--transition-smooth);
 }
 
-html[dir="rtl"] .mobile-menu-panel {
+.mobile-menu-panel:not(.is-open) {
+  transform: translate3d(100%, 0, 0);
+}
+
+html[dir="rtl"] .mobile-menu-panel:not(.is-open) {
   transform: translate3d(-100%, 0, 0);
 }
 
@@ -424,6 +427,7 @@ html[dir="rtl"] .mobile-menu-panel {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+  z-index: 10;
 }
 
 .mobile-menu-open {
