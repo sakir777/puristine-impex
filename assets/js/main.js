@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     page: pageFile.replace('.html', '')
   });
 
+  if (typeof WhatsApp !== 'undefined') {
+    WhatsApp.init();
+  }
+
   await I18n.init();
   Animations.init();
 

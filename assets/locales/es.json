@@ -634,6 +634,11 @@
     "sending": "Enviando...",
     "sent": "Mensaje Enviado ✓"
   },
+  "whatsapp": {
+    "tooltip": "Chatea con nosotros",
+    "bubble": "¿Necesita ayuda? Chatea con nosotros",
+    "ariaLabel": "Chatea con nosotros en WhatsApp"
+  },
   "testimonials": {
     "label": "Testimonios",
     "title": "Lo Que Dicen Nuestros Clientes",

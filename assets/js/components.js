@@ -176,11 +176,48 @@ const Components = (function () {
     });
   }
 
+  function renderWhatsApp() {
+    const url =
+      typeof WhatsApp !== 'undefined' && WhatsApp.CHAT_URL
+        ? WhatsApp.CHAT_URL
+        : 'https://wa.me/91XXXXXXXXXX?text=Hello%20Puristine%20Impex,%20I%20want%20to%20know%20more%20about%20your%20products';
+
+    return `
+    <aside
+      id="whatsapp-widget"
+      class="whatsapp-widget"
+      aria-hidden="true"
+      aria-label="WhatsApp support"
+    >
+      <div class="whatsapp-widget__bubble" role="status">
+        <p class="whatsapp-widget__bubble-text" data-i18n="whatsapp.bubble"></p>
+      </div>
+      <a
+        href="${url}"
+        class="whatsapp-widget__btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp"
+        data-i18n="whatsapp.ariaLabel"
+        data-i18n-attr="aria-label"
+      >
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <span class="whatsapp-widget__tooltip" data-i18n="whatsapp.tooltip"></span>
+      </a>
+    </aside>`;
+  }
+
+  function mountWhatsApp() {
+    if (document.getElementById('whatsapp-widget')) return;
+    document.body.insertAdjacentHTML('beforeend', renderWhatsApp());
+  }
+
   function init(options = {}) {
     mount('#site-header', renderNavbar(options));
     mount('#site-footer', renderFooter());
+    mountWhatsApp();
     initMobileMenu();
   }
 
-  return { init, renderNavbar, renderFooter, basePath };
+  return { init, renderNavbar, renderFooter, renderWhatsApp, basePath };
 })();

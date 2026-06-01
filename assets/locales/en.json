@@ -381,5 +381,10 @@
   "contact": {
     "sending": "Sending...",
     "sent": "Message Sent ✓"
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us",
+    "bubble": "Need assistance? Chat with us",
+    "ariaLabel": "Chat with us on WhatsApp"
   }
 }
