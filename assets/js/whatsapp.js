@@ -2,7 +2,7 @@
  * Puristine Impex LLP — WhatsApp floating chat widget
  */
 const WhatsApp = (function () {
-  const PHONE = '917387537907';
+  const PHONE = '919326477055';
   const PREFILLED_TEXT =
     'Hello Puristine Impex, I want to know more about your products';
   const CHAT_URL = `https://wa.me/${PHONE}?text=${encodeURIComponent(PREFILLED_TEXT)}`;

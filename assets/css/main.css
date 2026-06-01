@@ -462,6 +462,17 @@ html[dir="rtl"] .mobile-menu-panel {
   grid-area: copy;
 }
 
+.hero-title {
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .hero-title {
+    white-space: normal;
+  }
+}
+
 .hero-visual-wrap {
   grid-area: visual;
 }
