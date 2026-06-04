@@ -451,7 +451,7 @@ html[dir="rtl"] .mobile-menu-panel:not(.is-open) {
   aspect-ratio: 4/3;
 }
 
-/* Hero layout — mobile: copy → image → buttons; desktop: copy+buttons | image */
+/* Hero layout — mobile: copy → image → CTA; desktop: copy + CTA | image */
 .hero-grid {
   display: grid;
   gap: 1.25rem;
@@ -514,7 +514,7 @@ html[dir="rtl"] .mobile-menu-panel:not(.is-open) {
     grid-template-areas:
       "copy visual"
       "ctas visual";
-    gap: 2.5rem;
+    gap: 1rem 2.5rem;
     align-items: center;
   }
 
@@ -524,7 +524,7 @@ html[dir="rtl"] .mobile-menu-panel:not(.is-open) {
 
   .hero-ctas {
     align-self: start;
-    margin-top: -0.5rem;
+    margin-top: -0.25rem;
     width: auto;
     flex-wrap: wrap;
     gap: 1rem;
@@ -616,12 +616,12 @@ html[dir="rtl"] .mobile-menu-panel:not(.is-open) {
     height: 16rem;
   }
 
-  .hero-ctas {
-    padding-top: 0.25rem;
-  }
-
   .hero-visual-stack {
     transform: translate(-26%, 17%);
+  }
+
+  .hero-ctas {
+    padding-top: 0.25rem;
   }
 
   /* Float animation rotates the badge and causes horizontal overflow on mobile */
