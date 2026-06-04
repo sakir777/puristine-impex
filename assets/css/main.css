@@ -754,6 +754,7 @@ html[dir="rtl"] .lang-active {
 /* Fairewash hero products showcase */
 .fairewash-showcase {
   box-sizing: border-box;
+  contain: layout style;
 }
 
 .fairewash-cards-grid {
@@ -778,7 +779,7 @@ html[dir="rtl"] .lang-active {
   }
 
   .fairewash-showcase .fairewash-product-cover {
-    height: 334px;
+    height: 301px;
   }
 
   .fairewash-showcase .fairewash-product-body {
@@ -788,100 +789,16 @@ html[dir="rtl"] .lang-active {
 
 .fairewash-mesh {
   background:
-    radial-gradient(ellipse 70% 60% at 15% 20%, rgba(168, 213, 186, 0.38) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 50% at 85% 80%, rgba(68, 116, 158, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 55% 45% at 12% 22%, rgba(168, 213, 186, 0.42) 0%, transparent 58%),
+    radial-gradient(ellipse 48% 42% at 88% 78%, rgba(68, 116, 158, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 55% at 50% 48%, rgba(184, 224, 200, 0.14) 0%, transparent 62%),
     linear-gradient(180deg, #ffffff 0%, #f8f9fb 45%, #f1f5f9 100%);
-}
-
-/* Smooth rotating premium background */
-.fairewash-bg-rotate {
-  z-index: 0;
-  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 45%, #000 25%, transparent 72%);
-  mask-image: radial-gradient(ellipse 90% 80% at 50% 45%, #000 25%, transparent 72%);
-}
-
-.fairewash-bg-rotate__ring {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 160vmax;
-  height: 160vmax;
-  transform: translate(-50%, -50%);
-  transform-origin: center center;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    rgba(168, 213, 186, 0.48) 0deg,
-    rgba(255, 255, 255, 0.05) 55deg,
-    rgba(68, 116, 158, 0.28) 120deg,
-    rgba(91, 168, 114, 0.4) 180deg,
-    rgba(255, 255, 255, 0.06) 235deg,
-    rgba(184, 224, 200, 0.35) 300deg,
-    rgba(168, 213, 186, 0.48) 360deg
-  );
-  filter: blur(56px);
-  opacity: 0.75;
-  animation: fairewash-bg-spin 7s linear infinite;
-  will-change: transform;
-}
-
-.fairewash-bg-rotate__ring--reverse {
-  width: 120vmax;
-  height: 120vmax;
-  background: conic-gradient(
-    from 90deg,
-    rgba(68, 116, 158, 0.22) 0deg,
-    rgba(255, 255, 255, 0.04) 70deg,
-    rgba(91, 168, 114, 0.32) 150deg,
-    rgba(168, 213, 186, 0.28) 220deg,
-    rgba(68, 116, 158, 0.2) 300deg,
-    rgba(68, 116, 158, 0.22) 360deg
-  );
-  filter: blur(44px);
-  opacity: 0.55;
-  animation: fairewash-bg-spin-reverse 10s linear infinite;
-}
-
-@keyframes fairewash-bg-spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes fairewash-bg-spin-reverse {
-  from {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-}
-
-@keyframes fairewash-orb-drift {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(24px, -16px) scale(1.08); }
-}
-
-.fairewash-orb {
-  animation: fairewash-orb-drift 3s ease-in-out infinite;
-}
-
-.fairewash-orb-delay {
-  animation: fairewash-orb-drift 3.5s ease-in-out infinite 0.5s;
 }
 
 @keyframes fairewash-shine-sweep {
   0% { transform: translateX(-120%) skewX(-18deg); opacity: 0; }
   35% { opacity: 0.65; }
   100% { transform: translateX(220%) skewX(-18deg); opacity: 0; }
-}
-
-@keyframes fairewash-card-pulse {
-  0%, 100% { box-shadow: 0 8px 32px -8px rgba(68, 116, 158, 0.15), 0 0 0 0 rgba(91, 168, 114, 0); }
-  50% { box-shadow: 0 12px 40px -8px rgba(68, 116, 158, 0.2), 0 0 0 1px rgba(91, 168, 114, 0.2); }
 }
 
 .fairewash-product-card {
@@ -899,19 +816,13 @@ html[dir="rtl"] .lang-active {
     transform 0.55s var(--transition-smooth),
     box-shadow 0.55s var(--transition-smooth),
     border-color 0.55s var(--transition-smooth);
-  animation: fairewash-card-pulse 4s ease-in-out infinite;
   cursor: pointer;
-}
-
-.fairewash-product-card:nth-child(2) {
-  animation-delay: 2s;
 }
 
 .fairewash-product-card:hover,
 .fairewash-product-card:focus-visible {
   transform: translateY(-14px) scale(1.02);
   box-shadow: 0 32px 64px -24px rgba(68, 116, 158, 0.35);
-  animation: none;
   outline: none;
 }
 
@@ -947,7 +858,7 @@ html[dir="rtl"] .lang-active {
 .fairewash-product-cover {
   position: relative;
   width: 100%;
-  height: 264px;
+  height: 238px;
   flex-shrink: 0;
   overflow: hidden;
   background: linear-gradient(160deg, rgba(68, 116, 158, 0.08) 0%, rgba(168, 213, 186, 0.22) 100%);
@@ -955,7 +866,7 @@ html[dir="rtl"] .lang-active {
 
 @media (min-width: 640px) {
   .fairewash-product-cover {
-    height: 299px;
+    height: 269px;
   }
 }
 
@@ -995,21 +906,6 @@ html[dir="rtl"] .lang-active {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fairewash-bg-rotate__ring,
-  .fairewash-bg-rotate__ring--reverse {
-    animation: none;
-  }
-
-  .fairewash-product-card,
-  .fairewash-product-card:nth-child(2) {
-    animation: none;
-  }
-
-  .fairewash-orb,
-  .fairewash-orb-delay {
-    animation: none;
-  }
-
   .fairewash-product-card:hover,
   .fairewash-product-card:focus-visible {
     transform: translateY(-4px);
@@ -1089,8 +985,43 @@ html[dir="rtl"] .lang-active {
   font-style: normal;
 }
 
-.testimonial-text-card:hover {
+.testimonials-carousel .testimonial-text-card.card-premium {
+  position: relative;
+  z-index: 0;
+  border-radius: 1rem;
+  box-shadow: none;
+  filter: none;
+  transition:
+    transform 0.35s var(--transition-smooth),
+    border-color 0.35s ease;
+}
+
+.testimonials-carousel .testimonial-text-card.card-premium:hover,
+.testimonials-carousel .testimonial-text-card.card-premium:focus-within {
+  z-index: 2;
+  transform: translateY(-6px);
   border-color: rgba(237, 131, 94, 0.35);
+  box-shadow: none;
+  filter: none;
+}
+
+/* Inner page hero (Products, About, Contact) — compact vertical spacing */
+.page-hero {
+  padding-block: 2.75rem;
+}
+
+@media (min-width: 1024px) {
+  .page-hero {
+    padding-block: 3.5rem;
+  }
+}
+
+.page-hero .line-gold {
+  margin-bottom: 1rem;
+}
+
+.page-hero h1 {
+  margin-bottom: 1rem;
 }
 
 /* About preview — welcome heading on one line */
@@ -1126,29 +1057,38 @@ html[dir="rtl"] .lang-active {
 /* Testimonials carousel */
 .testimonials-carousel {
   position: relative;
-  padding-inline: 2.75rem;
+}
+
+.testimonials-carousel__frame {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.625rem;
 }
 
 @media (min-width: 640px) {
-  .testimonials-carousel {
-    padding-inline: 3.25rem;
+  .testimonials-carousel__frame {
+    gap: 1rem;
   }
 }
 
 .testimonials-carousel__viewport {
   width: 100%;
+  min-width: 0;
   overflow: hidden;
   outline: none;
   --carousel-gap: 1.25rem;
   --slide-width: 100%;
-  /* Room for card-premium hover lift (translateY) so cards are not clipped */
-  padding-block: 0.75rem 1rem;
-  margin-block: -0.75rem -1rem;
+  padding-block: 0.5rem;
 }
 
+/* Clones must stay interactive — pointer-events:none broke hover after carousel scroll */
 .testimonials-carousel .testimonials-carousel__slide.is-clone {
-  pointer-events: none;
   user-select: none;
+}
+
+.testimonials-carousel .card-premium:hover {
+  box-shadow: none;
 }
 
 .testimonials-carousel__track {
@@ -1165,18 +1105,18 @@ html[dir="rtl"] .lang-active {
   min-width: 0;
   max-width: var(--slide-width);
   box-sizing: border-box;
+  overflow: visible;
 }
 
 .testimonials-carousel__btn {
-  position: absolute;
-  top: 50%;
+  position: relative;
   z-index: 2;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  margin-top: -1.25rem;
   border-radius: 9999px;
   border: 1px solid rgba(68, 116, 158, 0.15);
   background: #fff;
@@ -1202,22 +1142,12 @@ html[dir="rtl"] .lang-active {
   outline-offset: 2px;
 }
 
-.testimonials-carousel__btn--prev {
-  left: 0;
+html[dir="rtl"] .testimonials-carousel__frame {
+  direction: ltr;
 }
 
-.testimonials-carousel__btn--next {
-  right: 0;
-}
-
-html[dir="rtl"] .testimonials-carousel__btn--prev {
-  left: auto;
-  right: 0;
-}
-
-html[dir="rtl"] .testimonials-carousel__btn--next {
-  right: auto;
-  left: 0;
+html[dir="rtl"] .testimonials-carousel__viewport {
+  direction: rtl;
 }
 
 @media (prefers-reduced-motion: reduce) {

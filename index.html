@@ -128,12 +128,6 @@
     <!-- FAIREWASH — Home Care Solutions -->
     <section class="fairewash-showcase relative py-12 lg:py-14 overflow-hidden" id="fairewash" aria-label="Fairewash sustainable cleaning solutions">
       <div class="absolute inset-0 fairewash-mesh pointer-events-none" aria-hidden="true"></div>
-      <div class="fairewash-bg-rotate absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        <div class="fairewash-bg-rotate__ring"></div>
-        <div class="fairewash-bg-rotate__ring fairewash-bg-rotate__ring--reverse"></div>
-      </div>
-      <div class="absolute top-16 -left-20 w-80 h-80 rounded-full bg-[#A8D5BA]/35 blur-3xl fairewash-orb pointer-events-none" aria-hidden="true"></div>
-      <div class="absolute bottom-10 right-0 w-96 h-96 rounded-full bg-[#44749E]/15 blur-3xl fairewash-orb-delay pointer-events-none" aria-hidden="true"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <header class="text-center max-w-6xl mx-auto mb-8 lg:mb-6 reveal">
@@ -246,7 +240,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="py-16 lg:py-24 overflow-x-hidden" id="testimonials" aria-label="Testimonials">
+    <section class="py-16 lg:py-24" id="testimonials" aria-label="Testimonials">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-12 reveal">
           <div class="line-gold mx-auto mb-4"></div>
@@ -283,11 +277,12 @@
         </div> -->
 
         <div class="testimonials-carousel reveal" data-testimonials-carousel>
-          <button type="button" class="testimonials-carousel__btn testimonials-carousel__btn--prev" data-carousel-prev aria-label="Previous testimonial">
-            <svg class="w-5 h-5 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-          </button>
-          <div class="testimonials-carousel__viewport" data-carousel-viewport tabindex="0" aria-roledescription="carousel">
-            <div class="testimonials-carousel__track" data-carousel-track>
+          <div class="testimonials-carousel__frame">
+            <button type="button" class="testimonials-carousel__btn testimonials-carousel__btn--prev" data-carousel-prev aria-label="Previous testimonial">
+              <svg class="w-5 h-5 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <div class="testimonials-carousel__viewport" data-carousel-viewport tabindex="0" aria-roledescription="carousel">
+              <div class="testimonials-carousel__track" data-carousel-track>
               <article class="testimonial-text-card testimonials-carousel__slide card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80">
                 <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
                 <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t1.quote"></blockquote>
@@ -312,11 +307,36 @@
                   <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t3.role"></p>
                 </footer>
               </article>
+              <article class="testimonial-text-card testimonials-carousel__slide card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80">
+                <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+                <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t4.quote"></blockquote>
+                <footer>
+                  <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t4.name"></p>
+                  <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t4.role"></p>
+                </footer>
+              </article>
+              <article class="testimonial-text-card testimonials-carousel__slide card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80">
+                <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+                <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t5.quote"></blockquote>
+                <footer>
+                  <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t5.name"></p>
+                  <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t5.role"></p>
+                </footer>
+              </article>
+              <article class="testimonial-text-card testimonials-carousel__slide card-premium p-6 lg:p-7 rounded-2xl bg-white border border-gray-200/80">
+                <svg class="w-8 h-8 text-gold/80 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.29l.806 1.547C6.657 7.89 4.5 10.42 4.5 13.011c0 1.637.674 2.983 1.833 4.139L4.583 17.321zm12 0c-1.03-1.094-1.583-2.321-1.583-4.31 0-3.5 2.457-6.637 6.03-8.29l.806 1.547C18.657 7.89 16.5 10.42 16.5 13.011c0 1.637.674 2.983 1.833 4.139l-1.75 1.171z"/></svg>
+                <blockquote class="text-gray-600 text-sm leading-relaxed mb-5" data-i18n="testimonials.t6.quote"></blockquote>
+                <footer>
+                  <p class="font-heading font-semibold text-navy text-sm" data-i18n="testimonials.t6.name"></p>
+                  <p class="text-xs text-gray-500 mt-1" data-i18n="testimonials.t6.role"></p>
+                </footer>
+              </article>
+              </div>
             </div>
+            <button type="button" class="testimonials-carousel__btn testimonials-carousel__btn--next" data-carousel-next aria-label="Next testimonial">
+              <svg class="w-5 h-5 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
           </div>
-          <button type="button" class="testimonials-carousel__btn testimonials-carousel__btn--next" data-carousel-next aria-label="Next testimonial">
-            <svg class="w-5 h-5 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </button>
         </div>
       </div>
     </section>

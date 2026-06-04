@@ -108,6 +108,7 @@ const HomePage = {
     const markClone = (node) => {
       node.classList.add('is-clone');
       node.setAttribute('aria-hidden', 'true');
+      node.setAttribute('tabindex', '-1');
       node.removeAttribute('data-i18n');
       node.querySelectorAll('[data-i18n]').forEach((el) => el.removeAttribute('data-i18n'));
     };
@@ -134,8 +135,11 @@ const HomePage = {
     let stepIndex = 0;
     let autoplayId = null;
     let isAnimating = false;
-    const autoplayMs = 5000;
+    const autoplayMs = 2500;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const section = document.getElementById('testimonials');
+    let pausedByUser = false;
+    let sectionInView = false;
 
     const getGap = () => {
       const styles = getComputedStyle(track);
@@ -143,7 +147,12 @@ const HomePage = {
       return Number.isFinite(gap) ? gap : 0;
     };
 
-    const getSlidesVisible = () => (window.innerWidth >= 768 ? 3 : 1);
+    const getSlidesVisible = () => {
+      if (window.innerWidth < 768) return 1;
+      if (realCount <= 3) return 1;
+      if (realCount <= 5) return 2;
+      return 3;
+    };
 
     const getSlideWidth = () => {
       const gap = getGap();
@@ -198,8 +207,18 @@ const HomePage = {
 
     const startAutoplay = () => {
       stopAutoplay();
-      if (reducedMotion || realCount < 2) return;
+      if (reducedMotion || realCount < 2 || pausedByUser || !sectionInView) return;
       autoplayId = window.setInterval(next, autoplayMs);
+    };
+
+    const pauseForUser = () => {
+      pausedByUser = true;
+      stopAutoplay();
+    };
+
+    const resumeForUser = () => {
+      pausedByUser = false;
+      startAutoplay();
     };
 
     const onResize = () => {
@@ -225,11 +244,41 @@ const HomePage = {
       startAutoplay();
     });
 
-    root.addEventListener('mouseenter', stopAutoplay);
-    root.addEventListener('mouseleave', startAutoplay);
-    root.addEventListener('focusin', stopAutoplay);
-    root.addEventListener('focusout', (e) => {
-      if (!root.contains(e.relatedTarget)) startAutoplay();
+    const pauseTargets = [root.querySelector('.testimonials-carousel__frame') || root, section].filter(Boolean);
+    pauseTargets.forEach((el) => {
+      el.addEventListener('mouseenter', pauseForUser);
+      el.addEventListener('mouseleave', resumeForUser);
+      el.addEventListener('focusin', pauseForUser);
+      el.addEventListener('focusout', (e) => {
+        if (!el.contains(e.relatedTarget)) resumeForUser();
+      });
+      let touchResumeTimer;
+      el.addEventListener('touchstart', () => {
+        pauseForUser();
+        clearTimeout(touchResumeTimer);
+      }, { passive: true });
+      el.addEventListener('touchend', () => {
+        touchResumeTimer = window.setTimeout(resumeForUser, 4000);
+      }, { passive: true });
+    });
+
+    if (section && 'IntersectionObserver' in window) {
+      const sectionObserver = new IntersectionObserver(
+        ([entry]) => {
+          sectionInView = entry.isIntersecting;
+          if (sectionInView) startAutoplay();
+          else stopAutoplay();
+        },
+        { threshold: 0.15 }
+      );
+      sectionObserver.observe(section);
+    } else {
+      sectionInView = true;
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stopAutoplay();
+      else startAutoplay();
     });
 
     viewport?.addEventListener('keydown', (e) => {
@@ -261,7 +310,10 @@ const HomePage = {
     window.addEventListener('resize', onResize);
     syncSlideMetrics();
     scrollToStep(0, false);
-    startAutoplay();
+    if (!('IntersectionObserver' in window) || !section) {
+      sectionInView = true;
+      startAutoplay();
+    }
     root.dataset.carouselReady = 'true';
     this.testimonialCarousel = { stopAutoplay };
   },

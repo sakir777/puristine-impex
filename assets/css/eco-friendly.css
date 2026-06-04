@@ -118,15 +118,33 @@
   border-left: 4px solid var(--eco-primary);
 }
 
-.eco-product-block-highlights-row {
-  display: flex;
-  flex-direction: column;
+.eco-product-block-body {
+  display: grid;
   gap: 1rem;
-  margin-bottom: 0;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "highlights"
+    "media"
+    "cta";
 }
 
 .eco-product-block-highlights-copy {
+  grid-area: highlights;
   min-width: 0;
+}
+
+.eco-product-block-media {
+  grid-area: media;
+  justify-self: center;
+}
+
+.eco-product-block-cta {
+  grid-area: cta;
+  display: block;
+  width: 100%;
+  justify-self: stretch;
+  text-align: center;
+  margin-top: 0;
 }
 
 .eco-product-block-list {
@@ -151,6 +169,9 @@
 .eco-product-block-media {
   position: relative;
   display: block;
+  flex-shrink: 0;
+  width: 242px;
+  height: 242px;
   border-radius: 0.75rem;
   overflow: hidden;
   background: linear-gradient(160deg, rgba(68, 116, 158, 0.08) 0%, rgba(247, 211, 147, 0.15) 100%);
@@ -218,9 +239,8 @@
 
 .eco-product-block-image {
   display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 10;
+  width: 242px;
+  height: 242px;
   object-fit: cover;
   object-position: center;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -232,27 +252,31 @@
 }
 
 @media (min-width: 640px) {
-  .eco-product-block-highlights-row {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1rem;
+  .eco-product-block-body {
+    grid-template-columns: 1fr 242px;
+    grid-template-rows: auto auto;
+    column-gap: 1.25rem;
+    row-gap: 1rem;
+    grid-template-areas:
+      "highlights media"
+      "cta media";
   }
 
   .eco-product-block-highlights-copy {
-    flex: 1 1 54%;
     padding-top: 0.125rem;
   }
 
   .eco-product-block-media {
-    flex: 1 1 46%;
-    min-width: 0;
-    align-self: stretch;
+    justify-self: end;
+    align-self: start;
   }
 
-  .eco-product-block-image {
-    height: 100%;
-    min-height: 10.5rem;
-    aspect-ratio: auto;
+  .eco-product-block-cta {
+    display: inline-block;
+    width: auto;
+    justify-self: start;
+    text-align: left;
+    margin-top: 0;
   }
 }
 
