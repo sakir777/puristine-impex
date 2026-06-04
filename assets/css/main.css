@@ -639,7 +639,7 @@ html[dir="rtl"] .mobile-menu-panel:not(.is-open) {
   }
 
   .hero-visual {
-    max-width: 28rem;
+    max-width: 26rem;
     height: min(58vh, 520px);
     margin-left: auto;
     margin-right: 0;
@@ -655,7 +655,7 @@ html[dir="rtl"] .mobile-menu-panel:not(.is-open) {
   }
 
   .hero-visual-stack {
-    transform: translate(-70%, 20%);
+    transform: translate(-68%, 20%);
   }
 
   .hero-visual-stack-inner {
