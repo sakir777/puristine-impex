@@ -14,8 +14,8 @@ const IMG = (function () {
       (e) => {
         const el = e.target;
         if (el.tagName !== 'IMG' || el.dataset.fallbackApplied) return;
-        const fallback = path('categories/spices.svg');
-        if (el.src && !el.src.endsWith('spices.svg')) {
+        const fallback = path('categories/spices.jpg');
+        if (el.src && !el.src.endsWith('spices.jpg')) {
           el.dataset.fallbackApplied = '1';
           el.src = fallback;
         }

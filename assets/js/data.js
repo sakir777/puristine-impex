@@ -7,10 +7,10 @@ const PURISTINE_DATA = {
   homepageCategories: ['pulses', 'instant-mixes', 'spices'],
 
   categories: [
-    { id: 'instant-mixes', slug: 'instant-mixes', image: 'categories/instant-mixes.svg', icon: '⚡' },
-    { id: 'spices', slug: 'spices', image: 'categories/spices.svg', icon: '🌶️' },
+    { id: 'instant-mixes', slug: 'instant-mixes', image: 'categories/instant-mixes.jpg', icon: '⚡' },
+    { id: 'spices', slug: 'spices', image: 'categories/spices.jpg', icon: '🌶️' },
     { id: 'disposable-products', slug: 'disposable-products', image: 'categories/disposable-products.svg', icon: '📦' },
-    { id: 'pulses', slug: 'pulses', image: 'categories/pulses.svg', icon: '🫘' },
+    { id: 'pulses', slug: 'pulses', image: 'categories/pulses.jpg', icon: '🫘' },
     { id: 'mouth-fresheners', slug: 'mouth-fresheners', image: 'categories/mouth-fresheners.svg', icon: '✨' },
     { id: 'jaggery', slug: 'jaggery', image: 'categories/syrups.svg', icon: '🍯' },
     { id: 'flours', slug: 'flours', image: 'categories/flours.svg', icon: '🌾' },
@@ -22,7 +22,7 @@ const PURISTINE_DATA = {
 
   featuredProducts: [
     { id: 'turmeric-powder', category: 'spices', image: 'products/turmeric.svg' },
-    { id: 'toor-dal', category: 'pulses', image: 'categories/pulses.svg' },
+    { id: 'toor-dal', category: 'pulses', image: 'categories/pulses.jpg' },
     { id: 'wheat-flour', category: 'flours', image: 'categories/flours.svg' },
     { id: 'green-chutney', category: 'sauces', image: 'categories/sauces.svg' },
     { id: 'mango-pickle', category: 'pickles', image: 'categories/pickles.svg' },
@@ -32,17 +32,17 @@ const PURISTINE_DATA = {
   categoryProducts: {
     spices: [
       { id: 'turmeric', image: 'products/turmeric.svg' },
-      { id: 'cumin', image: 'categories/spices.svg' },
-      { id: 'coriander', image: 'categories/spices.svg' },
-      { id: 'red-chilli', image: 'categories/spices.svg' },
-      { id: 'garam-masala', image: 'categories/spices.svg' },
-      { id: 'cardamom', image: 'categories/spices.svg' }
+      { id: 'cumin', image: 'categories/spices.jpg' },
+      { id: 'coriander', image: 'categories/spices.jpg' },
+      { id: 'red-chilli', image: 'categories/spices.jpg' },
+      { id: 'garam-masala', image: 'categories/spices.jpg' },
+      { id: 'cardamom', image: 'categories/spices.jpg' }
     ],
     pulses: [
-      { id: 'toor-dal', image: 'categories/pulses.svg' },
-      { id: 'moong-dal', image: 'categories/pulses.svg' },
-      { id: 'chana-dal', image: 'categories/pulses.svg' },
-      { id: 'urad-dal', image: 'categories/pulses.svg' }
+      { id: 'toor-dal', image: 'categories/pulses.jpg' },
+      { id: 'moong-dal', image: 'categories/pulses.jpg' },
+      { id: 'chana-dal', image: 'categories/pulses.jpg' },
+      { id: 'urad-dal', image: 'categories/pulses.jpg' }
     ],
     flours: [
       { id: 'wheat-flour', image: 'categories/flours.svg' },
