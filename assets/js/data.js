@@ -9,15 +9,15 @@ const PURISTINE_DATA = {
   categories: [
     { id: 'instant-mixes', slug: 'instant-mixes', image: 'categories/instant-mixes.jpg', icon: '⚡' },
     { id: 'spices', slug: 'spices', image: 'categories/spices.jpg', icon: '🌶️' },
-    { id: 'disposable-products', slug: 'disposable-products', image: 'categories/disposable-products.svg', icon: '📦' },
+    { id: 'disposable-products', slug: 'disposable-products', image: 'categories/disposable-plates.jpg', icon: '📦' },
     { id: 'pulses', slug: 'pulses', image: 'categories/pulses.jpg', icon: '🫘' },
-    { id: 'mouth-fresheners', slug: 'mouth-fresheners', image: 'categories/mouth-fresheners.svg', icon: '✨' },
-    { id: 'jaggery', slug: 'jaggery', image: 'categories/syrups.svg', icon: '🍯' },
-    { id: 'flours', slug: 'flours', image: 'categories/flours.svg', icon: '🌾' },
-    { id: 'syrups', slug: 'syrups', image: 'categories/syrups.svg', icon: '🍶' },
-    { id: 'pickles', slug: 'pickles', image: 'categories/pickles.svg', icon: '🥒' },
-    { id: 'sauces', slug: 'sauces', image: 'categories/sauces.svg', icon: '🍯' },
-    { id: 'namkeens-sweets', slug: 'namkeens-sweets', image: 'categories/namkeens-sweets.svg', icon: '🍬' }
+    { id: 'mouth-fresheners', slug: 'mouth-fresheners', image: 'categories/mouth-fresheners.jpg', icon: '✨' },
+    { id: 'jaggery', slug: 'jaggery', image: 'categories/syrups.jpg', icon: '🍯' },
+    { id: 'flours', slug: 'flours', image: 'categories/flours.jpg', icon: '🌾' },
+    { id: 'syrups', slug: 'syrups', image: 'categories/syrups.jpg', icon: '🍶' },
+    { id: 'pickles', slug: 'pickles', image: 'categories/pickles.jpg', icon: '🥒' },
+    { id: 'sauces', slug: 'sauces', image: 'categories/sauces.jpg', icon: '🍯' },
+    { id: 'namkeens-sweets', slug: 'namkeens-sweets', image: 'categories/namkeen-sweets.jpg', icon: '🍬' }
   ],
 
   featuredProducts: [
