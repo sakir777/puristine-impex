@@ -12,7 +12,7 @@ const PURISTINE_DATA = {
     { id: 'disposable-products', slug: 'disposable-products', image: 'categories/disposable-plates.jpg', icon: '📦' },
     { id: 'pulses', slug: 'pulses', image: 'categories/pulses.jpg', icon: '🫘' },
     { id: 'mouth-fresheners', slug: 'mouth-fresheners', image: 'categories/mouth-fresheners.jpg', icon: '✨' },
-    { id: 'jaggery', slug: 'jaggery', image: 'categories/syrups.jpg', icon: '🍯' },
+    { id: 'jaggery', slug: 'jaggery', image: 'categories/jaggery.jpg', icon: '🍯' },
     { id: 'flours', slug: 'flours', image: 'categories/flours.jpg', icon: '🌾' },
     { id: 'syrups', slug: 'syrups', image: 'categories/syrups.jpg', icon: '🍶' },
     { id: 'pickles', slug: 'pickles', image: 'categories/pickles.jpg', icon: '🥒' },
