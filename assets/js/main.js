@@ -511,3 +511,107 @@ const ContactPage = {
     });
   }
 };
+
+/**
+ * Content & Copy Protection
+ * Protects website assets from casual copying, right-click saving, and devtool/source shortcuts
+ */
+const CopyProtection = {
+  init() {
+    this.disableContextMenu();
+    this.disableKeyCombinations();
+    this.disableCopy();
+    this.disableDrag();
+    this.logConsoleNotice();
+  },
+
+  disableContextMenu() {
+    document.addEventListener('contextmenu', (e) => {
+      // Allow right-click in inputs, textareas, and editable fields for typing/accessibility
+      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName) || e.target.isContentEditable) {
+        return;
+      }
+      e.preventDefault();
+      return false;
+    });
+  },
+
+  disableKeyCombinations() {
+    window.addEventListener('keydown', (e) => {
+      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+      const cmdOrCtrl = isMac ? e.metaKey : e.ctrlKey;
+      const key = (e.key || '').toLowerCase();
+
+      // F12 (Developer Tools)
+      if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+U / Cmd+Option+U (View Page Source)
+      if ((cmdOrCtrl && key === 'u') || (e.metaKey && e.altKey && key === 'u')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+Shift+I / Cmd+Option+I (Inspect Element / DevTools)
+      if ((cmdOrCtrl && e.shiftKey && key === 'i') || (e.metaKey && e.altKey && key === 'i')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+Shift+J / Cmd+Option+J (DevTools Console)
+      if ((cmdOrCtrl && e.shiftKey && key === 'j') || (e.metaKey && e.altKey && key === 'j')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+Shift+C / Cmd+Option+C (Inspect Element Selector)
+      if ((cmdOrCtrl && e.shiftKey && key === 'c') || (e.metaKey && e.altKey && key === 'c')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+S / Cmd+S (Save Web Page)
+      if (cmdOrCtrl && key === 's') {
+        e.preventDefault();
+        return false;
+      }
+    });
+  },
+
+  disableCopy() {
+    document.addEventListener('copy', (e) => {
+      const activeEl = document.activeElement;
+      if (activeEl && (['INPUT', 'TEXTAREA'].includes(activeEl.tagName) || activeEl.isContentEditable)) {
+        return;
+      }
+      e.preventDefault();
+      return false;
+    });
+  },
+
+  disableDrag() {
+    document.addEventListener('dragstart', (e) => {
+      if (e.target && e.target.tagName === 'IMG') {
+        e.preventDefault();
+        return false;
+      }
+    });
+  },
+
+  logConsoleNotice() {
+    try {
+      console.log(
+        '%cNotice',
+        'color: #ED835E; font-size: 26px; font-weight: 700; font-family: Montserrat, sans-serif;'
+      );
+      console.log(
+        '%cContent and media on this website are proprietary to Puristine Impex LLP. Unauthorized copying or scraping is prohibited.',
+        'color: #44749E; font-size: 13px; line-height: 1.5; font-family: Inter, sans-serif;'
+      );
+    } catch (_) {}
+  }
+};
+
+CopyProtection.init();

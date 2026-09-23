@@ -1,4 +1,59 @@
+# ==============================================================================
+# Puristine Impex LLP — Robots.txt
+# ==============================================================================
+
+# Website-copying tools and aggressive SEO harvesting bots
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: PageFreezer
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: SiteAuditBot
+Disallow: /
+
+User-agent: SurveyBot
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+# General crawlers and search engines (Allowed: Googlebot, Bingbot, LLM readers, Wayback Machine)
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /private/
 
-Sitemap: https://puristine-impex.vercel.app/sitemap.xml
+# Sitemap & Host
+Sitemap: https://puristineimpex.com/sitemap.xml
+Host: https://puristineimpex.com/
