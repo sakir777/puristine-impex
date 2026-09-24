@@ -69,9 +69,11 @@
   flex-shrink: 0;
 }
 
-.product-benefit-icon svg {
+.product-benefit-icon svg,
+.product-benefit-icon img {
   width: 1.5rem;
   height: 1.5rem;
+  object-fit: contain;
 }
 
 .product-benefit-card h3 {
